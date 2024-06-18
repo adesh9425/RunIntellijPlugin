@@ -26,3 +26,4 @@ Component is provided by the `CalendarToolWindowFactory.CalendarToolWindowConten
 # RunIntellijPlugin
 # RunIntellijPlugin
 # RunIntellijPlugin
+# RunIntellijPlugin
