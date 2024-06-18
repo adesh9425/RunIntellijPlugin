@@ -1,0 +1,5494 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'CCEX'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style>
+    <script>function hideElementsHavingClass(className, hideOrShow) {
+  const elements = document.getElementsByClassName(className)
+  const displayType = hideOrShow ? 'none' : 'initial'
+  for (const element of elements) {
+    element.classList.toggle('invisible', hideOrShow)
+  }
+}</script>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <ul>
+        <li><a href="#id-project-name">Project name</a></li>
+        <li><a href="#id-app-info">Application info</a></li>
+        <li><a href="#id-runtime-info">Runtime</a></li>
+        <li><a href="#id-indexing-info">Indexing info</a></li>
+        <li><a href="#id-slow-files">Slowly indexed files</a></li>
+        <li><a href="#id-stats-per-file-type">Statistics per file type</a></li>
+        <li><a href="#id-stats-per-indexer">Statistics per indexer</a></li>
+        <li><a href="#id-scanning">Scanning</a></li>
+        <li><a href="#id-indexing">Indexing</a></li>
+      </ul>
+      <hr class="solid">
+      <ul>
+        <li><label for="id-hide-minor-data-checkbox">Hide minor data<input checked="checked" id="id-hide-minor-data-checkbox" type="checkbox" onclick="hideElementsHavingClass('minor-data', this.checked)">
+              <style>padding-left: 10px</style>
+            </label></li>
+      </ul>
+      <div class="jetbrains-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.21407 130.10375">
+  <title>logo-grey</title>
+  <g>
+    <path d="M120.2,68.6a4.99684,4.99684,0,0,0-1.4-3.5L55.191,2.68736a7.86372,7.86372,0,0,0-3.36731-2.261c-.03467-.012-.06812-.02612-.103-.03766-.19336-.06323-.3913-.11511-.591-.16327-.06689-.0163-.13177-.0368-.1994-.05133-.18744-.04-.37909-.06738-.57117-.09363-.0788-.0108-.15527-.0274-.23492-.03589A7.83914,7.83914,0,0,0,49.3,0a7.73961,7.73961,0,0,0-1.21088.10413c-.0235.00391-.04694.00671-.07037.0108a7.62573,7.62573,0,0,0-3.092,1.24969c-.07343.04773-.155.08575-.22668.13538L4.9,28.3c-.08221.08221-.15106.10632-.17773.16437L4.67218,28.5H4.6A11.11647,11.11647,0,0,0,.15875,39.45683l.00854.04449c.05176.28589.11011.56958.18372.84973.03052.119.06964.235.104.35284.054.181.10278.3634.16571.5412A11.15109,11.15109,0,0,0,5.3,47.1a8.82025,8.82025,0,0,0,2,.9c.4.2,45.4,18.8,45.4,18.8a4.291,4.291,0,0,0,4.4-7.3c-.06525,0-16.839-13.21332-28.69928-22.52606l21.105-19.03113,57.91815,49.58282L28.6,110.7a9.82332,9.82332,0,0,0-4.7,4.1,10.0662,10.0662,0,0,0,3.6,13.9,10.28689,10.28689,0,0,0,10.7-.2c.2-.2.5-.3.7-.5L116.9,73.2a18.32,18.32,0,0,0,1.58612-1.2663A4.74573,4.74573,0,0,0,120.2,68.6Z" transform="translate(0.01406 0.00002)" fill="#cdcdcd"/>
+    <g id="_Group_" data-name="&lt;Group&gt;">
+      <rect id="_Path_" data-name="&lt;Path&gt;" x="34.61406" y="37.40002" width="51" height="51"/>
+      <rect id="_Path_2" data-name="&lt;Path&gt;" x="39.01406" y="78.80002" width="19.1" height="3.2" fill="#fff"/>
+      <g id="_Group_2" data-name="&lt;Group&gt;">
+        <path id="_Path_3" data-name="&lt;Path&gt;" d="M38.8,50.8l1.5-1.4a1.70271,1.70271,0,0,0,1.3.8q.9,0,.9-1.2V43.7h2.3V49a2.79543,2.79543,0,0,1-3.1,3.1A3.026,3.026,0,0,1,38.8,50.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_4" data-name="&lt;Path&gt;" d="M45.3,43.8H52v1.9H47.6V47h4v1.8h-4v1.3h4.5v2H45.4Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_5" data-name="&lt;Path&gt;" d="M55,45.8H52.5v-2h7.3v2H57.3v6.3H55Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M39,54h4.3a3.7023,3.7023,0,0,1,2.3.7,1.97822,1.97822,0,0,1,.5,1.4h0A1.95538,1.95538,0,0,1,44.8,58a1.94762,1.94762,0,0,1,1.6,2h0c0,1.4-1.2,2.3-3.1,2.3H39Zm4.8,2.6c0-.5-.4-.7-1-.7H41.3v1.5h1.4c.7-.1,1.1-.3,1.1-.8ZM43,59H41.2v1.5H43c.7,0,1.1-.3,1.1-.8h0C44.1,59.2,43.7,59,43,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" d="M46.8,54h3.9a3.51463,3.51463,0,0,1,2.7.9,2.48948,2.48948,0,0,1,.7,1.9h0a2.76053,2.76053,0,0,1-1.7,2.6l2,2.9H51.8l-1.7-2.5h-1v2.5H46.8Zm3.8,4c.8,0,1.2-.4,1.2-1h0c0-.7-.5-1-1.2-1H49.1v2Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" d="M56.8,54H59l3.5,8.4H60l-.6-1.5H56.2l-.6,1.5H53.2Zm2,5-.9-2.3L57,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_6" data-name="&lt;Path&gt;" d="M62.8,54h2.3v8.3H62.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_7" data-name="&lt;Path&gt;" d="M65.7,54h2.1l3.4,4.4V54h2.3v8.3h-2L68,57.8v4.6H65.7Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_8" data-name="&lt;Path&gt;" d="M73.7,61.1,75,59.6a3.94219,3.94219,0,0,0,2.7,1c.6,0,1-.2,1-.6h0c0-.4-.3-.5-1.4-.8-1.8-.4-3.1-.9-3.1-2.6h0c0-1.5,1.2-2.7,3.2-2.7A5.33072,5.33072,0,0,1,80.8,55l-1.2,1.6a4.55346,4.55346,0,0,0-2.3-.8c-.6,0-.8.2-.8.5h0c0,.4.3.5,1.4.8,1.9.4,3.1,1,3.1,2.6h0c0,1.7-1.3,2.7-3.4,2.7A5.29336,5.29336,0,0,1,73.7,61.1Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg></div>
+    </div>
+    <div class="stats-content">
+      <div id="id-project-name">
+        <h1 class="Project name"></h1>
+CCEX</div>
+      <div id="id-app-info">
+        <h1 class="Application info"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Build</td>
+              <td>231.9392.1</td>
+            </tr>
+            <tr>
+              <td>Build date</td>
+              <td>14:39:05 25 Jul</td>
+            </tr>
+            <tr>
+              <td>Product code</td>
+              <td>IC</td>
+            </tr>
+            <tr>
+              <td>Generated</td>
+              <td>15:05:45 19 Mar</td>
+            </tr>
+            <tr>
+              <td>OS</td>
+              <td>macOS 14.0</td>
+            </tr>
+            <tr>
+              <td>Runtime</td>
+              <td>JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-runtime-info">
+        <h1 class="Runtime"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Max memory</td>
+              <td>786.43 MB</td>
+            </tr>
+            <tr>
+              <td>Number of processors</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Max number of indexing threads</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Max size of file for analysis</td>
+              <td>2.56 MB</td>
+            </tr>
+            <tr>
+              <td>Max size of file for content loading</td>
+              <td>20.97 MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing-info">
+        <h1 class="Indexing info"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Number of file providers</td>
+              <td>424</td>
+            </tr>
+            <tr>
+              <td>Number of scanned files</td>
+              <td>151463</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed by shared indexes during the scan (without loading content)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files scheduled for indexing after scanning</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed by shared indexes during the indexing stage (with loading content)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed during the indexing stage with loading content (including indexed by shared indexes)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of too large for indexing files</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Started at</td>
+              <td>15:05:25 19 Mar</td>
+            </tr>
+            <tr>
+              <td>Reason</td>
+              <td>On project open</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>full on project open</td>
+            </tr>
+            <tr>
+              <td>Finished at</td>
+              <td>15:05:45 19 Mar</td>
+            </tr>
+            <tr>
+              <td>Cancelled?</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Suspended time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Total time</td>
+              <td>19 s 797 ms</td>
+            </tr>
+            <tr>
+              <td>Indexing time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Iterators creation time</td>
+              <td>55 ms</td>
+            </tr>
+            <tr>
+              <td>Scanning time</td>
+              <td>18 s 735 ms</td>
+            </tr>
+            <tr>
+              <td>Content loading time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Pushing properties time</td>
+              <td>1 ms</td>
+            </tr>
+            <tr>
+              <td>Running extensions time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Index writing time</td>
+              <td>0 ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-slow-files">
+        <h1 class="Slowly indexed files (&gt; 500 ms)"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>File</th>
+              <th>Content loading time</th>
+              <th>Indexing time</th>
+              <th>Total processing time</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-file-type">
+        <h1 class="Statistics per file type"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>File type</th>
+              <th>Number of files</th>
+              <th>Total processing time</th>
+              <th>Content loading time</th>
+              <th>Total files size</th>
+              <th>Total processing speed</th>
+              <th>The biggest contributors</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-indexer">
+        <h1 class="Statistics per indexer"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Number of files</th>
+              <th>Part of total indexing time</th>
+              <th>Total number of files indexed by shared indexes</th>
+              <th>Total files size</th>
+              <th>Indexing speed</th>
+              <th>Snapshot input mapping statistics</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="id-scanning">
+        <h1 class="Scanning"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>Number of scanned files</th>
+              <th>Number of files scheduled for indexing</th>
+              <th>Number of files fully indexed by shared indexes</th>
+              <th>Number of double-scanned skipped files</th>
+              <th>Total time of getting files' statuses (part of scanning)</th>
+              <th>Scanning time</th>
+              <th>Time processing up-to-date files</th>
+              <th>Time updating content-less indexes</th>
+              <th>Time indexing without content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-cognitoidp:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>959</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 s 717 ms</td>
+              <td>6 s 725 ms</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.nimbusds:nimbus-jose-jwt:9.24.4 (#1 class roots, #0 source roots)</td>
+              <td>472</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 s 712 ms</td>
+              <td>5 s 734 ms</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>104</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>718 ms</td>
+              <td>5 s 716 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.2.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>477 ms</td>
+              <td>5 s 408 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.ldap:spring-ldap-core:3.2.1 (#1 class roots, #0 source roots)</td>
+              <td>331</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 s 191 ms</td>
+              <td>5 s 200 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.google.guava:guava:32.1.1-jre (#1 class roots, #0 source roots)</td>
+              <td>2032</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 686 ms</td>
+              <td>2 s 698 ms</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.bouncycastle:bcprov-jdk15on:1.70 (#1 class roots, #0 source roots)</td>
+              <td>4330</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 23 ms</td>
+              <td>2 s 252 ms</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.thymeleaf:thymeleaf:3.1.2.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>581</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 617 ms</td>
+              <td>1 s 814 ms</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)</td>
+              <td>6772</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 471 ms</td>
+              <td>1 s 693 ms</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home</td>
+              <td>42616</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 622 ms</td>
+              <td>1 s 667 ms</td>
+              <td>0</td>
+              <td>18 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.nimbusds:oauth2-oidc-sdk:10.7.1 (#1 class roots, #0 source roots)</td>
+              <td>467</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 293 ms</td>
+              <td>1 s 425 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.bouncycastle:bcpkix-jdk15on:1.68 (#1 class roots, #0 source roots)</td>
+              <td>748</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 197 ms</td>
+              <td>1 s 264 ms</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.groovy:groovy:4.0.17 (#1 class roots, #0 source roots)</td>
+              <td>4604</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 222 ms</td>
+              <td>1 s 259 ms</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>629</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 106 ms</td>
+              <td>1 s 150 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.santuario:xmlsec:2.1.6 (#1 class roots, #0 source roots)</td>
+              <td>684</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 29 ms</td>
+              <td>1 s 117 ms</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-saml-impl:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>877</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>819 ms</td>
+              <td>898 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.google.guava:guava:32.0.1-jre (#1 class roots, #0 source roots)</td>
+              <td>2026</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>881 ms</td>
+              <td>890 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-soap-impl:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>501</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>764 ms</td>
+              <td>826 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-saml-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>427</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>687 ms</td>
+              <td>807 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:xmltooling:1.4.4 (#1 class roots, #0 source roots)</td>
+              <td>607</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>680 ms</td>
+              <td>711 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: net.bytebuddy:byte-buddy:1.14.11 (#1 class roots, #0 source roots)</td>
+              <td>2887</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>615 ms</td>
+              <td>618 ms</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework:spring-context:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>862</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>526 ms</td>
+              <td>541 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-xmlsec-impl:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>353</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>500 ms</td>
+              <td>540 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.attoparser:attoparser:2.0.7.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>163</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>470 ms</td>
+              <td>504 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>1379</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>443 ms</td>
+              <td>469 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-xmlsec-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>246</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>398 ms</td>
+              <td>429 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.microsoft.sqlserver:mssql-jdbc:12.4.2.jre11 (#1 class roots, #0 source roots)</td>
+              <td>443</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>407 ms</td>
+              <td>428 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.velocity:velocity-engine-core:2.3 (#1 class roots, #0 source roots)</td>
+              <td>269</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>381 ms</td>
+              <td>422 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>7222</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>405 ms</td>
+              <td>412 ms</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework:spring-web:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>1121</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>369 ms</td>
+              <td>374 ms</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.fasterxml.woodstox:woodstox-core:5.0.3 (#1 class roots, #0 source roots)</td>
+              <td>214</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>335 ms</td>
+              <td>369 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework:spring-core:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>1148</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>363 ms</td>
+              <td>368 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-soap-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>194</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>324 ms</td>
+              <td>362 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.logging.log4j:log4j-core:2.21.1 (#1 class roots, #0 source roots)</td>
+              <td>1243</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>346 ms</td>
+              <td>351 ms</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: ca.juliusdavies:not-yet-commons-ssl:0.3.9 (#1 class roots, #0 source roots)</td>
+              <td>158</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>309 ms</td>
+              <td>345 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.fasterxml.jackson.core:jackson-databind:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>783</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>324 ms</td>
+              <td>325 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: junit:junit:4.13.2 (#1 class roots, #0 source roots)</td>
+              <td>354</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>274 ms</td>
+              <td>299 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: net.shibboleth.utilities:java-support:8.2.1 (#1 class roots, #0 source roots)</td>
+              <td>187</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>254 ms</td>
+              <td>297 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: jakarta.xml.bind:jakarta.xml.bind-api:4.0.1 (#1 class roots, #0 source roots)</td>
+              <td>126</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>290 ms</td>
+              <td>295 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.postgresql:postgresql:42.6.0 (#1 class roots, #0 source roots)</td>
+              <td>485</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>280 ms</td>
+              <td>293 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.unbescape:unbescape:1.1.6.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>73</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>258 ms</td>
+              <td>284 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework:spring-webmvc:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>533</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>280 ms</td>
+              <td>284 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-redshift:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>1100</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>280 ms</td>
+              <td>284 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.google.guava:guava:33.0.0-jre (#1 class roots, #0 source roots)</td>
+              <td>2029</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>277 ms</td>
+              <td>281 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-s3:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>911</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>271 ms</td>
+              <td>276 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.hypersistence:hypersistence-utils-hibernate-62:3.7.0 (#1 class roots, #0 source roots)</td>
+              <td>176</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>264 ms</td>
+              <td>276 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.cryptacular:cryptacular:1.2.4 (#1 class roots, #0 source roots)</td>
+              <td>131</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>219 ms</td>
+              <td>265 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: jakarta.servlet:jakarta.servlet-api:6.0.0 (#1 class roots, #0 source roots)</td>
+              <td>147</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>237 ms</td>
+              <td>237 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.tomcat.embed:tomcat-embed-core:10.1.18 (#1 class roots, #0 source roots)</td>
+              <td>1613</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>228 ms</td>
+              <td>236 ms</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.lucene:lucene-core:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>2195</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>224 ms</td>
+              <td>226 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-security-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>115</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>193 ms</td>
+              <td>223 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.codehaus.woodstox:stax2-api:3.1.4 (#1 class roots, #0 source roots)</td>
+              <td>127</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>189 ms</td>
+              <td>212 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-claimapp' (avizva-hc-claimapp)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>145 ms</td>
+              <td>211 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-core:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>138</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>182 ms</td>
+              <td>211 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: commons-httpclient:commons-httpclient:3.0 (#1 class roots, #0 source roots)</td>
+              <td>150</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>192 ms</td>
+              <td>209 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.security:spring-security-saml2-service-provider:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>124</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>184 ms</td>
+              <td>208 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.data:spring-data-mongodb:4.2.2 (#1 class roots, #0 source roots)</td>
+              <td>1488</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>196 ms</td>
+              <td>198 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.jsonwebtoken:jjwt-api:0.12.3 (#1 class roots, #0 source roots)</td>
+              <td>199</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>189 ms</td>
+              <td>196 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-kms:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>468</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>188 ms</td>
+              <td>189 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.jsonwebtoken:jjwt-impl:0.12.3 (#1 class roots, #0 source roots)</td>
+              <td>342</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>180 ms</td>
+              <td>189 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-secretsmanager:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>207</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>188 ms</td>
+              <td>189 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: joda-time:joda-time:2.12.6 (#1 class roots, #0 source roots)</td>
+              <td>744</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>148 ms</td>
+              <td>178 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.data:spring-data-commons:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>909</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>168 ms</td>
+              <td>172 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.aspectj:aspectjweaver:1.9.21 (#1 class roots, #0 source roots)</td>
+              <td>977</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>162 ms</td>
+              <td>166 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)</td>
+              <td>52</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>90 ms</td>
+              <td>164 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.freemarker:freemarker:2.3.32 (#1 class roots, #0 source roots)</td>
+              <td>1230</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>157 ms</td>
+              <td>164 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'CCEX' (CCEX)</td>
+              <td>754</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>121 ms</td>
+              <td>162 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.data:spring-data-redis:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>1234</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>160 ms</td>
+              <td>162 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.lettuce:lettuce-core:6.3.1.RELEASE (#1 class roots, #0 source roots)</td>
+              <td>1376</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>158 ms</td>
+              <td>161 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.dropwizard.metrics:metrics-core:4.2.23 (#1 class roots, #0 source roots)</td>
+              <td>107</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>147 ms</td>
+              <td>158 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.hamcrest:hamcrest:2.2 (#1 class roots, #0 source roots)</td>
+              <td>109</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>139 ms</td>
+              <td>156 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.apache.pdfbox:pdfbox:3.0.1 (#1 class roots, #0 source roots)</td>
+              <td>781</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>148 ms</td>
+              <td>156 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazon.redshift:redshift-jdbc42:2.1.0.25 (#1 class roots, #0 source roots)</td>
+              <td>425</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>133 ms</td>
+              <td>156 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.checkerframework:checker-qual:3.33.0 (#1 class roots, #0 source roots)</td>
+              <td>360</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>143 ms</td>
+              <td>148 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-messaging-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>59</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>106 ms</td>
+              <td>138 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: joda-time:joda-time:2.10.10 (#1 class roots, #0 source roots)</td>
+              <td>736</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>130 ms</td>
+              <td>135 ms</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.google.guava:guava:21.0 (#1 class roots, #0 source roots)</td>
+              <td>1840</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>133 ms</td>
+              <td>135 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-iam:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>999</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>130 ms</td>
+              <td>130 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.mongodb:mongodb-driver-core:4.11.1 (#1 class roots, #0 source roots)</td>
+              <td>1126</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>124 ms</td>
+              <td>128 ms</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.yaml:snakeyaml:2.2 (#1 class roots, #0 source roots)</td>
+              <td>235</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>105 ms</td>
+              <td>124 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.hibernate.validator:hibernate-validator:8.0.1.Final (#1 class roots, #0 source roots)</td>
+              <td>944</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>115 ms</td>
+              <td>123 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.mongodb:bson:4.11.1 (#1 class roots, #0 source roots)</td>
+              <td>384</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>106 ms</td>
+              <td>123 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.opensaml:opensaml-security-impl:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>64</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>89 ms</td>
+              <td>122 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.boot:spring-boot:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>1007</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>116 ms</td>
+              <td>120 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: io.projectreactor:reactor-core:3.6.2 (#1 class roots, #0 source roots)</td>
+              <td>947</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>119 ms</td>
+              <td>120 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.carrotsearch:hppc:0.8.1 (#1 class roots, #0 source roots)</td>
+              <td>953</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>119 ms</td>
+              <td>120 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>735</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>115 ms</td>
+              <td>116 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: net.minidev:json-smart:2.5.0 (#1 class roots, #0 source roots)</td>
+              <td>96</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>107 ms</td>
+              <td>114 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-core:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>864</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>76 ms</td>
+              <td>108 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>87 ms</td>
+              <td>99 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)</td>
+              <td>15</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>36 ms</td>
+              <td>99 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-elasticsearch:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>615</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>97 ms</td>
+              <td>97 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.glassfish.jaxb:jaxb-runtime:4.0.4 (#1 class roots, #0 source roots)</td>
+              <td>666</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>95 ms</td>
+              <td>97 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-dao' (avizva-hc-zenoapp-dao)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22 ms</td>
+              <td>96 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>688</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>89 ms</td>
+              <td>95 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp' (avizva-hc-softphonehandlerapp)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>71 ms</td>
+              <td>94 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: joda-time:joda-time:2.8.1 (#1 class roots, #0 source roots)</td>
+              <td>720</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>89 ms</td>
+              <td>89 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>456</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>86 ms</td>
+              <td>88 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)</td>
+              <td>356</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>70 ms</td>
+              <td>85 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-notification-core:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>80</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>61 ms</td>
+              <td>81 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>19 ms</td>
+              <td>78 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-tx:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>221</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>76 ms</td>
+              <td>77 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: redis.clients:jedis:5.0.2 (#1 class roots, #0 source roots)</td>
+              <td>579</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>77 ms</td>
+              <td>77 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.bouncycastle:bcpkix-jdk15on:1.70 (#1 class roots, #0 source roots)</td>
+              <td>809</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>74 ms</td>
+              <td>77 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-livewire:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>41</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>52 ms</td>
+              <td>77 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-dao' (avizva-hc-benefitapp-dao)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>75 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.ow2.asm:asm:9.3 (#1 class roots, #0 source roots)</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>66 ms</td>
+              <td>74 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao-telephonysystem' (avizva-hc-softphonehandlerapp-dao-telephonysystem)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>73 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp' (avizva-hc-notesapp)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>56 ms</td>
+              <td>72 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.httpcomponents:httpclient:4.5.3 (#1 class roots, #0 source roots)</td>
+              <td>474</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>70 ms</td>
+              <td>71 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.commons:commons-lang3:3.13.0 (#1 class roots, #0 source roots)</td>
+              <td>395</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>71 ms</td>
+              <td>71 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-ses:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>545</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>70 ms</td>
+              <td>70 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-apigatewaymanagementapi:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>41</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>52 ms</td>
+              <td>66 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-jdbc:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>308</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>65 ms</td>
+              <td>66 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.core:jackson-core:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>205</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>52 ms</td>
+              <td>63 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-io:commons-io:2.15.1 (#1 class roots, #0 source roots)</td>
+              <td>344</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>62 ms</td>
+              <td>62 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.opensaml:opensaml-profile-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>29</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>44 ms</td>
+              <td>62 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.searchbox:jest-common:6.3.1 (#1 class roots, #0 source roots)</td>
+              <td>276</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>58 ms</td>
+              <td>61 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-oauth2-client:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>213</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>51 ms</td>
+              <td>60 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-authentication' (avizva-hc-providerapp-authentication)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>54 ms</td>
+              <td>59 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.core:jackson-annotations:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>78</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>54 ms</td>
+              <td>58 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.nimbusds:nimbus-jose-jwt:9.35 (#1 class roots, #0 source roots)</td>
+              <td>538</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>57 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-queryparser:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>260</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>57 ms</td>
+              <td>57 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-apis' (avizva-hc-notesapp-apis)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>57 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-aop:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>298</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>54 ms</td>
+              <td>56 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-queries:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>294</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>56 ms</td>
+              <td>56 ms</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-apis' (avizva-hc-benefitapp-apis)</td>
+              <td>7</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>19 ms</td>
+              <td>55 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>3 ms</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.auto:auto-common:1.2.1 (#1 class roots, #0 source roots)</td>
+              <td>75</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>51 ms</td>
+              <td>55 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-codec:commons-codec:1.16.0 (#1 class roots, #0 source roots)</td>
+              <td>242</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>54 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-web:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>501</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>53 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-common:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>500</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>53 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.validation:jakarta.validation-api:3.0.2 (#1 class roots, #0 source roots)</td>
+              <td>147</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>53 ms</td>
+              <td>53 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-core:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>379</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>40 ms</td>
+              <td>52 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-codec-http:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>396</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>52 ms</td>
+              <td>52 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-transport:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>380</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>52 ms</td>
+              <td>52 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.jupiter:junit-jupiter-params:5.10.1 (#1 class roots, #0 source roots)</td>
+              <td>352</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>51 ms</td>
+              <td>52 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.checkerframework:checker-qual:3.41.0 (#1 class roots, #0 source roots)</td>
+              <td>368</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>49 ms</td>
+              <td>52 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.code.gson:gson:2.10.1 (#1 class roots, #0 source roots)</td>
+              <td>221</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>51 ms</td>
+              <td>51 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-codec-http2:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>288</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>48 ms</td>
+              <td>51 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)</td>
+              <td>76</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>48 ms</td>
+              <td>50 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-authorization' (avizva-hc-zenoapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>47 ms</td>
+              <td>49 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)</td>
+              <td>320</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>39 ms</td>
+              <td>46 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.persistence:jakarta.persistence-api:3.1.0 (#1 class roots, #0 source roots)</td>
+              <td>217</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>45 ms</td>
+              <td>46 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-logic' (avizva-hc-zenoapp-logic)</td>
+              <td>23</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>45 ms</td>
+              <td>46 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-sns:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>357</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>44 ms</td>
+              <td>45 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.activation:jakarta.activation-api:2.1.2 (#1 class roots, #0 source roots)</td>
+              <td>52</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>39 ms</td>
+              <td>44 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.smallrye:jandex:3.1.2 (#1 class roots, #0 source roots)</td>
+              <td>167</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>44 ms</td>
+              <td>44 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-handler:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>366</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>43 ms</td>
+              <td>43 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.opensaml:opensaml-storage-api:4.1.1 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>28 ms</td>
+              <td>43 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.bouncycastle:bcutil-jdk15on:1.70 (#1 class roots, #0 source roots)</td>
+              <td>419</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>42 ms</td>
+              <td>43 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 ms</td>
+              <td>41 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.module:jackson-module-afterburner:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>83</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>30 ms</td>
+              <td>41 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:aws-java-sdk-sqs:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>276</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>38 ms</td>
+              <td>39 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.pdfbox:fontbox:3.0.1 (#1 class roots, #0 source roots)</td>
+              <td>279</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>36 ms</td>
+              <td>38 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-authentication' (avizva-hc-notesapp-authentication)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>36 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-misc:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>67</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>34 ms</td>
+              <td>34 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.httpcomponents:httpcore-nio:4.4.16 (#1 class roots, #0 source roots)</td>
+              <td>249</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>32 ms</td>
+              <td>34 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation)</td>
+              <td>276</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23 ms</td>
+              <td>33 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.checkerframework:checker-qual:3.31.0 (#1 class roots, #0 source roots)</td>
+              <td>360</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>29 ms</td>
+              <td>32 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-entities' (avizva-hc-benefitapp-entities)</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>31 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.microsoft.azure:msal4j:1.14.2 (#1 class roots, #0 source roots)</td>
+              <td>208</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>31 ms</td>
+              <td>31 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-authorization' (avizva-hc-claimapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>30 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)</td>
+              <td>246</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>27 ms</td>
+              <td>30 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.httpcomponents:httpclient:4.5.13 (#1 class roots, #0 source roots)</td>
+              <td>478</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>29 ms</td>
+              <td>30 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.mail:jakarta.mail-api:2.1.2 (#1 class roots, #0 source roots)</td>
+              <td>154</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>24 ms</td>
+              <td>29 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.hypersistence:hypersistence-tsid:2.1.1 (#1 class roots, #0 source roots)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>19 ms</td>
+              <td>29 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-expression:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>152</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 ms</td>
+              <td>29 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.18 (#1 class roots, #0 source roots)</td>
+              <td>191</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>27 ms</td>
+              <td>28 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@3720b73b' (non-project)</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4</td>
+              <td>26 ms</td>
+              <td>28 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: net.minidev:accessors-smart:2.5.0 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>20 ms</td>
+              <td>26 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-oauth2-core:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>80</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>24 ms</td>
+              <td>26 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.hibernate.common:hibernate-commons-annotations:6.0.6.Final (#1 class roots, #0 source roots)</td>
+              <td>60</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>26 ms</td>
+              <td>26 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation)</td>
+              <td>221</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23 ms</td>
+              <td>26 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.platform:junit-platform-engine:1.10.1 (#1 class roots, #0 source roots)</td>
+              <td>139</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>25 ms</td>
+              <td>25 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.antlr:antlr4-runtime:4.13.0 (#1 class roots, #0 source roots)</td>
+              <td>218</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>25 ms</td>
+              <td>25 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.jsonwebtoken:jjwt-jackson:0.12.3 (#1 class roots, #0 source roots)</td>
+              <td>10</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>25 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15 ms</td>
+              <td>24 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.18 (#1 class roots, #0 source roots)</td>
+              <td>164</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22 ms</td>
+              <td>24 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-logic' (avizva-hc-softphonehandlerapp-logic)</td>
+              <td>96</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18 ms</td>
+              <td>23 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-crypto:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>47</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>23 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-codec-socks:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>113</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>20 ms</td>
+              <td>23 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.mongodb:mongodb-driver-sync:4.11.1 (#1 class roots, #0 source roots)</td>
+              <td>77</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 ms</td>
+              <td>23 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-resolver-dns:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>119</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>20 ms</td>
+              <td>23 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.logging.log4j:log4j-api:2.21.1 (#1 class roots, #0 source roots)</td>
+              <td>201</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22 ms</td>
+              <td>22 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.eclipse.angus:angus-mail:2.0.2 (#1 class roots, #0 source roots)</td>
+              <td>233</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22 ms</td>
+              <td>22 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springdoc:springdoc-openapi-starter-common:2.3.0 (#1 class roots, #0 source roots)</td>
+              <td>238</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>19 ms</td>
+              <td>22 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-codec:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>221</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 ms</td>
+              <td>22 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.micrometer:micrometer-observation:1.12.2 (#1 class roots, #0 source roots)</td>
+              <td>61</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>21 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-apis' (avizva-hc-zenoapp-apis)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>21 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10 ms</td>
+              <td>21 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.jupiter:junit-jupiter-api:5.10.1 (#1 class roots, #0 source roots)</td>
+              <td>186</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 ms</td>
+              <td>21 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-dao' (avizva-hc-claimapp-dao)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>20 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16 ms</td>
+              <td>19 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>19 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.glassfish.jaxb:jaxb-core:4.0.4 (#1 class roots, #0 source roots)</td>
+              <td>132</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>19 ms</td>
+              <td>19 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-authorization' (avizva-hc-providerapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>19 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-orm:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>111</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17 ms</td>
+              <td>19 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-oauth2-jose:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>56</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>18 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-context-support:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>110</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18 ms</td>
+              <td>18 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-suggest:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>136</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17 ms</td>
+              <td>18 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-oxm:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>41</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17 ms</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.httpcomponents:httpcore:4.4.16 (#1 class roots, #0 source roots)</td>
+              <td>260</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17 ms</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.jupiter:junit-jupiter-engine:5.10.1 (#1 class roots, #0 source roots)</td>
+              <td>134</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.maven.shared:maven-shared-utils:3.3.4 (#1 class roots, #0 source roots)</td>
+              <td>86</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>71</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17 ms</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-presentation' (avizva-hc-zenoapp-presentation)</td>
+              <td>63</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>16 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-entities' (avizva-hc-memberapp-entities)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>16 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.commons:commons-text:1.11.0 (#1 class roots, #0 source roots)</td>
+              <td>163</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15 ms</td>
+              <td>16 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.webjars:swagger-ui:5.10.3 (#1 class roots, #0 source roots)</td>
+              <td>31</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15 ms</td>
+              <td>15 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-presentation' (avizva-hc-taskmanagerapp-presentation)</td>
+              <td>108</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>15 ms</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: javax.xml.bind:jaxb-api:2.3.0 (#1 class roots, #0 source roots)</td>
+              <td>119</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>15 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>51</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15 ms</td>
+              <td>15 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-codec-dns:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>51</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: net.java.dev.jna:jna:5.10.0 (#1 class roots, #0 source roots)</td>
+              <td>146</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.session:spring-session-core:3.2.1 (#1 class roots, #0 source roots)</td>
+              <td>67</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-spatial3d:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>148</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-sandbox:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>135</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.swagger.core.v3:swagger-annotations:2.2.20 (#1 class roots, #0 source roots)</td>
+              <td>63</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>14 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>129</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>13 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>120</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>13 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-fileupload:commons-fileupload:1.5 (#1 class roots, #0 source roots)</td>
+              <td>61</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-invoice:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>20</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-dao-cognitiveengine' (avizva-hc-zenoapp-dao-cognitiveengine)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-highlighter:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>135</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.lz4:lz4-java:1.8.0 (#1 class roots, #0 source roots)</td>
+              <td>89</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-logging:commons-logging:1.1.3 (#1 class roots, #0 source roots)</td>
+              <td>33</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)</td>
+              <td>101</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>12 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-apiaudit:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-buffer:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>144</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-io:commons-io:2.6 (#1 class roots, #0 source roots)</td>
+              <td>132</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.hamcrest:hamcrest-core:2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-presentation' (avizva-hc-transcriptapp-presentation)</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-dao-jira' (avizva-hc-taskmanagerapp-dao-jira)</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>11 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.maven.shared:maven-invoker:3.2.0 (#1 class roots, #0 source roots)</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10 ms</td>
+              <td>10 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-member:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>43</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10 ms</td>
+              <td>10 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp' (avizva-hc-memberapp)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>10 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-dbsetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>10 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.data:spring-data-keyvalue:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>87</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-logic' (avizva-hc-taskmanagerapp-logic)</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.auth0:java-jwt:4.4.0 (#1 class roots, #0 source roots)</td>
+              <td>57</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>65</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.swagger.core.v3:swagger-core-jakarta:2.2.19 (#1 class roots, #0 source roots)</td>
+              <td>120</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.intellij.sdk:tool_window:2.0.0 (#1 class roots, #0 source roots)</td>
+              <td>35</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-authentication' (avizva-hc-softphonehandlerapp-authentication)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-logic' (avizva-hc-benefitapp-logic)</td>
+              <td>55</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-logic' (avizva-hc-memberapp-logic)</td>
+              <td>57</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apereo.cas.client:cas-client-core:4.0.3 (#1 class roots, #0 source roots)</td>
+              <td>108</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.guava:failureaccess:1.0.1 (#1 class roots, #0 source roots)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-join:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>110</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-x-content:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>98</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: net.sf.jopt-simple:jopt-simple:5.0.2 (#1 class roots, #0 source roots)</td>
+              <td>64</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.mongodb:bson-record-codec:4.11.1 (#1 class roots, #0 source roots)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-backward-codecs:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>105</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao' (avizva-hc-softphonehandlerapp-dao)</td>
+              <td>69</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.slf4j:slf4j-api:2.0.11 (#1 class roots, #0 source roots)</td>
+              <td>59</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-authentication' (avizva-hc-zenoapp-authentication)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml:classmate:1.6.0 (#1 class roots, #0 source roots)</td>
+              <td>49</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.eatthepath:pushy:0.15.2 (#1 class roots, #0 source roots)</td>
+              <td>81</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.httpcomponents:httpasyncclient:4.1.5 (#1 class roots, #0 source roots)</td>
+              <td>93</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: de.brendamour:jpasskit:0.3.4 (#1 class roots, #0 source roots)</td>
+              <td>63</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.hdrhistogram:HdrHistogram:2.1.9 (#1 class roots, #0 source roots)</td>
+              <td>62</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-claim:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>81</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7 ms</td>
+              <td>7 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>69</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)</td>
+              <td>27</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.swagger.core.v3:swagger-models-jakarta:2.2.19 (#1 class roots, #0 source roots)</td>
+              <td>71</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-data-mongodb:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-freemarker:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-authentication' (avizva-hc-memberapp-authentication)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-grouping:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>66</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp' (avizva-hc-transcriptapp)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.platform:junit-platform-commons:1.10.1 (#1 class roots, #0 source roots)</td>
+              <td>48</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-authorization' (avizva-hc-transcriptapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>38</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)</td>
+              <td>55</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)</td>
+              <td>53</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-plan:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>58</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.commons:commons-pool2:2.12.0 (#1 class roots, #0 source roots)</td>
+              <td>89</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.glassfish.jaxb:txw2:4.0.4 (#1 class roots, #0 source roots)</td>
+              <td>62</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.zaxxer:HikariCP:5.0.1 (#1 class roots, #0 source roots)</td>
+              <td>79</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.lucene:lucene-memory:8.11.1 (#1 class roots, #0 source roots)</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-core:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>42</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-jcl:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-web' (avizva-hc-transcriptapp-web)</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>66</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.swagger.core.v3:swagger-annotations-jakarta:2.2.19 (#1 class roots, #0 source roots)</td>
+              <td>63</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-dao' (avizva-hc-providerapp-dao)</td>
+              <td>49</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework:spring-aspects:6.1.3 (#1 class roots, #0 source roots)</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.amazonaws:jmespath-java:1.12.664 (#1 class roots, #0 source roots)</td>
+              <td>32</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-web' (avizva-hc-softphonehandlerapp-web)</td>
+              <td>27</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-authentication' (avizva-hc-transcriptapp-authentication)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>29</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.jboss.logging:jboss-logging:3.5.3.Final (#1 class roots, #0 source roots)</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.micrometer:micrometer-commons:1.12.2 (#1 class roots, #0 source roots)</td>
+              <td>40</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.pdfbox:pdfbox-io:3.0.1 (#1 class roots, #0 source roots)</td>
+              <td>25</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)</td>
+              <td>21</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.json:json:20231013 (#1 class roots, #0 source roots)</td>
+              <td>32</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-restapiinvoker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)</td>
+              <td>31</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-resolver:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>34</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.code.findbugs:jsr305:3.0.2 (#1 class roots, #0 source roots)</td>
+              <td>38</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-common:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>31</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>38</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-authentication' (avizva-hc-taskmanagerapp-authentication)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>35</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.j2objc:j2objc-annotations:2.8 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>3 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-dao' (avizva-hc-transcriptapp-dao)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)</td>
+              <td>34</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.annotation:jakarta.annotation-api:2.1.1 (#1 class roots, #0 source roots)</td>
+              <td>23</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-preauth:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)</td>
+              <td>25</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.logging.log4j:log4j-jul:2.21.1 (#1 class roots, #0 source roots)</td>
+              <td>22</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)</td>
+              <td>21</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-transport-native-unix-common:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)</td>
+              <td>20</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.auth0:jwks-rsa:0.22.1 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao-cognitiveengine' (avizva-hc-softphonehandlerapp-dao-cognitiveengine)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-coverage:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao-elasticsearch' (avizva-hc-softphonehandlerapp-dao-elasticsearch)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao-softphone' (avizva-hc-softphonehandlerapp-dao-softphone)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-web' (avizva-hc-providerapp-web)</td>
+              <td>21</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: commons-logging:commons-logging:1.2 (#1 class roots, #0 source roots)</td>
+              <td>33</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.errorprone:error_prone_annotations:2.23.0 (#1 class roots, #0 source roots)</td>
+              <td>30</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.transaction:jakarta.transaction-api:2.0.1 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-entities' (avizva-hc-softphonehandlerapp-entities)</td>
+              <td>27</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>2 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-authorization:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>30</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.session:spring-session-data-redis:3.2.1 (#1 class roots, #0 source roots)</td>
+              <td>22</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-device:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.reactivestreams:reactive-streams:1.0.4 (#1 class roots, #0 source roots)</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.sun.istack:istack-commons-runtime:4.1.2 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springdoc:springdoc-openapi-starter-webmvc-api:2.3.0 (#1 class roots, #0 source roots)</td>
+              <td>23</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-filestore:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.searchbox:jest:6.3.1 (#1 class roots, #0 source roots)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-broker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.logging.log4j:log4j-slf4j2-impl:2.21.1 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-geo:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-authorization' (avizva-hc-taskmanagerapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp' (avizva-hc-taskmanagerapp)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-authentication' (avizva-hc-benefitapp-authentication)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.groovy:groovy-jsr223:4.0.17 (#1 class roots, #0 source roots)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-authentication' (avizva-hc-claimapp-authentication)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.eclipse.angus:angus-activation:2.0.1 (#1 class roots, #0 source roots)</td>
+              <td>20</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: io.netty:netty-handler-proxy:4.1.105.Final (#1 class roots, #0 source roots)</td>
+              <td>18</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp' (avizva-hc-benefitapp)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apache.logging.log4j:log4j-spring-boot:2.21.1 (#1 class roots, #0 source roots)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-pharmacyclaim:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.errorprone:error_prone_annotations:2.18.0 (#1 class roots, #0 source roots)</td>
+              <td>29</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.security:spring-security-cas:6.2.1 (#1 class roots, #0 source roots)</td>
+              <td>22</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.tdunning:t-digest:3.2 (#1 class roots, #0 source roots)</td>
+              <td>21</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp' (avizva-hc-providerapp)</td>
+              <td>9</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: jakarta.inject:jakarta.inject-api:2.0.1 (#1 class roots, #0 source roots)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-buhierarchy:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.session:spring-session-data-mongodb:3.2.1 (#1 class roots, #0 source roots)</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-policy:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-entities' (avizva-hc-transcriptapp-entities)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.auto.service:auto-service:1.1.1 (#1 class roots, #0 source roots)</td>
+              <td>9</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-logic' (avizva-hc-transcriptapp-logic)</td>
+              <td>10</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-apis' (avizva-hc-memberapp-apis)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 ms</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0 (#1 class roots, #0 source roots)</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common' (avizva-hc-common)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-cli:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>10</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.nimbusds:lang-tag:1.7 (#1 class roots, #0 source roots)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-dao' (avizva-hc-notesapp-dao)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-secure-sm:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.opentest4j:opentest4j:1.3.0 (#1 class roots, #0 source roots)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-lz4:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-entities' (avizva-hc-providerapp-entities)</td>
+              <td>9</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.eatthepath:fast-uuid:0.2.0 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-dao-cognitiveengine' (avizva-hc-transcriptapp-dao-cognitiveengine)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.auto.service:auto-service-annotations:1.1.1 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.codehaus.plexus:plexus-component-annotations:2.2.0 (#1 class roots, #0 source roots)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.guava:failureaccess:1.0.2 (#1 class roots, #0 source roots)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-apis' (avizva-hc-softphonehandlerapp-apis)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-web:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.3 (#1 class roots, #0 source roots)</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-authorization' (avizva-hc-benefitapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.junit.jupiter:junit-jupiter:5.10.1 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-oauth2-client:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-thymeleaf:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: javax.inject:javax.inject:1 (#1 class roots, #0 source roots)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-entities' (avizva-hc-taskmanagerapp-entities)</td>
+              <td>12</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-tomcat:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.elasticsearch:elasticsearch-plugin-classloader:7.17.10 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-authorization' (avizva-hc-softphonehandlerapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.nimbusds:content-type:2.2 (#1 class roots, #0 source roots)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-apis' (avizva-hc-taskmanagerapp-apis)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-validation:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-log4j2:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.github.stephenc.jcip:jcip-annotations:1.0-1 (#1 class roots, #0 source roots)</td>
+              <td>7</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-apis' (avizva-hc-transcriptapp-apis)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-apis' (avizva-hc-claimapp-apis)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-aop:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-apis' (avizva-hc-providerapp-apis)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.apiguardian:apiguardian-api:1.1.2 (#1 class roots, #0 source roots)</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp' (avizva-hc-zenoapp)</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-authorization' (avizva-hc-contactcenterex-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-authorization' (avizva-hc-notesapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-security:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-authorization' (avizva-hc-memberapp-authorization)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-data-jpa:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-json:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-jdbc:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: org.springframework.boot:spring-boot-starter-data-redis:3.2.2 (#1 class roots, #0 source roots)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#0 class roots, #0 source roots)</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Indexable set contributor 'Scratches &amp; Consoles' (project)</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Indexable set contributor 'Scratches &amp; Consoles' (non-project)</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@3720b73b' (project)</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing">
+        <h1 class="Indexing"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>Total processing time</th>
+              <th>Content loading time</th>
+              <th>Number of indexed files</th>
+              <th>Number of files indexed by shared indexes</th>
+              <th>Number of too large for indexing files</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

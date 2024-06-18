@@ -1,0 +1,1980 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'CCEX'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script>
+  </head>
+  <body>
+    <div class="aggregate-report-content">
+      <h1 class="Project name"></h1>
+CCEX
+      <div>
+        <h1 class="Indexing history"></h1>
+        <table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption>
+          <thead>
+            <tr>
+              <th colspan="7">Time</th>
+              <th colspan="6">Files</th>
+              <th rowspan="2">IDE</th>
+              <th rowspan="2">Type</th>
+            </tr>
+            <tr>
+              <th>Started</th>
+              <th>Total</th>
+              <th>Creating iterators</th>
+              <th>Scanning</th>
+              <th>Indexing</th>
+              <th>Content loading</th>
+              <th>Finished</th>
+              <th>Providers</th>
+              <th>Scanned</th>
+              <th>Shared indexes (w/o content loading)</th>
+              <th>Scheduled for indexing</th>
+              <th>Shared indexes (content loaded)</th>
+              <th>Total indexed (shared indexes included)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-49-15.768.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:49:15 26 Apr</td>
+              <td>84 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>80 ms</td>
+              <td>8 ms</td>
+              <td>16:49:15 26 Apr</td>
+              <td>1</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-27-29.400.html">
+              <td><strong class="changes in: &quot;Module 'avizva-hc-providerapp-usecases' (avizva-hc-providerapp-usecases)&quot;, &quot;Module 'avizva-hc-providerapp' (avizva-hc-providerapp)&quot;, &quot;Module 'avizva-hc-claimapp-usecases' (avizva-hc-claimapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-apis' (avizva-hc-careex-apis)&quot;, &quot;Module 'Benefit' (Usecases)&quot;, &quot;Module 'avizva-hc-careex' (avizva-hc-careex)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-usecases' (avizva-hc-softphonehandlerapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-logic' (avizva-hc-careex-logic)&quot;, &quot;Module 'avizva-hc-benefitapp-usecases' (avizva-hc-benefitapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-web' (avizva-hc-careex-web)&quot; and 143 iterators more"></strong><br>16:27:27 26 Apr</td>
+              <td>2 s 84 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 80 ms</td>
+              <td>66 ms</td>
+              <td>16:27:29 26 Apr</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>642</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-27-27.259.html">
+              <td><strong class="changes in: &quot;Module 'avizva-hc-providerapp-usecases' (avizva-hc-providerapp-usecases)&quot;, &quot;Module 'avizva-hc-providerapp' (avizva-hc-providerapp)&quot;, &quot;Module 'avizva-hc-claimapp-usecases' (avizva-hc-claimapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-apis' (avizva-hc-careex-apis)&quot;, &quot;Module 'Benefit' (Usecases)&quot;, &quot;Module 'avizva-hc-careex' (avizva-hc-careex)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-usecases' (avizva-hc-softphonehandlerapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-logic' (avizva-hc-careex-logic)&quot;, &quot;Module 'avizva-hc-benefitapp-usecases' (avizva-hc-benefitapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-web' (avizva-hc-careex-web)&quot; and 143 iterators more"></strong><br>16:27:22 26 Apr</td>
+              <td>4 s 305 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>4 s 271 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:27:27 26 Apr</td>
+              <td>153</td>
+              <td>78723</td>
+              <td>0</td>
+              <td>642</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-27-16.791.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:27:15 26 Apr</td>
+              <td>9 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>16:27:15 26 Apr</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-27-15.509.html">
+              <td><strong class="Merged On project open with On refresh of files in CCEX"></strong><br>16:27:06 26 Apr</td>
+              <td>8 s 923 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8 s 902 ms</td>
+              <td>371 ms</td>
+              <td>16:27:15 26 Apr</td>
+              <td>1</td>
+              <td>272</td>
+              <td>0</td>
+              <td>272</td>
+              <td>0</td>
+              <td>2190</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-27-06.528.html">
+              <td><strong class="On project open"></strong><br>16:26:55 26 Apr</td>
+              <td>10 s 875 ms</td>
+              <td>447 ms</td>
+              <td>9 s 966 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:27:06 26 Apr</td>
+              <td>421</td>
+              <td>152142</td>
+              <td>0</td>
+              <td>1918</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-23-48.072.html">
+              <td><strong class="changes in: &quot;Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: org.apache.maven.shared:maven-invoker:3.2.0 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: org.apache.maven.shared:maven-shared-utils:3.3.4 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: commons-io:commons-io:2.6 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: javax.inject:javax.inject:1 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: org.intellij.sdk:tool_window:2.0.0 (#1 class roots, #0 source roots)&quot;"></strong><br>16:23:41 26 Apr</td>
+              <td>614 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>340 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:23:42 26 Apr</td>
+              <td>6</td>
+              <td>287</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-26-16-23-41.551.html">
+              <td><strong class="On project open"></strong><br>16:23:18 26 Apr</td>
+              <td>23 s 161 ms</td>
+              <td>259 ms</td>
+              <td>22 s 149 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:23:41 26 Apr</td>
+              <td>437</td>
+              <td>151488</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-50-47.052.html">
+              <td><strong class="Merged changes in: &quot;Module 'avizva-hc-careex' (avizva-hc-careex)&quot;, &quot;Module 'avizva-hc-careex-web' (avizva-hc-careex-web)&quot;, &quot;Module 'avizva-hc-careex-logic' (avizva-hc-careex-logic)&quot;, &quot;Module 'avizva-hc-benefitapp-usecases' (avizva-hc-benefitapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-presentation' (avizva-hc-careex-presentation)&quot;, &quot;Module 'avizva-hc-transcriptapp-usecases' (avizva-hc-transcriptapp-usecases)&quot;, &quot;Module 'avizva-hc-notesapp-dao-elasticsearch' (avizva-hc-notesapp-dao-elasticsearch)&quot;, &quot;Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-usecases' (avizva-hc-softphonehandlerapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-authentication' (avizva-hc-careex-authentication)&quot; and 370 iterators more with On refresh of files in CCEX"></strong><br>22:50:46 19 Apr</td>
+              <td>937 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>932 ms</td>
+              <td>32 ms</td>
+              <td>22:50:47 19 Apr</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>238</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-50-46.044.html">
+              <td><strong class="changes in: &quot;Module 'avizva-hc-careex' (avizva-hc-careex)&quot;, &quot;Module 'avizva-hc-careex-web' (avizva-hc-careex-web)&quot;, &quot;Module 'avizva-hc-careex-logic' (avizva-hc-careex-logic)&quot;, &quot;Module 'avizva-hc-benefitapp-usecases' (avizva-hc-benefitapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-presentation' (avizva-hc-careex-presentation)&quot;, &quot;Module 'avizva-hc-transcriptapp-usecases' (avizva-hc-transcriptapp-usecases)&quot;, &quot;Module 'avizva-hc-notesapp-dao-elasticsearch' (avizva-hc-notesapp-dao-elasticsearch)&quot;, &quot;Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-usecases' (avizva-hc-softphonehandlerapp-usecases)&quot;, &quot;Module 'avizva-hc-careex-authentication' (avizva-hc-careex-authentication)&quot; and 370 iterators more"></strong><br>22:50:41 19 Apr</td>
+              <td>4 s 335 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>4 s 321 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:50:46 19 Apr</td>
+              <td>380</td>
+              <td>148258</td>
+              <td>0</td>
+              <td>237</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-50-22.485.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>22:50:20 19 Apr</td>
+              <td>2 s 146 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 137 ms</td>
+              <td>102 ms</td>
+              <td>22:50:22 19 Apr</td>
+              <td>1</td>
+              <td>1464</td>
+              <td>0</td>
+              <td>1464</td>
+              <td>0</td>
+              <td>1464</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-50-20.297.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>22:50:07 19 Apr</td>
+              <td>12 s 347 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12 s 327 ms</td>
+              <td>249 ms</td>
+              <td>22:50:20 19 Apr</td>
+              <td>1</td>
+              <td>3305</td>
+              <td>0</td>
+              <td>3305</td>
+              <td>0</td>
+              <td>3305</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-49-59.963.html">
+              <td><strong class="changes in: &quot;Module 'avizva-hc-providerapp' (avizva-hc-providerapp)&quot;"></strong><br>22:49:55 19 Apr</td>
+              <td>495 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>440 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:49:56 19 Apr</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-04-19-22-49-55.153.html">
+              <td><strong class="On project open"></strong><br>22:49:27 19 Apr</td>
+              <td>27 s 364 ms</td>
+              <td>173 ms</td>
+              <td>26 s 125 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:49:55 19 Apr</td>
+              <td>425</td>
+              <td>151397</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-50-07.734.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:50:07 19 Mar</td>
+              <td>64 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>61 ms</td>
+              <td>33 ms</td>
+              <td>15:50:07 19 Mar</td>
+              <td>1</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-42.563.html">
+              <td><strong class="changes in: &quot;Library Maven: com.avizva.frameworks:avizva-hcdentities-medicalcode:4.0.0 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.avizva.frameworks:avizva-hcdentities-client:4.0.0 (#1 class roots, #0 source roots)&quot;"></strong><br>15:18:42 19 Mar</td>
+              <td>243 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>237 ms</td>
+              <td>4 ms</td>
+              <td>15:18:42 19 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>34</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-40.799.html">
+              <td><strong class="changes in: &quot;Library Maven: com.avizva.frameworks:avizva-hcdentities-medicalcode:4.0.0 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.avizva.frameworks:avizva-hcdentities-client:4.0.0 (#1 class roots, #0 source roots)&quot;"></strong><br>15:18:40 19 Mar</td>
+              <td>323 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>291 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:18:40 19 Mar</td>
+              <td>2</td>
+              <td>34</td>
+              <td>0</td>
+              <td>34</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-39.379.html">
+              <td><strong class="Merged changes in: &quot;Module 'avizva-hc-transcriptapp-presentation' (annotations)&quot;, &quot;Module 'avizva-hc-transcriptapp-dao-cognitiveengine' (annotations)&quot;, &quot;Module 'avizva-hc-contactcenterex-dao' (annotations)&quot;, &quot;Module 'avizva-hc-notesapp-dao' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-presentation' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-dao-softphone' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-dao-elasticsearch' (annotations)&quot;, &quot;Module 'avizva-hc-taskmanagerapp-dao-jira' (annotations)&quot;, &quot;Module 'avizva-hc-taskmanagerapp-entities' (annotations)&quot;, &quot;Module 'avizva-hc-zenoapp-presentation' (annotations)&quot; and 14 iterators more with On refresh of files in CCEX"></strong><br>15:18:38 19 Mar</td>
+              <td>445 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>430 ms</td>
+              <td>24 ms</td>
+              <td>15:18:39 19 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>88</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-36.503.html">
+              <td><strong class="changes in: &quot;Module 'avizva-hc-transcriptapp-presentation' (annotations)&quot;, &quot;Module 'avizva-hc-transcriptapp-dao-cognitiveengine' (annotations)&quot;, &quot;Module 'avizva-hc-contactcenterex-dao' (annotations)&quot;, &quot;Module 'avizva-hc-notesapp-dao' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-presentation' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-dao-softphone' (annotations)&quot;, &quot;Module 'avizva-hc-softphonehandlerapp-dao-elasticsearch' (annotations)&quot;, &quot;Module 'avizva-hc-taskmanagerapp-dao-jira' (annotations)&quot;, &quot;Module 'avizva-hc-taskmanagerapp-entities' (annotations)&quot;, &quot;Module 'avizva-hc-zenoapp-presentation' (annotations)&quot; and 14 iterators more"></strong><br>15:18:35 19 Mar</td>
+              <td>911 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>768 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:18:36 19 Mar</td>
+              <td>24</td>
+              <td>88</td>
+              <td>0</td>
+              <td>88</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-08.913.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:18:08 19 Mar</td>
+              <td>17 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13 ms</td>
+              <td>0</td>
+              <td>15:18:08 19 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-18-08.004.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:18:02 19 Mar</td>
+              <td>5 s 252 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 s 245 ms</td>
+              <td>98 ms</td>
+              <td>15:18:08 19 Mar</td>
+              <td>1</td>
+              <td>1989</td>
+              <td>0</td>
+              <td>1989</td>
+              <td>0</td>
+              <td>1989</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-14-48.714.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:14:47 19 Mar</td>
+              <td>1 s 561 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 542 ms</td>
+              <td>99 ms</td>
+              <td>15:14:48 19 Mar</td>
+              <td>1</td>
+              <td>26</td>
+              <td>0</td>
+              <td>26</td>
+              <td>0</td>
+              <td>26</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-13-33.070.html">
+              <td><strong class="On project open"></strong><br>15:12:58 19 Mar</td>
+              <td>34 s 113 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>34 s 98 ms</td>
+              <td>2 s 152 ms</td>
+              <td>15:13:33 19 Mar</td>
+              <td>1</td>
+              <td>5</td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+              <td>62233</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-12-58.475.html">
+              <td><strong class="On project open"></strong><br>15:12:49 19 Mar</td>
+              <td>8 s 972 ms</td>
+              <td>51 ms</td>
+              <td>7 s 948 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:12:58 19 Mar</td>
+              <td>424</td>
+              <td>151458</td>
+              <td>0</td>
+              <td>62228</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-08-52.262.html">
+              <td><strong class="On project open"></strong><br>15:08:44 19 Mar</td>
+              <td>7 s 502 ms</td>
+              <td>105 ms</td>
+              <td>6 s 776 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:08:52 19 Mar</td>
+              <td>424</td>
+              <td>151461</td>
+              <td>0</td>
+              <td>79502</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-07-51.567.html">
+              <td><strong class="On project open"></strong><br>15:06:44 19 Mar</td>
+              <td>1 m 6 s 859 ms</td>
+              <td>1 s 59 ms</td>
+              <td>1 m 4 s 994 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:07:51 19 Mar</td>
+              <td>424</td>
+              <td>151461</td>
+              <td>0</td>
+              <td>149620</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-05-47.716.html">
+              <td><strong class="On project open"></strong><br>15:05:46 19 Mar</td>
+              <td>1 s 253 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 248 ms</td>
+              <td>38 ms</td>
+              <td>15:05:47 19 Mar</td>
+              <td>1</td>
+              <td>7</td>
+              <td>0</td>
+              <td>7</td>
+              <td>0</td>
+              <td>8</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-05-45.785.html">
+              <td><strong class="On project open"></strong><br>15:05:25 19 Mar</td>
+              <td>19 s 797 ms</td>
+              <td>55 ms</td>
+              <td>18 s 735 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:05:45 19 Mar</td>
+              <td>424</td>
+              <td>151463</td>
+              <td>0</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-05-21.825.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:05:21 19 Mar</td>
+              <td>713 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>681 ms</td>
+              <td>16 ms</td>
+              <td>15:05:21 19 Mar</td>
+              <td>1</td>
+              <td>62</td>
+              <td>0</td>
+              <td>62</td>
+              <td>0</td>
+              <td>62</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-15-03-09.624.html">
+              <td><strong class="On project open"></strong><br>15:02:39 19 Mar</td>
+              <td>30 s 178 ms</td>
+              <td>140 ms</td>
+              <td>26 s 711 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:03:09 19 Mar</td>
+              <td>424</td>
+              <td>151518</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-47-42.669.html">
+              <td><strong class="On project open"></strong><br>14:47:37 19 Mar</td>
+              <td>4 s 804 ms</td>
+              <td>55 ms</td>
+              <td>4 s 94 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14:47:42 19 Mar</td>
+              <td>424</td>
+              <td>151518</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-47-29.954.html">
+              <td><strong class="On project open"></strong><br>14:47:25 19 Mar</td>
+              <td>4 s 666 ms</td>
+              <td>32 ms</td>
+              <td>3 s 974 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14:47:29 19 Mar</td>
+              <td>424</td>
+              <td>151518</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-47-05.946.html">
+              <td><strong class="On project open"></strong><br>14:46:59 19 Mar</td>
+              <td>6 s 108 ms</td>
+              <td>108 ms</td>
+              <td>5 s 215 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14:47:05 19 Mar</td>
+              <td>424</td>
+              <td>151518</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-41-13.418.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>14:41:13 19 Mar</td>
+              <td>16 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6 ms</td>
+              <td>0</td>
+              <td>14:41:13 19 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-41-12.882.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>14:41:11 19 Mar</td>
+              <td>235 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>222 ms</td>
+              <td>14 ms</td>
+              <td>14:41:11 19 Mar</td>
+              <td>1</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-41-08.927.html">
+              <td><strong class="On project open"></strong><br>14:40:40 19 Mar</td>
+              <td>27 s 957 ms</td>
+              <td>175 ms</td>
+              <td>26 s 762 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14:41:08 19 Mar</td>
+              <td>424</td>
+              <td>151520</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-35-25.319.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>14:35:25 19 Mar</td>
+              <td>110 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>104 ms</td>
+              <td>26 ms</td>
+              <td>14:35:25 19 Mar</td>
+              <td>1</td>
+              <td>107</td>
+              <td>0</td>
+              <td>107</td>
+              <td>0</td>
+              <td>107</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-22-35.662.html">
+              <td><strong class="On project open"></strong><br>14:21:32 19 Mar</td>
+              <td>1 m 2 s 694 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 m 2 s 672 ms</td>
+              <td>3 s 593 ms</td>
+              <td>14:22:35 19 Mar</td>
+              <td>1</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>0</td>
+              <td>123413</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-19-14-21-32.780.html">
+              <td><strong class="On project open"></strong><br>14:21:11 19 Mar</td>
+              <td>21 s 493 ms</td>
+              <td>284 ms</td>
+              <td>20 s 354 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14:21:32 19 Mar</td>
+              <td>424</td>
+              <td>151522</td>
+              <td>0</td>
+              <td>123411</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-17-47-47.815.html">
+              <td><strong class="On project open"></strong><br>17:47:24 17 Mar</td>
+              <td>22 s 941 ms</td>
+              <td>328 ms</td>
+              <td>22 s 150 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>17:47:47 17 Mar</td>
+              <td>425</td>
+              <td>151550</td>
+              <td>0</td>
+              <td>149656</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-46-01.372.html">
+              <td><strong class="changes in: &quot;Library Maven: com.avizva.frameworks:avizva-hcdentities-medicalcode:4.0.0 (#1 class roots, #0 source roots)&quot;"></strong><br>12:46:00 17 Mar</td>
+              <td>625 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>343 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12:46:01 17 Mar</td>
+              <td>1</td>
+              <td>28</td>
+              <td>0</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-46-00.637.html">
+              <td><strong class="changes in: &quot;Library maven-invoker-3.2.0 (#1 class roots, #0 source roots)&quot;"></strong><br>12:45:53 17 Mar</td>
+              <td>450 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>402 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12:45:54 17 Mar</td>
+              <td>1</td>
+              <td>24</td>
+              <td>0</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-45-53.527.html">
+              <td><strong class="On project open"></strong><br>12:45:21 17 Mar</td>
+              <td>32 s 122 ms</td>
+              <td>1 s 221 ms</td>
+              <td>30 s 325 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12:45:53 17 Mar</td>
+              <td>424</td>
+              <td>151522</td>
+              <td>0</td>
+              <td>149628</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-17-52.636.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>12:17:50 17 Mar</td>
+              <td>2 s 33 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 28 ms</td>
+              <td>70 ms</td>
+              <td>12:17:52 17 Mar</td>
+              <td>1</td>
+              <td>1442</td>
+              <td>0</td>
+              <td>1442</td>
+              <td>0</td>
+              <td>1442</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-16-32.193.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>12:16:30 17 Mar</td>
+              <td>1 s 535 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 523 ms</td>
+              <td>20 ms</td>
+              <td>12:16:32 17 Mar</td>
+              <td>1</td>
+              <td>194</td>
+              <td>0</td>
+              <td>194</td>
+              <td>0</td>
+              <td>194</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-15-22.184.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>12:15:22 17 Mar</td>
+              <td>106 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>101 ms</td>
+              <td>38 ms</td>
+              <td>12:15:22 17 Mar</td>
+              <td>1</td>
+              <td>20</td>
+              <td>0</td>
+              <td>20</td>
+              <td>0</td>
+              <td>20</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-11-28.336.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>12:11:28 17 Mar</td>
+              <td>43 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>31 ms</td>
+              <td>0</td>
+              <td>12:11:28 17 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-17-12-11-22.627.html">
+              <td><strong class="On project open"></strong><br>12:10:56 17 Mar</td>
+              <td>25 s 818 ms</td>
+              <td>108 ms</td>
+              <td>24 s 698 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>12:11:22 17 Mar</td>
+              <td>424</td>
+              <td>151564</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-20-03-53.251.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>20:03:53 13 Mar</td>
+              <td>13 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>20:03:53 13 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-20-03-53.017.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>20:03:50 13 Mar</td>
+              <td>2 s 923 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 916 ms</td>
+              <td>65 ms</td>
+              <td>20:03:53 13 Mar</td>
+              <td>1</td>
+              <td>382</td>
+              <td>0</td>
+              <td>382</td>
+              <td>0</td>
+              <td>382</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-48-55.313.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:48:55 13 Mar</td>
+              <td>1 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&lt; 1 ms</td>
+              <td>0</td>
+              <td>16:48:55 13 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-48-55.194.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:48:54 13 Mar</td>
+              <td>694 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>691 ms</td>
+              <td>24 ms</td>
+              <td>16:48:55 13 Mar</td>
+              <td>1</td>
+              <td>159</td>
+              <td>0</td>
+              <td>159</td>
+              <td>0</td>
+              <td>159</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-44-00.509.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:43:59 13 Mar</td>
+              <td>849 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>845 ms</td>
+              <td>8 ms</td>
+              <td>16:44:00 13 Mar</td>
+              <td>1</td>
+              <td>93</td>
+              <td>0</td>
+              <td>93</td>
+              <td>0</td>
+              <td>93</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-40-49.612.html">
+              <td><strong class="changes in: &quot;Library Maven: org.springframework.boot:spring-boot-starter-freemarker:3.2.2 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: org.freemarker:freemarker:2.3.32 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: jakarta.mail:jakarta.mail-api:2.1.2 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: org.eclipse.angus:angus-mail:2.0.2 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.amazonaws:aws-java-sdk-iam:1.12.664 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.amazonaws:aws-java-sdk-sns:1.12.664 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.amazonaws:aws-java-sdk-ses:1.12.664 (#1 class roots, #0 source roots)&quot;, &quot;Library Maven: com.amazonaws:aws-java-sdk-sqs:1.12.664 (#1 class roots, #0 source roots)&quot;"></strong><br>16:40:48 13 Mar</td>
+              <td>848 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>809 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:40:49 13 Mar</td>
+              <td>8</td>
+              <td>3797</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>partial</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-33-00.886.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:33:00 13 Mar</td>
+              <td>58 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>54 ms</td>
+              <td>11 ms</td>
+              <td>16:33:00 13 Mar</td>
+              <td>1</td>
+              <td>23</td>
+              <td>0</td>
+              <td>23</td>
+              <td>0</td>
+              <td>23</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-20-33.257.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:20:32 13 Mar</td>
+              <td>1 s 130 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 126 ms</td>
+              <td>8 ms</td>
+              <td>16:20:33 13 Mar</td>
+              <td>1</td>
+              <td>37</td>
+              <td>0</td>
+              <td>37</td>
+              <td>0</td>
+              <td>37</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-14-41.815.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:14:41 13 Mar</td>
+              <td>357 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>355 ms</td>
+              <td>15 ms</td>
+              <td>16:14:41 13 Mar</td>
+              <td>1</td>
+              <td>25</td>
+              <td>0</td>
+              <td>25</td>
+              <td>0</td>
+              <td>25</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-08-05.396.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:08:04 13 Mar</td>
+              <td>46 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>41 ms</td>
+              <td>0</td>
+              <td>16:08:04 13 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-08-04.638.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:08:01 13 Mar</td>
+              <td>3 s 232 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 s 211 ms</td>
+              <td>78 ms</td>
+              <td>16:08:04 13 Mar</td>
+              <td>1</td>
+              <td>43</td>
+              <td>0</td>
+              <td>43</td>
+              <td>0</td>
+              <td>43</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-07-54.374.html">
+              <td><strong class="On project open"></strong><br>16:07:29 13 Mar</td>
+              <td>24 s 486 ms</td>
+              <td>339 ms</td>
+              <td>23 s 393 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16:07:54 13 Mar</td>
+              <td>424</td>
+              <td>151558</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-16-05-16.778.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>16:05:15 13 Mar</td>
+              <td>1 s 137 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1 s 128 ms</td>
+              <td>81 ms</td>
+              <td>16:05:16 13 Mar</td>
+              <td>1</td>
+              <td>104</td>
+              <td>0</td>
+              <td>104</td>
+              <td>0</td>
+              <td>104</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-15-58-59.413.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>15:58:59 13 Mar</td>
+              <td>25 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>20 ms</td>
+              <td>0</td>
+              <td>15:58:59 13 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-13-15-59-08.133.html">
+              <td><strong class="Plugin loaded/unloaded"></strong><br>15:58:56 13 Mar</td>
+              <td>12 s 34 ms</td>
+              <td>82 ms</td>
+              <td>10 s 603 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>15:59:08 13 Mar</td>
+              <td>424</td>
+              <td>151555</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h1 class="Scanning to push properties of changed files"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Reason</th>
+              <th>Full duration</th>
+              <th>Is cancelled</th>
+              <th>Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>22:50:20 19 Apr</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:50:03 19 Apr</td>
+              <td>Push on VFS changes</td>
+              <td>1 s 577 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:20:17 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:18:36 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:18:08 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:17:59 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>95 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:14:44 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>247 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:05:46 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>12 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:05:25 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>59 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:05:20 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>26 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:41:11 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:35:24 19 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>30 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:17:50 17 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>9 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:16:30 17 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>76 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>20:03:49 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>21 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:48:54 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>59 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:21:09 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>33 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:20:33 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>105 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:14:41 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:08:01 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>35 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:05:14 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>179 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:12:38 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>12 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:12:38 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>50 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:11:16 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>6 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:10:43 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>64 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:10:40 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>47 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>15:09:44 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>4 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:49:31 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:31:17 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>682 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:15:38 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>15 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:14:00 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>4 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:12:08 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>33 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:53:08 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>12 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:52:54 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>94 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:52:53 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:52:33 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>32 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:35:37 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:17:46 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>6 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:24:46 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>49 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>02:15:33 13 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>32 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:48:54 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>28 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:48:52 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>26 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:48:51 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:48:51 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>149 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:48:46 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>35 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:47:54 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>674 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:26:26 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:24:12 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>29 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:02:26 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>124 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>21:58:37 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>64 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>21:42:12 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>36 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>21:41:25 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>5 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>19:43:42 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>11 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>19:28:05 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:21:02 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>8 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:09:36 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>51 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:35:11 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>25 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>14:10:46 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>4 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>13:09:43 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:25:56 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>16 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:25:49 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:25:39 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>51 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>12:02:45 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>55 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>11:52:02 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>14 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>11:51:59 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>17 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>11:51:54 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>149 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>11:51:08 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>11:51:01 12 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>201 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:53:45 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:16:54 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>687 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>23:16:52 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>33 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18:54:17 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>7 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18:04:33 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>25 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:46:03 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>26 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:34:42 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:23:34 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>69 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:47:27 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>8 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:29:41 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>19 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>01:20:11 11 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>11 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:30 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:30 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>44 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:30 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>16:59:30 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:29 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:29 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:29 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>19 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:29 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:28 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>16:59:28 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:28 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>1 ms</td>
+              <td>fully finished</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>16:59:26 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>2 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:25 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:59:25 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>16:57:40 09 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:01:41 08 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>184 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:41:08 06 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>16 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>17:41:07 06 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>11 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>00:28:09 06 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>22:30:20 05 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>19:18:07 05 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>3 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18:27:20 05 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18:27:19 05 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>25 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>01:12:05 05 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>75 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>21:12:43 04 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>15 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>00:53:47 04 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>84 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>00:53:45 04 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>&lt; 1 ms</td>
+              <td>fully finished</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>00:53:43 04 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>8 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

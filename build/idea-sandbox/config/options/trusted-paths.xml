@@ -1,0 +1,16 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/CCEX/CCEX" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/CCEX/CCEX/avizva-hc-claimapp" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/contactcenterex" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/contactcenterex/avizva-hc-common" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/contactcenterex/avizva-hc-contactcenterex" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/contactcenterex/avizva-hc-contactcenterex-usecases" value="true" />
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/notesapp" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

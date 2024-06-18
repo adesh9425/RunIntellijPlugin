@@ -1,0 +1,1648 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'CCEX'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style>
+    <script>function hideElementsHavingClass(className, hideOrShow) {
+  const elements = document.getElementsByClassName(className)
+  const displayType = hideOrShow ? 'none' : 'initial'
+  for (const element of elements) {
+    element.classList.toggle('invisible', hideOrShow)
+  }
+}</script>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <ul>
+        <li><a href="#id-project-name">Project name</a></li>
+        <li><a href="#id-app-info">Application info</a></li>
+        <li><a href="#id-runtime-info">Runtime</a></li>
+        <li><a href="#id-indexing-info">Indexing info</a></li>
+        <li><a href="#id-slow-files">Slowly indexed files</a></li>
+        <li><a href="#id-stats-per-file-type">Statistics per file type</a></li>
+        <li><a href="#id-stats-per-indexer">Statistics per indexer</a></li>
+        <li><a href="#id-scanning">Scanning</a></li>
+        <li><a href="#id-indexing">Indexing</a></li>
+      </ul>
+      <hr class="solid">
+      <ul>
+        <li><label for="id-hide-minor-data-checkbox">Hide minor data<input checked="checked" id="id-hide-minor-data-checkbox" type="checkbox" onclick="hideElementsHavingClass('minor-data', this.checked)">
+              <style>padding-left: 10px</style>
+            </label></li>
+      </ul>
+      <div class="jetbrains-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.21407 130.10375">
+  <title>logo-grey</title>
+  <g>
+    <path d="M120.2,68.6a4.99684,4.99684,0,0,0-1.4-3.5L55.191,2.68736a7.86372,7.86372,0,0,0-3.36731-2.261c-.03467-.012-.06812-.02612-.103-.03766-.19336-.06323-.3913-.11511-.591-.16327-.06689-.0163-.13177-.0368-.1994-.05133-.18744-.04-.37909-.06738-.57117-.09363-.0788-.0108-.15527-.0274-.23492-.03589A7.83914,7.83914,0,0,0,49.3,0a7.73961,7.73961,0,0,0-1.21088.10413c-.0235.00391-.04694.00671-.07037.0108a7.62573,7.62573,0,0,0-3.092,1.24969c-.07343.04773-.155.08575-.22668.13538L4.9,28.3c-.08221.08221-.15106.10632-.17773.16437L4.67218,28.5H4.6A11.11647,11.11647,0,0,0,.15875,39.45683l.00854.04449c.05176.28589.11011.56958.18372.84973.03052.119.06964.235.104.35284.054.181.10278.3634.16571.5412A11.15109,11.15109,0,0,0,5.3,47.1a8.82025,8.82025,0,0,0,2,.9c.4.2,45.4,18.8,45.4,18.8a4.291,4.291,0,0,0,4.4-7.3c-.06525,0-16.839-13.21332-28.69928-22.52606l21.105-19.03113,57.91815,49.58282L28.6,110.7a9.82332,9.82332,0,0,0-4.7,4.1,10.0662,10.0662,0,0,0,3.6,13.9,10.28689,10.28689,0,0,0,10.7-.2c.2-.2.5-.3.7-.5L116.9,73.2a18.32,18.32,0,0,0,1.58612-1.2663A4.74573,4.74573,0,0,0,120.2,68.6Z" transform="translate(0.01406 0.00002)" fill="#cdcdcd"/>
+    <g id="_Group_" data-name="&lt;Group&gt;">
+      <rect id="_Path_" data-name="&lt;Path&gt;" x="34.61406" y="37.40002" width="51" height="51"/>
+      <rect id="_Path_2" data-name="&lt;Path&gt;" x="39.01406" y="78.80002" width="19.1" height="3.2" fill="#fff"/>
+      <g id="_Group_2" data-name="&lt;Group&gt;">
+        <path id="_Path_3" data-name="&lt;Path&gt;" d="M38.8,50.8l1.5-1.4a1.70271,1.70271,0,0,0,1.3.8q.9,0,.9-1.2V43.7h2.3V49a2.79543,2.79543,0,0,1-3.1,3.1A3.026,3.026,0,0,1,38.8,50.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_4" data-name="&lt;Path&gt;" d="M45.3,43.8H52v1.9H47.6V47h4v1.8h-4v1.3h4.5v2H45.4Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_5" data-name="&lt;Path&gt;" d="M55,45.8H52.5v-2h7.3v2H57.3v6.3H55Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M39,54h4.3a3.7023,3.7023,0,0,1,2.3.7,1.97822,1.97822,0,0,1,.5,1.4h0A1.95538,1.95538,0,0,1,44.8,58a1.94762,1.94762,0,0,1,1.6,2h0c0,1.4-1.2,2.3-3.1,2.3H39Zm4.8,2.6c0-.5-.4-.7-1-.7H41.3v1.5h1.4c.7-.1,1.1-.3,1.1-.8ZM43,59H41.2v1.5H43c.7,0,1.1-.3,1.1-.8h0C44.1,59.2,43.7,59,43,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" d="M46.8,54h3.9a3.51463,3.51463,0,0,1,2.7.9,2.48948,2.48948,0,0,1,.7,1.9h0a2.76053,2.76053,0,0,1-1.7,2.6l2,2.9H51.8l-1.7-2.5h-1v2.5H46.8Zm3.8,4c.8,0,1.2-.4,1.2-1h0c0-.7-.5-1-1.2-1H49.1v2Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" d="M56.8,54H59l3.5,8.4H60l-.6-1.5H56.2l-.6,1.5H53.2Zm2,5-.9-2.3L57,59Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_6" data-name="&lt;Path&gt;" d="M62.8,54h2.3v8.3H62.8Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_7" data-name="&lt;Path&gt;" d="M65.7,54h2.1l3.4,4.4V54h2.3v8.3h-2L68,57.8v4.6H65.7Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+        <path id="_Path_8" data-name="&lt;Path&gt;" d="M73.7,61.1,75,59.6a3.94219,3.94219,0,0,0,2.7,1c.6,0,1-.2,1-.6h0c0-.4-.3-.5-1.4-.8-1.8-.4-3.1-.9-3.1-2.6h0c0-1.5,1.2-2.7,3.2-2.7A5.33072,5.33072,0,0,1,80.8,55l-1.2,1.6a4.55346,4.55346,0,0,0-2.3-.8c-.6,0-.8.2-.8.5h0c0,.4.3.5,1.4.8,1.9.4,3.1,1,3.1,2.6h0c0,1.7-1.3,2.7-3.4,2.7A5.29336,5.29336,0,0,1,73.7,61.1Z" transform="translate(0.01406 0.00002)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg></div>
+    </div>
+    <div class="stats-content">
+      <div id="id-project-name">
+        <h1 class="Project name"></h1>
+CCEX</div>
+      <div id="id-app-info">
+        <h1 class="Application info"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Build</td>
+              <td>231.9392.1</td>
+            </tr>
+            <tr>
+              <td>Build date</td>
+              <td>14:39:04 25 Jul</td>
+            </tr>
+            <tr>
+              <td>Product code</td>
+              <td>IC</td>
+            </tr>
+            <tr>
+              <td>Generated</td>
+              <td>16:27:15 26 Apr</td>
+            </tr>
+            <tr>
+              <td>OS</td>
+              <td>macOS 14.4.1</td>
+            </tr>
+            <tr>
+              <td>Runtime</td>
+              <td>JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-runtime-info">
+        <h1 class="Runtime"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Max memory</td>
+              <td>786.43 MB</td>
+            </tr>
+            <tr>
+              <td>Number of processors</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Max number of indexing threads</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Max size of file for analysis</td>
+              <td>2.56 MB</td>
+            </tr>
+            <tr>
+              <td>Max size of file for content loading</td>
+              <td>20.97 MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing-info">
+        <h1 class="Indexing info"></h1>
+        <table class="two-columns">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Number of file providers</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Number of scanned files</td>
+              <td>272</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed by shared indexes during the scan (without loading content)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files scheduled for indexing after scanning</td>
+              <td>272</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed by shared indexes during the indexing stage (with loading content)</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Number of files indexed during the indexing stage with loading content (including indexed by shared indexes)</td>
+              <td>2190</td>
+            </tr>
+            <tr>
+              <td>Number of too large for indexing files</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Started at</td>
+              <td>16:27:06 26 Apr</td>
+            </tr>
+            <tr>
+              <td>Reason</td>
+              <td>Merged On project open with On refresh of files in CCEX</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>refresh</td>
+            </tr>
+            <tr>
+              <td>Finished at</td>
+              <td>16:27:15 26 Apr</td>
+            </tr>
+            <tr>
+              <td>Cancelled?</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Suspended time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Total time</td>
+              <td>8 s 923 ms</td>
+            </tr>
+            <tr>
+              <td>Indexing time</td>
+              <td>8 s 902 ms</td>
+            </tr>
+            <tr>
+              <td>Iterators creation time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Scanning time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Content loading time</td>
+              <td>371 ms</td>
+            </tr>
+            <tr>
+              <td>Pushing properties time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Running extensions time</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Index writing time</td>
+              <td>1 s 379 ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-slow-files">
+        <h1 class="Slowly indexed files (&gt; 500 ms)"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>File</th>
+              <th>Content loading time</th>
+              <th>Indexing time</th>
+              <th>Total processing time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao)</td>
+              <td>ETask.java</td>
+              <td>1 ms</td>
+              <td>143 ms</td>
+              <td>974 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>ETaskStatusType.java</td>
+              <td>4 ms</td>
+              <td>129 ms</td>
+              <td>740 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>ESubCategoryType.java</td>
+              <td>&lt; 1 ms</td>
+              <td>108 ms</td>
+              <td>684 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>TaskJpaRepository.java</td>
+              <td>&lt; 1 ms</td>
+              <td>121 ms</td>
+              <td>625 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>SubTaskJpaRepository.java</td>
+              <td>2 ms</td>
+              <td>123 ms</td>
+              <td>595 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>TaskRefTypeJpaRepository.java</td>
+              <td>1 ms</td>
+              <td>120 ms</td>
+              <td>594 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>CategoryTypeJpaRepository.java</td>
+              <td>&lt; 1 ms</td>
+              <td>117 ms</td>
+              <td>592 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>PriorityTypeJpaRepository.java</td>
+              <td>&lt; 1 ms</td>
+              <td>117 ms</td>
+              <td>590 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>TaskStatusTypeJpaRepository.java</td>
+              <td>&lt; 1 ms</td>
+              <td>117 ms</td>
+              <td>589 ms</td>
+            </tr>
+            <tr>
+              <td>Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)</td>
+              <td>ListingComponentDataBuilder.java</td>
+              <td>1 ms</td>
+              <td>595 ms</td>
+              <td>623 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>EditCallbackFormComponentDataBuilder.java</td>
+              <td>1 ms</td>
+              <td>530 ms</td>
+              <td>539 ms</td>
+            </tr>
+            <tr>
+              <td>Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao)</td>
+              <td>BaseJpaEntity.java</td>
+              <td>14 ms</td>
+              <td>427 ms</td>
+              <td>554 ms</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>ApplicationDaoAppConfig.java</td>
+              <td>14 ms</td>
+              <td>418 ms</td>
+              <td>551 ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-file-type">
+        <h1 class="Statistics per file type"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>File type</th>
+              <th>Number of files</th>
+              <th>Total processing time</th>
+              <th>Content loading time</th>
+              <th>Total files size</th>
+              <th>Total processing speed</th>
+              <th>The biggest contributors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>CLASS</td>
+              <td>1508</td>
+              <td>3 s 923 ms (44.1%)</td>
+              <td>200 ms (53.9%)</td>
+              <td>3.65 MB</td>
+              <td>106.11 kB/s</td>
+              <td>19.7%: Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots) 61 files of total size 143.83 kB
+9.5%: Refreshed files 197 files of total size 360.71 kB
+9.5%: Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots) 116 files of total size 349.84 kB
+8.4%: Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots) 16 files of total size 42.49 kB
+8.1%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 148 files of total size 280.65 kB
+5.5%: Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots) 69 files of total size 124.32 kB
+5.4%: Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots) 48 files of total size 116.4 kB
+4.4%: Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots) 51 files of total size 270.08 kB
+3.7%: Library Maven: com.avizva.frameworks:avizva-authorization:4.0.0 (#1 class roots, #0 source roots) 26 files of total size 37.63 kB
+2.7%: Library Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0 (#1 class roots, #0 source roots) 11 files of total size 39.17 kB</td>
+            </tr>
+            <tr class="">
+              <td>JAVA</td>
+              <td>285</td>
+              <td>3 s 513 ms (39.5%)</td>
+              <td>72 ms (19.5%)</td>
+              <td>657.65 kB</td>
+              <td>21.35 kB/s</td>
+              <td>29.3%: Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao) 17 files of total size 19.35 kB
+18.9%: Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation) 35 files of total size 101.51 kB
+8.0%: Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation) 24 files of total size 60.03 kB
+5.7%: Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation) 25 files of total size 120.77 kB
+5.1%: Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao) 3 files of total size 6.73 kB
+4.3%: Module 'avizva-hc-softphonehandlerapp-dao' (avizva-hc-softphonehandlerapp-dao) 3 files of total size 6.79 kB
+3.7%: Module 'avizva-hc-taskmanagerapp-presentation' (avizva-hc-taskmanagerapp-presentation) 25 files of total size 46.21 kB
+2.3%: Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation) 12 files of total size 51.83 kB
+2.3%: Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities) 14 files of total size 15.54 kB
+1.8%: Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao) 3 files of total size 6.76 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>JSON</td>
+              <td>104</td>
+              <td>369 ms (4.2%)</td>
+              <td>25 ms (6.8%)</td>
+              <td>452.18 kB</td>
+              <td>139.47 kB/s</td>
+              <td>39.6%: Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation) 5 files of total size 25.96 kB
+20.2%: Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation) 20 files of total size 134.61 kB
+10.2%: Refreshed files 33 files of total size 64.72 kB
+6.3%: Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation) 8 files of total size 80.76 kB
+5.4%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 4 files of total size 2.67 kB
+4.0%: Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation) 12 files of total size 63.73 kB
+4.0%: Module 'CCEX' (CCEX) 6 files of total size 18.37 kB
+3.4%: Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation) 6 files of total size 11.2 kB
+2.4%: Module 'avizva-hc-zenoapp-presentation' (avizva-hc-zenoapp-presentation) 2 files of total size 5.87 kB
+2.2%: Module 'avizva-hc-transcriptapp-presentation' (avizva-hc-transcriptapp-presentation) 1 files of total size 2.17 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>XML</td>
+              <td>47</td>
+              <td>284 ms (3.2%)</td>
+              <td>19 ms (5.3%)</td>
+              <td>90.35 kB</td>
+              <td>36.17 kB/s</td>
+              <td>10.8%: Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 7.35 kB
+10.0%: Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 846 B
+7.3%: Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 3.43 kB
+5.2%: Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 840 B
+3.9%: Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 832 B
+3.8%: Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 1.19 kB
+3.5%: Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 1.62 kB
+3.3%: Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 800 B
+3.3%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 1.5 kB
+3.1%: Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 4.55 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Properties</td>
+              <td>84</td>
+              <td>229 ms (2.6%)</td>
+              <td>19 ms (5.4%)</td>
+              <td>23.51 kB</td>
+              <td>11.66 kB/s</td>
+              <td>16.0%: Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots) 3 files of total size 111 B
+6.0%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 835 B
+5.8%: Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 86 B
+5.7%: Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 2.2 kB
+4.6%: Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 210 B
+4.0%: Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 83 B
+3.8%: Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 78 B
+3.7%: Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots) 4 files of total size 2.34 kB
+3.6%: Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 77 B
+3.5%: Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web) 1 files of total size 1.59 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Markdown</td>
+              <td>12</td>
+              <td>186 ms (2.1%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>10.34 kB</td>
+              <td>6.33 kB/s</td>
+              <td>100.0%: Module 'CCEX' (CCEX) 12 files of total size 10.34 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>textmate</td>
+              <td>61</td>
+              <td>102 ms (1.1%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>460.55 kB</td>
+              <td>514.42 kB/s</td>
+              <td>99.8%: Module 'CCEX' (CCEX) 60 files of total size 459.07 kB
+&lt; 1%: Refreshed files 1 files of total size 1.48 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>YAML</td>
+              <td>9</td>
+              <td>93 ms (1.1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>16.59 kB</td>
+              <td>20.2 kB/s</td>
+              <td>17.0%: Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web) 1 files of total size 1.69 kB
+17.0%: Module 'avizva-hc-softphonehandlerapp-web' (avizva-hc-softphonehandlerapp-web) 1 files of total size 1.79 kB
+14.3%: Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web) 1 files of total size 2.97 kB
+12.5%: Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 1.14 kB
+11.8%: Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web) 1 files of total size 1.23 kB
+11.5%: Refreshed files 2 files of total size 2.7 kB
+8.3%: Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 3.66 kB
+7.6%: Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web) 1 files of total size 1.4 kB</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Manifest</td>
+              <td>42</td>
+              <td>65 ms (&lt; 1%)</td>
+              <td>12 ms (3.4%)</td>
+              <td>6.62 kB</td>
+              <td>11.44 kB/s</td>
+              <td>12.7%: Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 163 B
+12.5%: Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 166 B
+11.9%: Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 157 B
+8.0%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 155 B
+6.9%: Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 155 B
+6.1%: Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 157 B
+4.7%: Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 165 B
+3.9%: Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 150 B
+3.6%: Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 154 B
+3.3%: Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 156 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>HTML</td>
+              <td>4</td>
+              <td>40 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>3.2 kB</td>
+              <td>9.07 kB/s</td>
+              <td>77.8%: Refreshed files 2 files of total size 2.46 kB
+22.2%: Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots) 2 files of total size 742 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PLAIN_TEXT</td>
+              <td>23</td>
+              <td>31 ms (&lt; 1%)</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>59.99 kB</td>
+              <td>218.36 kB/s</td>
+              <td>83.1%: Refreshed files 19 files of total size 59.18 kB
+7.6%: Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 113 B
+5.5%: Module 'avizva-hc-memberapp-logic' (avizva-hc-memberapp-logic) 1 files of total size 487 B
+3.1%: Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 106 B
+&lt; 1%: Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 107 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>ARCHIVE</td>
+              <td>2</td>
+              <td>20 ms (&lt; 1%)</td>
+              <td>7 ms (2.0%)</td>
+              <td>0 B</td>
+              <td>0 B/s</td>
+              <td>100.0%: Refreshed files 2 files of total size 0 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Dictionary</td>
+              <td>2</td>
+              <td>20 ms (&lt; 1%)</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>1.75 kB</td>
+              <td>9.68 kB/s</td>
+              <td>91.9%: Module 'avizva-hc-taskmanagerapp' (avizva-hc-taskmanagerapp) 1 files of total size 925 B
+8.1%: Module 'avizva-hc-common' (avizva-hc-common) 1 files of total size 820 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>SPI</td>
+              <td>6</td>
+              <td>19 ms (&lt; 1%)</td>
+              <td>3 ms (&lt; 1%)</td>
+              <td>579 B</td>
+              <td>3.37 kB/s</td>
+              <td>56.5%: Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 116 B
+26.0%: Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 176 B
+13.8%: Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 63 B
+2.4%: Library Maven: com.avizva.frameworks:avizva-notification-core:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 88 B
+&lt; 1%: Library Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 82 B
+&lt; 1%: Library Maven: com.avizva.frameworks:avizva-dbsetup:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 54 B</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Shell Script</td>
+              <td>1</td>
+              <td>1 ms (&lt; 1%)</td>
+              <td>&lt; 1 ms (&lt; 1%)</td>
+              <td>4.38 kB</td>
+              <td>415.43 kB/s</td>
+              <td>100.0%: Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots) 1 files of total size 4.38 kB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-stats-per-indexer">
+        <h1 class="Statistics per indexer"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Number of files</th>
+              <th>Part of total indexing time</th>
+              <th>Total number of files indexed by shared indexes</th>
+              <th>Total files size</th>
+              <th>Indexing speed</th>
+              <th>Snapshot input mapping statistics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>Stubs</td>
+              <td>1922</td>
+              <td>62.4%</td>
+              <td>0</td>
+              <td>4.41 MB</td>
+              <td>144.06 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>java.fun.expression</td>
+              <td>267</td>
+              <td>9.6%</td>
+              <td>0</td>
+              <td>629.41 kB</td>
+              <td>133.88 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>IdIndex</td>
+              <td>677</td>
+              <td>7.1%</td>
+              <td>0</td>
+              <td>1.79 MB</td>
+              <td>516.93 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex</td>
+              <td>1508</td>
+              <td>4.3%</td>
+              <td>0</td>
+              <td>3.65 MB</td>
+              <td>1.74 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>bytecodeAnalysis</td>
+              <td>1508</td>
+              <td>3.3%</td>
+              <td>0</td>
+              <td>3.65 MB</td>
+              <td>2.25 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>java.null.method.argument</td>
+              <td>267</td>
+              <td>3.3%</td>
+              <td>0</td>
+              <td>629.41 kB</td>
+              <td>390.3 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Trigram.Index</td>
+              <td>679</td>
+              <td>3.1%</td>
+              <td>0</td>
+              <td>1.79 MB</td>
+              <td>1.19 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex</td>
+              <td>1508</td>
+              <td>3.0%</td>
+              <td>0</td>
+              <td>3.65 MB</td>
+              <td>2.47 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>yaml.keys.name</td>
+              <td>9</td>
+              <td>1.3%</td>
+              <td>0</td>
+              <td>16.59 kB</td>
+              <td>25.34 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>json.file.root.values</td>
+              <td>104</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>452.18 kB</td>
+              <td>1.39 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex</td>
+              <td>1508</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>3.65 MB</td>
+              <td>14.2 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>java.binary.plus.expression</td>
+              <td>267</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>629.41 kB</td>
+              <td>2.75 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>fileIncludes</td>
+              <td>5</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>28.14 kB</td>
+              <td>225.06 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>DomFileIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>735.79 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>html5.custom.attributes.index</td>
+              <td>2</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.46 kB</td>
+              <td>46.03 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>HtmlTagIdIndex</td>
+              <td>2</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>2.46 kB</td>
+              <td>59.58 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>java.source.module.name</td>
+              <td>42</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>6.62 kB</td>
+              <td>165.47 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex</td>
+              <td>42</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>6.62 kB</td>
+              <td>352.13 kB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>xmlProperties</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>4.83 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PluginIdModuleIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>7.01 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>FrameworkDetectionIndex</td>
+              <td>3</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>25.68 kB</td>
+              <td>2.98 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>NavXmlIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>22.46 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>IdeaPluginRegistrationIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>32.21 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>devkit.ExtensionPointClassIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>33.26 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>PluginIdDependenciesIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>33.71 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>devkit.ExtensionPointIndex</td>
+              <td>47</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>90.35 kB</td>
+              <td>33.99 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>ant-imports</td>
+              <td>3</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>25.68 kB</td>
+              <td>29.38 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>XsltSymbolIndex</td>
+              <td>3</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>25.68 kB</td>
+              <td>68.37 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>RelaxSymbolIndex</td>
+              <td>3</td>
+              <td>&lt; 1%</td>
+              <td>0</td>
+              <td>25.68 kB</td>
+              <td>81.76 MB/s</td>
+              <td>requests: 0, hits: 0 (100%), misses: 0 (100%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-scanning">
+        <h1 class="Scanning"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>Number of scanned files</th>
+              <th>Number of files scheduled for indexing</th>
+              <th>Number of files fully indexed by shared indexes</th>
+              <th>Number of double-scanned skipped files</th>
+              <th>Total time of getting files' statuses (part of scanning)</th>
+              <th>Scanning time</th>
+              <th>Time processing up-to-date files</th>
+              <th>Time updating content-less indexes</th>
+              <th>Time indexing without content</th>
+              <th>Roots</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="minor-data invisible">
+              <td>Refreshed files</td>
+              <td>272</td>
+              <td>272</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><textarea rows="10" cols="75" readonly="true" placeholder="empty" style="white-space: pre; border: none">Not collected for refresh</textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="id-indexing">
+        <h1 class="Indexing"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Provider name</th>
+              <th>Total processing time</th>
+              <th>Content loading time</th>
+              <th>Number of indexed files</th>
+              <th>Number of files indexed by shared indexes</th>
+              <th>Number of too large for indexing files</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao)</td>
+              <td>1 s 19 ms</td>
+              <td>8 ms</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>848 ms</td>
+              <td>54 ms</td>
+              <td>68</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)</td>
+              <td>734 ms</td>
+              <td>20 ms</td>
+              <td>56</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Refreshed files</td>
+              <td>511 ms</td>
+              <td>41 ms</td>
+              <td>272</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>394 ms</td>
+              <td>20 ms</td>
+              <td>120</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>377 ms</td>
+              <td>14 ms</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>366 ms</td>
+              <td>5 ms</td>
+              <td>157</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'CCEX' (CCEX)</td>
+              <td>337 ms</td>
+              <td>7 ms</td>
+              <td>84</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation)</td>
+              <td>291 ms</td>
+              <td>2 ms</td>
+              <td>36</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>246 ms</td>
+              <td>23 ms</td>
+              <td>72</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>227 ms</td>
+              <td>7 ms</td>
+              <td>51</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)</td>
+              <td>199 ms</td>
+              <td>6 ms</td>
+              <td>25</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>192 ms</td>
+              <td>3 ms</td>
+              <td>55</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao)</td>
+              <td>176 ms</td>
+              <td>4 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-authorization:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>155 ms</td>
+              <td>5 ms</td>
+              <td>30</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-softphonehandlerapp-dao' (avizva-hc-softphonehandlerapp-dao)</td>
+              <td>150 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)</td>
+              <td>144 ms</td>
+              <td>7 ms</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-taskmanagerapp-presentation' (avizva-hc-taskmanagerapp-presentation)</td>
+              <td>135 ms</td>
+              <td>6 ms</td>
+              <td>31</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>118 ms</td>
+              <td>6 ms</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation)</td>
+              <td>106 ms</td>
+              <td>5 ms</td>
+              <td>21</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-plan:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>100 ms</td>
+              <td>2 ms</td>
+              <td>73</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>89 ms</td>
+              <td>12 ms</td>
+              <td>10</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)</td>
+              <td>79 ms</td>
+              <td>1 ms</td>
+              <td>14</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>77 ms</td>
+              <td>5 ms</td>
+              <td>66</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-claim:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>74 ms</td>
+              <td>5 ms</td>
+              <td>80</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>73 ms</td>
+              <td>6 ms</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)</td>
+              <td>70 ms</td>
+              <td>2 ms</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>68 ms</td>
+              <td>1 ms</td>
+              <td>40</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)</td>
+              <td>64 ms</td>
+              <td>1 ms</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)</td>
+              <td>61 ms</td>
+              <td>1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-coverage:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>56 ms</td>
+              <td>5 ms</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>54 ms</td>
+              <td>18 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-notification-core:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>51 ms</td>
+              <td>5 ms</td>
+              <td>80</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)</td>
+              <td>50 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-memberapp-logic' (avizva-hc-memberapp-logic)</td>
+              <td>49 ms</td>
+              <td>3 ms</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>48 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-dao' (avizva-hc-providerapp-dao)</td>
+              <td>47 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-dao' (avizva-hc-notesapp-dao)</td>
+              <td>47 ms</td>
+              <td>6 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-policy:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>45 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>15</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-logic' (avizva-hc-taskmanagerapp-logic)</td>
+              <td>42 ms</td>
+              <td>1 ms</td>
+              <td>11</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-filestore:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>39 ms</td>
+              <td>1 ms</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>38 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-softphonehandlerapp-web' (avizva-hc-softphonehandlerapp-web)</td>
+              <td>37 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)</td>
+              <td>34 ms</td>
+              <td>2 ms</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-common:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>33 ms</td>
+              <td>1 ms</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-medicalcode:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>33 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)</td>
+              <td>31 ms</td>
+              <td>1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)</td>
+              <td>30 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>9</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-presentation' (avizva-hc-transcriptapp-presentation)</td>
+              <td>28 ms</td>
+              <td>1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-dao-jira' (avizva-hc-taskmanagerapp-dao-jira)</td>
+              <td>27 ms</td>
+              <td>1 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)</td>
+              <td>26 ms</td>
+              <td>1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>25 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-dbsetup:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>25 ms</td>
+              <td>1 ms</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>25 ms</td>
+              <td>2 ms</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-restapiinvoker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>25 ms</td>
+              <td>2 ms</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-member:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>25 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>45</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-dao' (avizva-hc-zenoapp-dao)</td>
+              <td>23 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-livewire:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>22 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>41</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>22 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>13</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>18 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>19</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-client:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>18 ms</td>
+              <td>1 ms</td>
+              <td>8</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp' (avizva-hc-taskmanagerapp)</td>
+              <td>18 ms</td>
+              <td>1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-logic' (avizva-hc-zenoapp-logic)</td>
+              <td>18 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-apiaudit:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>16 ms</td>
+              <td>1 ms</td>
+              <td>37</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>15 ms</td>
+              <td>2 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-presentation' (avizva-hc-zenoapp-presentation)</td>
+              <td>13 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)</td>
+              <td>13 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-preauth:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>13 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-transcriptapp-dao' (avizva-hc-transcriptapp-dao)</td>
+              <td>12 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)</td>
+              <td>11 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-broker:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>11 ms</td>
+              <td>2 ms</td>
+              <td>9</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-pharmacyclaim:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>11 ms</td>
+              <td>1 ms</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)</td>
+              <td>10 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)</td>
+              <td>10 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-device:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>10 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>17</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>10 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>35</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-invoice:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>9 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>20</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)</td>
+              <td>7 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Library Maven: com.avizva.frameworks:avizva-hcdentities-buhierarchy:4.0.0 (#1 class roots, #0 source roots)</td>
+              <td>6 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-zenoapp-dao-cognitiveengine' (avizva-hc-zenoapp-dao-cognitiveengine)</td>
+              <td>5 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-common' (avizva-hc-common)</td>
+              <td>2 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)</td>
+              <td>1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr class="minor-data invisible">
+              <td>Module 'avizva-hc-taskmanagerapp-entities' (avizva-hc-taskmanagerapp-entities)</td>
+              <td>1 ms</td>
+              <td>&lt; 1 ms</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

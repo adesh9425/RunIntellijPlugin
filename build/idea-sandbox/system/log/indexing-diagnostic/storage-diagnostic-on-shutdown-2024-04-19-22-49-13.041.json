@@ -1,0 +1,744 @@
+{
+  "pageCacheStats" : {
+    "cachedChannelsStatistics" : {
+      "hit" : 5966,
+      "miss" : 0,
+      "load" : 141,
+      "capacity" : 400
+    },
+    "uncachedFileAccess" : 1946,
+    "maxRegisteredFiles" : 718,
+    "maxCacheSizeInBytes" : 508174336,
+    "totalCachedSizeInBytes" : 93986816,
+    "pageHits" : 270949,
+    "pageFastCacheHits" : 11020287,
+    "pageLoadsAboveSizeThreshold" : 0,
+    "regularPageLoads" : 4801,
+    "disposedBuffers" : 3497,
+    "totalPageDisposalUs" : 26019,
+    "totalPageLoadUs" : 1242193,
+    "totalPagesLoaded" : 4801,
+    "capacityInBytes" : 524288000
+  },
+  "vfsStorageStats" : {
+    "statsPerEnumerator" : {
+      "contentHashes.dat" : {
+        "collisions" : 0,
+        "values" : 325,
+        "dataFileSizeInBytes" : 6500,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 325,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 2,
+          "searchRequests" : 716,
+          "searchSteps" : 31,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "names.dat" : {
+        "collisions" : 26,
+        "values" : 132164,
+        "dataFileSizeInBytes" : 3932780,
+        "storageSizeInBytes" : 336,
+        "btreeStatistics" : {
+          "pages" : 65,
+          "elements" : 132150,
+          "height" : 2,
+          "moves" : 871,
+          "leafPages" : 64,
+          "maxSearchStepsInRequest" : 68,
+          "searchRequests" : 656375,
+          "searchSteps" : 822861,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 2129920
+        }
+      }
+    }
+  },
+  "indexStorageStats" : {
+    "indexStoragesStats" : { }
+  },
+  "otherStorageStats" : {
+    "statsPerPhm" : {
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index0/data0/archetypes-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 1,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 136,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 1,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 1,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 112
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index0/data0/artifactIds-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 393,
+          "dataFileSizeInBytes" : 7118,
+          "storageSizeInBytes" : 3272,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 393,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 1,
+            "searchRequests" : 911,
+            "searchSteps" : 55,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 65444
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index0/data0/versions-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 1412,
+          "dataFileSizeInBytes" : 49963,
+          "storageSizeInBytes" : 11440,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 1412,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 5,
+            "searchRequests" : 2940,
+            "searchSteps" : 682,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 37945
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index1/data0/archetypes-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index1/data0/artifactIds-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index1/data0/versions-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index2/data0/archetypes-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index2/data0/artifactIds-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/Maven/Indices/Index2/data0/versions-map.dat" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/back.cast.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 27,
+          "dataFileSizeInBytes" : 105,
+          "storageSizeInBytes" : 344,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 27,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 188,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 3203
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/back.class.def.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 4,
+          "values" : 2721,
+          "dataFileSizeInBytes" : 10714,
+          "storageSizeInBytes" : 26032,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 2718,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 21,
+            "searchRequests" : 10610,
+            "searchSteps" : 8450,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 753654
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/back.hierarchy.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 145,
+          "dataFileSizeInBytes" : 563,
+          "storageSizeInBytes" : 1288,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 145,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 1,
+            "searchRequests" : 1740,
+            "searchSteps" : 14,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 589808
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/back.member.sign.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 1333,
+          "dataFileSizeInBytes" : 6625,
+          "storageSizeInBytes" : 10808,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 1333,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 7,
+            "searchRequests" : 6346,
+            "searchSteps" : 1002,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 786427
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/back.refs.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 12,
+          "values" : 17810,
+          "dataFileSizeInBytes" : 122067,
+          "storageSizeInBytes" : 146976,
+          "btreeStatistics" : {
+            "pages" : 8,
+            "elements" : 17804,
+            "height" : 2,
+            "moves" : 9,
+            "leafPages" : 7,
+            "maxSearchStepsInRequest" : 81,
+            "searchRequests" : 115598,
+            "searchSteps" : 138258,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 262144
+          }
+        },
+        "valueStorageSizeInBytes" : 1802232
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/implicit.to.string.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 9,
+          "dataFileSizeInBytes" : 34,
+          "storageSizeInBytes" : 200,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 9,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 143,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 2746
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/frameworks/detection/CCEX.65f2c0dd/files" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/testHistory/65f2c0dd/testStateMap" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : 0,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 0,
+            "elements" : 0,
+            "height" : 0,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 0,
+            "searchRequests" : 0,
+            "searchSteps" : 0,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 0
+          }
+        },
+        "valueStorageSizeInBytes" : 0
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/committers.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 3,
+            "elements" : 4000,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 2,
+            "maxSearchStepsInRequest" : 62,
+            "searchRequests" : 11930,
+            "searchSteps" : 16253,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 98304
+          }
+        },
+        "valueStorageSizeInBytes" : 24049
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/messages.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 9,
+            "elements" : 17384,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 8,
+            "maxSearchStepsInRequest" : 1918,
+            "searchRequests" : 125054,
+            "searchSteps" : 140061,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 294912
+          }
+        },
+        "valueStorageSizeInBytes" : 1136249
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/parents.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 9,
+            "elements" : 17384,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 8,
+            "maxSearchStepsInRequest" : 922,
+            "searchRequests" : 179085,
+            "searchSteps" : 213944,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 294912
+          }
+        },
+        "valueStorageSizeInBytes" : 155005
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/paths.26.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 11,
+            "elements" : 19396,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 10,
+            "maxSearchStepsInRequest" : 89,
+            "searchRequests" : 85573,
+            "searchSteps" : 144667,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 360448
+          }
+        },
+        "valueStorageSizeInBytes" : 1598865
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/renames-map.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 1250,
+          "dataFileSizeInBytes" : 10000,
+          "storageSizeInBytes" : 10144,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 1250,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 6,
+            "searchRequests" : 50045,
+            "searchSteps" : 15511,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 87946
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/timestamps.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 9,
+            "elements" : 17384,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 8,
+            "maxSearchStepsInRequest" : 922,
+            "searchRequests" : 61054,
+            "searchSteps" : 44808,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 294912
+          }
+        },
+        "valueStorageSizeInBytes" : 312961
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/trigrams.26.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 3,
+            "elements" : 4590,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 2,
+            "maxSearchStepsInRequest" : 40,
+            "searchRequests" : 71321,
+            "searchSteps" : 46311,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 98304
+          }
+        },
+        "valueStorageSizeInBytes" : 2347386
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/users.26.storage" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 1,
+            "elements" : 186,
+            "height" : 1,
+            "moves" : 0,
+            "leafPages" : 1,
+            "maxSearchStepsInRequest" : 2,
+            "searchRequests" : 2060,
+            "searchSteps" : 18,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 32768
+          }
+        },
+        "valueStorageSizeInBytes" : 67846
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/users.idx.26" : {
+        "persistentEnumeratorStatistics" : {
+          "collisions" : 0,
+          "values" : 0,
+          "dataFileSizeInBytes" : -1,
+          "storageSizeInBytes" : 96,
+          "btreeStatistics" : {
+            "pages" : 9,
+            "elements" : 17384,
+            "height" : 2,
+            "moves" : 0,
+            "leafPages" : 8,
+            "maxSearchStepsInRequest" : 922,
+            "searchRequests" : 78437,
+            "searchSteps" : 66374,
+            "pageCapacity" : 32768,
+            "sizeInBytes" : 294912
+          }
+        },
+        "valueStorageSizeInBytes" : 121737
+      }
+    },
+    "statsPerEnumerator" : {
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/file.path.enum.tab" : {
+        "collisions" : 0,
+        "values" : 4485,
+        "dataFileSizeInBytes" : 799678,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 3,
+          "elements" : 4485,
+          "height" : 2,
+          "moves" : 0,
+          "leafPages" : 2,
+          "maxSearchStepsInRequest" : 49,
+          "searchRequests" : 15238,
+          "searchSteps" : 15204,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 98304
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/compile-server/ccex_52912473/backward-refs/name.tab" : {
+        "collisions" : 0,
+        "values" : 5780,
+        "dataFileSizeInBytes" : 294689,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 3,
+          "elements" : 5779,
+          "height" : 2,
+          "moves" : 0,
+          "leafPages" : 2,
+          "maxSearchStepsInRequest" : 36,
+          "searchRequests" : 254972,
+          "searchSteps" : 156467,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 98304
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/hashes/storage.8" : {
+        "collisions" : 0,
+        "values" : 17384,
+        "dataFileSizeInBytes" : 451984,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 9,
+          "elements" : 17384,
+          "height" : 2,
+          "moves" : 9,
+          "leafPages" : 8,
+          "maxSearchStepsInRequest" : 54,
+          "searchRequests" : 215081,
+          "searchSteps" : 207805,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 294912
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/paths-ids.26" : {
+        "collisions" : 0,
+        "values" : 19418,
+        "dataFileSizeInBytes" : 2175671,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 9,
+          "elements" : 19418,
+          "height" : 2,
+          "moves" : 11,
+          "leafPages" : 8,
+          "maxSearchStepsInRequest" : 58,
+          "searchRequests" : 864342,
+          "searchSteps" : 989894,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 294912
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/index/users-ids.26" : {
+        "collisions" : 0,
+        "values" : 186,
+        "dataFileSizeInBytes" : 8107,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 186,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 1,
+          "searchRequests" : 21815,
+          "searchSteps" : 241,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-log/CCEX_65f2c0dd_1dcf7231/refs/storage.10" : {
+        "collisions" : 0,
+        "values" : 26,
+        "dataFileSizeInBytes" : 899,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 26,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 0,
+          "searchRequests" : 62,
+          "searchSteps" : 0,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      },
+      "$USER_HOME$/Documents/learning/run-manager/tool_window/build/idea-sandbox/system/vcs-users/65f2c0dd.2" : {
+        "collisions" : 0,
+        "values" : 186,
+        "dataFileSizeInBytes" : 8107,
+        "storageSizeInBytes" : 96,
+        "btreeStatistics" : {
+          "pages" : 1,
+          "elements" : 186,
+          "height" : 1,
+          "moves" : 0,
+          "leafPages" : 1,
+          "maxSearchStepsInRequest" : 1,
+          "searchRequests" : 52179,
+          "searchSteps" : 198,
+          "pageCapacity" : 32768,
+          "sizeInBytes" : 32768
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:05.253Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-19T09:35:47.719636Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "CCEX",
+    "times" : {
+      "indexingReason" : "On project open",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 1253056042,
+      "indexingTime" : 1248748000,
+      "contentLoadingVisibleTime" : 38109483,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 140489220,
+      "updatingStart" : "2024-03-19T09:35:46.448559Z",
+      "updatingEnd" : "2024-03-19T09:35:47.701402Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 7,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 7,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 8
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 2191967292,
+        "total" : 2436979625
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 25872209,
+        "total" : 86868459
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 974,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 2191967292
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 974,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2191967292,
+          "total" : 2191967292
+        }
+      } ]
+    }, {
+      "fileType" : "UNKNOWN",
+      "partOfTotalProcessingTime" : {
+        "part" : 135668499,
+        "total" : 2436979625
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 56110500,
+        "total" : 86868459
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 135668499
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 135668499,
+          "total" : 135668499
+        }
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalProcessingTime" : {
+        "part" : 54814625,
+        "total" : 2436979625
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2083041,
+        "total" : 86868459
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 3424,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3424,
+        "totalTime" : 54814625
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-benefitapp-apis' (avizva-hc-benefitapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3424,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 54814625,
+          "total" : 54814625
+        }
+      } ]
+    }, {
+      "fileType" : "Dictionary",
+      "partOfTotalProcessingTime" : {
+        "part" : 54529209,
+        "total" : 2436979625
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2802709,
+        "total" : 86868459
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 897,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 897,
+        "totalTime" : 54529209
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-benefitapp-apis' (avizva-hc-benefitapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 897,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 54529209,
+          "total" : 54529209
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 1690903291,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 1690903291
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 136844583,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 136844583
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 13701959,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 13701959
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 6271249,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 6271249
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 4400876,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 4400876
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 2782000,
+        "total" : 1854903958
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 974,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 974,
+        "totalTime" : 2782000
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 7,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 7,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 63545291,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1051740002,
+      "contentLoadingVisibleTime" : 12413888,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "PresentationSuccessCodeInitializer.java",
+        "processingTime" : 1095521459,
+        "evaluationOfIndexValueChangerTime" : 925012666,
+        "contentLoadingTime" : 12675834
+      }, {
+        "fileName" : "PresentationErrorCodeInitializer.java",
+        "processingTime" : 1096445833,
+        "evaluationOfIndexValueChangerTime" : 929891292,
+        "contentLoadingTime" : 13196375
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 70946207
+    }, {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 56460750,
+      "contentLoadingVisibleTime" : 23351337,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 26354936
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-apis' (avizva-hc-benefitapp-apis)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 52464872,
+      "contentLoadingVisibleTime" : 2344258,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 43188077
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.4161669836120174
+  }
+}

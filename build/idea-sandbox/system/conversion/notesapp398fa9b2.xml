@@ -1,0 +1,22 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <f p="./.idea/encodings.xml" t="1706603757" />
+    <f p="./.idea/runConfigurations/checkout.xml" t="1706596826" />
+    <f p="./.idea/vcs.xml" t="1706599465" />
+    <f p="./.idea/notesapp.iml" t="1709984965" />
+    <f p="./.idea/markdown.xml" t="1706594502" />
+    <f p="./.idea/jpa-buddy.xml" t="1706623407" />
+    <f p="./.idea/runConfigurations/build.xml" t="1706596143" />
+    <f p="./.idea/modules.xml" t="1709984965" />
+    <f p="./.idea/misc.xml" t="1706603766" />
+    <f p="./.idea/compiler.xml" t="1706603766" />
+    <f p="./.idea/workspace.xml" t="1714128995" />
+    <f p="./.idea/runConfigurations/pull.xml" t="1706596263" />
+    <f p="./.idea/jarRepositories.xml" t="1706603757" />
+    <f p="./.idea/runConfigurations/Unnamed.xml" t="1708694745" />
+    <f p="./.idea/runConfigurations/master.xml" t="1706595779" />
+  </project-files>
+</conversion>

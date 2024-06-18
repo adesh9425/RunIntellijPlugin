@@ -1,0 +1,385 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:22.938Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-09T11:48:42.158847Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "notesapp",
+    "times" : {
+      "indexingReason" : "Merged changes in: \"Module 'avizva-hc-notesapp' (avizva-hc-notesapp)\", \"Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)\", \"Module 'avizva-hc-notesapp-entities' (avizva-hc-notesapp-entities)\", \"Module 'avizva-hc-notesapp-authorization' (avizva-hc-notesapp-authorization)\", \"Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)\", \"Module 'avizva-hc-notesapp-authentication' (avizva-hc-notesapp-authentication)\", \"Module 'avizva-hc-notesapp-usecases' (avizva-hc-notesapp-usecases)\", \"Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)\", \"Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)\", \"Module 'avizva-hc-common' (avizva-hc-common)\" and 285 iterators more with On refresh of files in notesapp",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 1907030833,
+      "indexingTime" : 1903750000,
+      "contentLoadingVisibleTime" : 13132268,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 268601160,
+      "updatingStart" : "2024-03-09T11:48:40.242896Z",
+      "updatingEnd" : "2024-03-09T11:48:42.149303Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 0,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 0,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 436
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 16729518722,
+        "total" : 16729518722
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 116366256,
+        "total" : 116366256
+      },
+      "totalNumberOfFiles" : 436,
+      "totalFilesSize" : 292319,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 16729518722
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+        "numberOfFiles" : 138,
+        "totalFilesSize" : 120662,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9942014580,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : 10146,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2846543253,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+        "numberOfFiles" : 212,
+        "totalFilesSize" : 121100,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2560572263,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : 10546,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 683892543,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+        "numberOfFiles" : 41,
+        "totalFilesSize" : 20997,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 258143501,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-authentication' (avizva-hc-notesapp-authentication)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 2806,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 229308418,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-dao' (avizva-hc-notesapp-dao)",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : 4028,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 121581873,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-entities' (avizva-hc-notesapp-entities)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 1986,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 51862333,
+          "total" : 16729518722
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-apis' (avizva-hc-notesapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 48,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 35599958,
+          "total" : 16729518722
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 10152119032,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 10152119032
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 375613174,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 375613174
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 214822956,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 214822956
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 123013003,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 123013003
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 112407955,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 112407955
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 35856539,
+        "total" : 11013832659
+      },
+      "totalNumberOfFiles" : 436,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 292319,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 292319,
+        "totalTime" : 35856539
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 455750,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+      "totalNumberOfIndexedFiles" : 138,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1121985328,
+      "contentLoadingVisibleTime" : 7227674,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "RecentSearch.java",
+        "processingTime" : 503880750,
+        "evaluationOfIndexValueChangerTime" : 308797957,
+        "contentLoadingTime" : 1684250
+      }, {
+        "fileName" : "ProductCategory.java",
+        "processingTime" : 503900791,
+        "evaluationOfIndexValueChangerTime" : 309797750,
+        "contentLoadingTime" : 1372916
+      }, {
+        "fileName" : "ClaimIndex.java",
+        "processingTime" : 506652125,
+        "evaluationOfIndexValueChangerTime" : 317900458,
+        "contentLoadingTime" : 1098584
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 105733776
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)",
+      "totalNumberOfIndexedFiles" : 15,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 321240704,
+      "contentLoadingVisibleTime" : 1671770,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 62334458
+    }, {
+      "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+      "totalNumberOfIndexedFiles" : 212,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 288968044,
+      "contentLoadingVisibleTime" : 2893817,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 74869204
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)",
+      "totalNumberOfIndexedFiles" : 12,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 77179267,
+      "contentLoadingVisibleTime" : 156545,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 9957830
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+      "totalNumberOfIndexedFiles" : 41,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 29132246,
+      "contentLoadingVisibleTime" : 1023698,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 10847125
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-authentication' (avizva-hc-notesapp-authentication)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25878123,
+      "contentLoadingVisibleTime" : 33080,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1243859
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-dao' (avizva-hc-notesapp-dao)",
+      "totalNumberOfIndexedFiles" : 9,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 13720868,
+      "contentLoadingVisibleTime" : 61058,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 737639
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-entities' (avizva-hc-notesapp-entities)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5852815,
+      "contentLoadingVisibleTime" : 48790,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 611098
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-apis' (avizva-hc-notesapp-apis)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 4017559,
+      "contentLoadingVisibleTime" : 15836,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2266171
+    }, {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 0,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 0,
+      "contentLoadingVisibleTime" : 0,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 0
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.0
+  }
+}

@@ -1,0 +1,1255 @@
+<html>
+  <head>
+    <title>Indexing diagnostics of 'CCEX'</title>
+    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script>
+  </head>
+  <body>
+    <div class="aggregate-report-content">
+      <h1 class="Project name"></h1>
+CCEX
+      <div>
+        <h1 class="Indexing history"></h1>
+        <table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption>
+          <thead>
+            <tr>
+              <th colspan="7">Time</th>
+              <th colspan="6">Files</th>
+              <th rowspan="2">IDE</th>
+              <th rowspan="2">Type</th>
+            </tr>
+            <tr>
+              <th>Started</th>
+              <th>Total</th>
+              <th>Creating iterators</th>
+              <th>Scanning</th>
+              <th>Indexing</th>
+              <th>Content loading</th>
+              <th>Finished</th>
+              <th>Providers</th>
+              <th>Scanned</th>
+              <th>Shared indexes (w/o content loading)</th>
+              <th>Scheduled for indexing</th>
+              <th>Shared indexes (content loaded)</th>
+              <th>Total indexed (shared indexes included)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-45-12.457.html">
+              <td><strong class="On project open"></strong><br>00:45:06 04 Mar</td>
+              <td>2 s 968 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 945 ms</td>
+              <td>134 ms</td>
+              <td>00:45:09 04 Mar</td>
+              <td>1</td>
+              <td>14</td>
+              <td>0</td>
+              <td>14</td>
+              <td>0</td>
+              <td>243</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-45-06.388.html">
+              <td><strong class="On project open"></strong><br>00:44:55 04 Mar</td>
+              <td>11 s 125 ms</td>
+              <td>28 ms</td>
+              <td>10 s 983 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:45:06 04 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>229</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-39-42.066.html">
+              <td><strong class="On project open"></strong><br>00:39:37 04 Mar</td>
+              <td>2 s 434 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 422 ms</td>
+              <td>134 ms</td>
+              <td>00:39:40 04 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>229</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-39-37.582.html">
+              <td><strong class="On project open"></strong><br>00:39:26 04 Mar</td>
+              <td>11 s 102 ms</td>
+              <td>13 ms</td>
+              <td>11 s 49 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:39:37 04 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>229</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-36-53.323.html">
+              <td><strong class="On project open"></strong><br>00:36:47 04 Mar</td>
+              <td>3 s 697 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 s 679 ms</td>
+              <td>236 ms</td>
+              <td>00:36:51 04 Mar</td>
+              <td>1</td>
+              <td>14</td>
+              <td>0</td>
+              <td>14</td>
+              <td>0</td>
+              <td>244</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-36-47.537.html">
+              <td><strong class="On project open"></strong><br>00:36:33 04 Mar</td>
+              <td>14 s 128 ms</td>
+              <td>39 ms</td>
+              <td>13 s 957 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:36:47 04 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>230</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-32-20.903.html">
+              <td><strong class="On project open"></strong><br>00:32:15 04 Mar</td>
+              <td>3 s 92 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 s 76 ms</td>
+              <td>142 ms</td>
+              <td>00:32:19 04 Mar</td>
+              <td>1</td>
+              <td>14</td>
+              <td>0</td>
+              <td>14</td>
+              <td>0</td>
+              <td>243</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-32-15.783.html">
+              <td><strong class="On project open"></strong><br>00:32:04 04 Mar</td>
+              <td>11 s 380 ms</td>
+              <td>5 ms</td>
+              <td>11 s 252 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:32:15 04 Mar</td>
+              <td>5</td>
+              <td>238</td>
+              <td>0</td>
+              <td>229</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-31-04.039.html">
+              <td><strong class="On project open"></strong><br>00:30:55 04 Mar</td>
+              <td>5 s 433 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5 s 422 ms</td>
+              <td>215 ms</td>
+              <td>00:31:01 04 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>234</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-30-55.768.html">
+              <td><strong class="On project open"></strong><br>00:30:46 04 Mar</td>
+              <td>9 s 704 ms</td>
+              <td>46 ms</td>
+              <td>9 s 543 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:30:55 04 Mar</td>
+              <td>5</td>
+              <td>234</td>
+              <td>0</td>
+              <td>234</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-25-17.821.html">
+              <td><strong class="On project open"></strong><br>00:25:11 04 Mar</td>
+              <td>4 s 366 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 s 344 ms</td>
+              <td>173 ms</td>
+              <td>00:25:15 04 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>226</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-25-11.367.html">
+              <td><strong class="On project open"></strong><br>00:24:59 04 Mar</td>
+              <td>12 s 287 ms</td>
+              <td>833 ms</td>
+              <td>11 s 374 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:25:11 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-20-18.023.html">
+              <td><strong class="On project open"></strong><br>00:20:06 04 Mar</td>
+              <td>11 s 221 ms</td>
+              <td>43 ms</td>
+              <td>10 s 917 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:20:18 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-17-47.515.html">
+              <td><strong class="On project open"></strong><br>00:17:36 04 Mar</td>
+              <td>11 s 243 ms</td>
+              <td>23 ms</td>
+              <td>10 s 813 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:17:47 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-17-01.234.html">
+              <td><strong class="On project open"></strong><br>00:16:49 04 Mar</td>
+              <td>11 s 257 ms</td>
+              <td>43 ms</td>
+              <td>10 s 978 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:17:01 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-16-27.528.html">
+              <td><strong class="On project open"></strong><br>00:16:17 04 Mar</td>
+              <td>10 s 394 ms</td>
+              <td>38 ms</td>
+              <td>10 s 110 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:16:27 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-12-48.577.html">
+              <td><strong class="On project open"></strong><br>00:12:36 04 Mar</td>
+              <td>11 s 603 ms</td>
+              <td>28 ms</td>
+              <td>11 s 377 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:12:48 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-12-04.992.html">
+              <td><strong class="On project open"></strong><br>00:11:54 04 Mar</td>
+              <td>10 s 959 ms</td>
+              <td>17 ms</td>
+              <td>10 s 749 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:12:04 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-10-36.809.html">
+              <td><strong class="On project open"></strong><br>00:10:27 04 Mar</td>
+              <td>9 s 23 ms</td>
+              <td>20 ms</td>
+              <td>8 s 826 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:10:36 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-04-49.523.html">
+              <td><strong class="On project open"></strong><br>00:04:37 04 Mar</td>
+              <td>12 s 3 ms</td>
+              <td>28 ms</td>
+              <td>11 s 813 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:04:49 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-03-58.072.html">
+              <td><strong class="On project open"></strong><br>00:03:50 04 Mar</td>
+              <td>7 s 560 ms</td>
+              <td>11 ms</td>
+              <td>7 s 399 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:03:58 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-04-00-03-08.026.html">
+              <td><strong class="On project open"></strong><br>00:02:58 04 Mar</td>
+              <td>9 s 391 ms</td>
+              <td>27 ms</td>
+              <td>9 s 174 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>00:03:08 04 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-59-05.140.html">
+              <td><strong class="On project open"></strong><br>23:58:55 03 Mar</td>
+              <td>9 s 938 ms</td>
+              <td>45 ms</td>
+              <td>9 s 651 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:59:05 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-56-49.898.html">
+              <td><strong class="On project open"></strong><br>23:56:37 03 Mar</td>
+              <td>12 s 165 ms</td>
+              <td>19 ms</td>
+              <td>11 s 969 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:56:49 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-12-00.849.html">
+              <td><strong class="On project open"></strong><br>23:11:49 03 Mar</td>
+              <td>11 s 331 ms</td>
+              <td>52 ms</td>
+              <td>11 s 103 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:12:00 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-10-51.387.html">
+              <td><strong class="On project open"></strong><br>23:10:40 03 Mar</td>
+              <td>11 s 334 ms</td>
+              <td>38 ms</td>
+              <td>11 s 127 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:10:51 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-04-56.782.html">
+              <td><strong class="On project open"></strong><br>23:04:43 03 Mar</td>
+              <td>12 s 938 ms</td>
+              <td>27 ms</td>
+              <td>12 s 676 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:04:56 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-04-03.067.html">
+              <td><strong class="On project open"></strong><br>23:03:52 03 Mar</td>
+              <td>10 s 535 ms</td>
+              <td>15 ms</td>
+              <td>10 s 261 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:04:03 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-02-43.880.html">
+              <td><strong class="On project open"></strong><br>23:02:35 03 Mar</td>
+              <td>8 s 543 ms</td>
+              <td>11 ms</td>
+              <td>8 s 354 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:02:43 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-23-01-07.621.html">
+              <td><strong class="On project open"></strong><br>23:00:55 03 Mar</td>
+              <td>11 s 628 ms</td>
+              <td>12 ms</td>
+              <td>11 s 312 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>23:01:07 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-42-37.272.html">
+              <td><strong class="On project open"></strong><br>22:42:29 03 Mar</td>
+              <td>7 s 709 ms</td>
+              <td>16 ms</td>
+              <td>7 s 482 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:42:37 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-41-46.772.html">
+              <td><strong class="On project open"></strong><br>22:41:34 03 Mar</td>
+              <td>11 s 845 ms</td>
+              <td>21 ms</td>
+              <td>11 s 680 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:41:46 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-38-21.885.html">
+              <td><strong class="On project open"></strong><br>22:38:10 03 Mar</td>
+              <td>11 s 688 ms</td>
+              <td>49 ms</td>
+              <td>11 s 368 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:38:21 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-32-40.171.html">
+              <td><strong class="On project open"></strong><br>22:32:28 03 Mar</td>
+              <td>11 s 393 ms</td>
+              <td>61 ms</td>
+              <td>11 s 30 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:32:40 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-09-48.590.html">
+              <td><strong class="On project open"></strong><br>22:09:37 03 Mar</td>
+              <td>11 s 6 ms</td>
+              <td>21 ms</td>
+              <td>10 s 721 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:09:48 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-08-42.659.html">
+              <td><strong class="On project open"></strong><br>22:08:30 03 Mar</td>
+              <td>11 s 778 ms</td>
+              <td>47 ms</td>
+              <td>11 s 356 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:08:42 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-07-33.726.html">
+              <td><strong class="On project open"></strong><br>22:07:22 03 Mar</td>
+              <td>11 s 677 ms</td>
+              <td>33 ms</td>
+              <td>11 s 333 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:07:33 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-04-55.487.html">
+              <td><strong class="On project open"></strong><br>22:04:43 03 Mar</td>
+              <td>12 s 13 ms</td>
+              <td>20 ms</td>
+              <td>11 s 870 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:04:55 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-04-28.075.html">
+              <td><strong class="On project open"></strong><br>22:04:19 03 Mar</td>
+              <td>8 s 965 ms</td>
+              <td>37 ms</td>
+              <td>8 s 778 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:04:28 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-03-01.393.html">
+              <td><strong class="On project open"></strong><br>22:02:52 03 Mar</td>
+              <td>9 s 131 ms</td>
+              <td>27 ms</td>
+              <td>8 s 882 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:03:01 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-01-27.818.html">
+              <td><strong class="On project open"></strong><br>22:01:16 03 Mar</td>
+              <td>11 s 452 ms</td>
+              <td>21 ms</td>
+              <td>11 s 261 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:01:27 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-22-00-16.933.html">
+              <td><strong class="On project open"></strong><br>22:00:06 03 Mar</td>
+              <td>10 s 911 ms</td>
+              <td>23 ms</td>
+              <td>10 s 696 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22:00:16 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-59-41.308.html">
+              <td><strong class="On project open"></strong><br>21:59:33 03 Mar</td>
+              <td>7 s 601 ms</td>
+              <td>11 ms</td>
+              <td>7 s 431 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:59:41 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-56-21.175.html">
+              <td><strong class="On project open"></strong><br>21:56:11 03 Mar</td>
+              <td>9 s 979 ms</td>
+              <td>12 ms</td>
+              <td>9 s 815 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:56:21 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-55-40.542.html">
+              <td><strong class="On project open"></strong><br>21:55:29 03 Mar</td>
+              <td>10 s 893 ms</td>
+              <td>20 ms</td>
+              <td>10 s 658 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:55:40 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-51-15.599.html">
+              <td><strong class="On project open"></strong><br>21:51:03 03 Mar</td>
+              <td>12 s 51 ms</td>
+              <td>44 ms</td>
+              <td>11 s 759 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:51:15 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-47-05.709.html">
+              <td><strong class="On project open"></strong><br>21:46:58 03 Mar</td>
+              <td>7 s 507 ms</td>
+              <td>36 ms</td>
+              <td>7 s 286 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:47:05 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-45-21.331.html">
+              <td><strong class="On project open"></strong><br>21:45:11 03 Mar</td>
+              <td>9 s 451 ms</td>
+              <td>26 ms</td>
+              <td>9 s 204 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:45:21 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-44-40.671.html">
+              <td><strong class="On project open"></strong><br>21:44:31 03 Mar</td>
+              <td>9 s 569 ms</td>
+              <td>18 ms</td>
+              <td>9 s 406 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:44:40 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-43-06.171.html">
+              <td><strong class="On project open"></strong><br>21:42:55 03 Mar</td>
+              <td>10 s 862 ms</td>
+              <td>51 ms</td>
+              <td>10 s 584 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:43:06 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-34-42.496.html">
+              <td><strong class="On project open"></strong><br>21:34:38 03 Mar</td>
+              <td>897 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>883 ms</td>
+              <td>79 ms</td>
+              <td>21:34:39 03 Mar</td>
+              <td>1</td>
+              <td>13</td>
+              <td>0</td>
+              <td>13</td>
+              <td>0</td>
+              <td>39</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-21-34-37.395.html">
+              <td><strong class="On project open"></strong><br>21:34:26 03 Mar</td>
+              <td>10 s 737 ms</td>
+              <td>21 ms</td>
+              <td>10 s 546 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21:34:37 03 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>26</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-34-31.363.html">
+              <td><strong class="On project open"></strong><br>18:34:25 03 Mar</td>
+              <td>5 s 536 ms</td>
+              <td>7 ms</td>
+              <td>5 s 482 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:34:31 03 Mar</td>
+              <td>5</td>
+              <td>19493</td>
+              <td>0</td>
+              <td>17998</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-33-46.859.html">
+              <td><strong class="On project open"></strong><br>18:33:46 03 Mar</td>
+              <td>223 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>216 ms</td>
+              <td>22 ms</td>
+              <td>18:33:46 03 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-33-37.246.html">
+              <td><strong class="On project open"></strong><br>18:33:27 03 Mar</td>
+              <td>9 s 790 ms</td>
+              <td>20 ms</td>
+              <td>9 s 667 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:33:37 03 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-24-54.687.html">
+              <td><strong class="On project open"></strong><br>18:24:50 03 Mar</td>
+              <td>2 s 318 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2 s 302 ms</td>
+              <td>137 ms</td>
+              <td>18:24:52 03 Mar</td>
+              <td>1</td>
+              <td>13</td>
+              <td>0</td>
+              <td>13</td>
+              <td>0</td>
+              <td>242</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-24-50.563.html">
+              <td><strong class="On project open"></strong><br>18:24:41 03 Mar</td>
+              <td>8 s 678 ms</td>
+              <td>21 ms</td>
+              <td>8 s 584 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:24:50 03 Mar</td>
+              <td>5</td>
+              <td>238</td>
+              <td>0</td>
+              <td>229</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-23-31.364.html">
+              <td><strong class="On project open"></strong><br>18:23:26 03 Mar</td>
+              <td>3 s 772 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3 s 750 ms</td>
+              <td>170 ms</td>
+              <td>18:23:30 03 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>234</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-23-26.171.html">
+              <td><strong class="On project open"></strong><br>18:23:16 03 Mar</td>
+              <td>9 s 296 ms</td>
+              <td>464 ms</td>
+              <td>8 s 712 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:23:26 03 Mar</td>
+              <td>5</td>
+              <td>234</td>
+              <td>0</td>
+              <td>234</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-19-34.425.html">
+              <td><strong class="On project open"></strong><br>18:19:18 03 Mar</td>
+              <td>16 s 172 ms</td>
+              <td>53 ms</td>
+              <td>16 s 40 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:19:34 03 Mar</td>
+              <td>5</td>
+              <td>239</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-17-48.335.html">
+              <td><strong class="On project open"></strong><br>18:17:48 03 Mar</td>
+              <td>205 ms</td>
+              <td>25 ms</td>
+              <td>151 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:17:48 03 Mar</td>
+              <td>4</td>
+              <td>226</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-10-43.407.html">
+              <td><strong class="On refresh of files in CCEX"></strong><br>18:10:42 03 Mar</td>
+              <td>8 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4 ms</td>
+              <td>0</td>
+              <td>18:10:42 03 Mar</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-10-42.102.html">
+              <td><strong class="On project open"></strong><br>18:10:20 03 Mar</td>
+              <td>21 s 397 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>21 s 386 ms</td>
+              <td>1 s 155 ms</td>
+              <td>18:10:42 03 Mar</td>
+              <td>1</td>
+              <td>152</td>
+              <td>0</td>
+              <td>152</td>
+              <td>0</td>
+              <td>16974</td>
+              <td>IC-231.9392.1</td>
+              <td>refresh</td>
+            </tr>
+            <tr class="linkable-table-row" href="diagnostic-2024-03-03-18-10-20.637.html">
+              <td><strong class="On project open"></strong><br>18:10:16 03 Mar</td>
+              <td>4 s 239 ms</td>
+              <td>51 ms</td>
+              <td>4 s 154 ms</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18:10:20 03 Mar</td>
+              <td>5</td>
+              <td>19348</td>
+              <td>0</td>
+              <td>16822</td>
+              <td>0</td>
+              <td>0</td>
+              <td>IC-231.9392.1</td>
+              <td>full on project open</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h1 class="Scanning to push properties of changed files"></h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Reason</th>
+              <th>Full duration</th>
+              <th>Is cancelled</th>
+              <th>Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>18:10:42 03 Mar</td>
+              <td>Push on VFS changes</td>
+              <td>44 ms</td>
+              <td>fully finished</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

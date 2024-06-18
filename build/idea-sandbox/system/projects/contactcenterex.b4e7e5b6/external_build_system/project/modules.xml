@@ -1,0 +1,19 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/avizva-hc-common-domainapiinvokers.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/avizva-hc-common-domainapiinvokers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/avizva-hc-common-domainentities.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/avizva-hc-common-domainentities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-apis/avizva-hc-contactcenterex-apis.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-apis/avizva-hc-contactcenterex-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authentication/avizva-hc-contactcenterex-authentication.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authentication/avizva-hc-contactcenterex-authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authorization/avizva-hc-contactcenterex-authorization.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authorization/avizva-hc-contactcenterex-authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-dao/avizva-hc-contactcenterex-dao.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-dao/avizva-hc-contactcenterex-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-entities/avizva-hc-contactcenterex-entities.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-entities/avizva-hc-contactcenterex-entities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-logic/avizva-hc-contactcenterex-logic.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-logic/avizva-hc-contactcenterex-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/avizva-hc-contactcenterex-presentation.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/avizva-hc-contactcenterex-presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex-usecases/avizva-hc-contactcenterex-usecases.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex-usecases/avizva-hc-contactcenterex-usecases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/avizva-hc-contactcenterex-web.iml" filepath="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/avizva-hc-contactcenterex-web.iml" />
+    </modules>
+  </component>
+</project>

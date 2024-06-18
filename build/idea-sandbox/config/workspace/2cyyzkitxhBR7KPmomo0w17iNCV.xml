@@ -1,0 +1,404 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="CCEX" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-presentation/src/main/java/com/avizva/hc/softphonehandlerapp/presentation/processes/member_verification/view_form/ViewFormComponentDataBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/avizva-hc-taskmanagerapp/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="CLASS">
+      <summary usageCount="9" lastUsed="1710322376656" />
+    </fileType>
+    <fileType name="JAVA">
+      <summary usageCount="70" lastUsed="1714129009736" />
+    </fileType>
+    <fileType name="Properties">
+      <summary usageCount="7" lastUsed="1709983688863" />
+    </fileType>
+    <fileType name="XML">
+      <summary usageCount="62" lastUsed="1714129046475" />
+    </fileType>
+    <fileType name="YAML">
+      <summary usageCount="23" lastUsed="1710320658392" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Provider/avizva-hc-providerapp/avizva-hc-providerapp-authorization/target/maven-archiver/pom.properties" />
+      <option value="$PROJECT_DIR$/pom.xml" />
+      <option value="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/src/main/resources/local.yml" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="70" lastUsage="1714129009736" />
+    </language>
+    <language id="Properties">
+      <summary usageCount="7" lastUsage="1709983688864" />
+    </language>
+    <language id="XML">
+      <summary usageCount="62" lastUsage="1714129046475" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="23" lastUsage="1710320658392" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CCEX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///Users/adesh.pathak/Avizva/Projects/CCEX/CCEX/CCEX}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCEX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Shell Script.kill" />
+      <element setting="Application.RunServicePlugin" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.13209876" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Application" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Application" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Maven" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Maven" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="kill" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/bin/zsh" />
+          <arg value="--login" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="kill (2)" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/bin/zsh" />
+          <arg value="--login" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+    <option name="mySelectedTabIndex" value="1" />
+  </component>
+  <component name="ToolWindowManager">
+    <layout>
+      <window_info id="Bookmarks" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23178571" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5003401" weight="0.32962963" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" sideWeight="0.5003401" weight="0.4005291" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Problems View" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5003401" weight="0.32962963" />
+      <window_info anchor="bottom" id="Services" order="8" sideWeight="0.57108843" weight="0.4988675" />
+      <window_info anchor="bottom" id="Dependencies" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.5003401" weight="0.32962963" />
+      <window_info active="true" anchor="bottom" id="Run Service" order="11" sideWeight="0.49965987" side_tool="true" visible="true" weight="0.32959908" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Notifications" order="1" weight="0.25" />
+      <unified_weights bottom="0.32959908" left="0.23178571" right="0.583664" top="0.3323896" />
+    </layout>
+    <recentWindows>
+      <value>Run Service</value>
+      <value>Build</value>
+      <value>Project</value>
+      <value>Services</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Debug</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="244" y="87" key="#Project_Structure" timestamp="1710322683062">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state x="244" y="87" key="#Project_Structure/0.32.1512.950@0.32.1512.950" timestamp="1710322683062" />
+    <state x="236" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1710317856755">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state x="236" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1512.950@0.32.1512.950" timestamp="1710317856755" />
+    <state width="586" height="157" key="DebuggerActiveHint" timestamp="1710321165632">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state width="586" height="157" key="DebuggerActiveHint/0.32.1512.950@0.32.1512.950" timestamp="1710321165631" />
+    <state width="1250" height="446" key="GridCell.Tab.0.bottom" timestamp="1710342947960">
+      <screen x="0" y="38" width="1512" height="883" />
+    </state>
+    <state width="1250" height="446" key="GridCell.Tab.0.bottom/0.32.1512.950@0.32.1512.950" timestamp="1710328859201" />
+    <state width="1250" height="446" key="GridCell.Tab.0.bottom/0.38.1512.883@0.38.1512.883" timestamp="1710342947960" />
+    <state width="1196" height="429" key="GridCell.Tab.0.bottom/0.38.1512.886@0.38.1512.886" timestamp="1710251887342" />
+    <state width="426" height="429" key="GridCell.Tab.0.bottom/0.38.1512.887@0.38.1512.887" timestamp="1710267890874" />
+    <state width="308" height="429" key="GridCell.Tab.0.bottom/0.38.1512.890@0.38.1512.890" timestamp="1710268518028" />
+    <state width="1250" height="446" key="GridCell.Tab.0.center" timestamp="1710342947960">
+      <screen x="0" y="38" width="1512" height="883" />
+    </state>
+    <state width="1250" height="446" key="GridCell.Tab.0.center/0.32.1512.950@0.32.1512.950" timestamp="1710328859200" />
+    <state width="1250" height="446" key="GridCell.Tab.0.center/0.38.1512.883@0.38.1512.883" timestamp="1710342947960" />
+    <state width="1196" height="429" key="GridCell.Tab.0.center/0.38.1512.886@0.38.1512.886" timestamp="1710251887342" />
+    <state width="426" height="429" key="GridCell.Tab.0.center/0.38.1512.887@0.38.1512.887" timestamp="1710267890874" />
+    <state width="308" height="429" key="GridCell.Tab.0.center/0.38.1512.890@0.38.1512.890" timestamp="1710268518028" />
+    <state width="1250" height="446" key="GridCell.Tab.0.left" timestamp="1710342947958">
+      <screen x="0" y="38" width="1512" height="883" />
+    </state>
+    <state width="1250" height="446" key="GridCell.Tab.0.left/0.32.1512.950@0.32.1512.950" timestamp="1710328859200" />
+    <state width="1250" height="446" key="GridCell.Tab.0.left/0.38.1512.883@0.38.1512.883" timestamp="1710342947958" />
+    <state width="1196" height="429" key="GridCell.Tab.0.left/0.38.1512.886@0.38.1512.886" timestamp="1710251887341" />
+    <state width="426" height="429" key="GridCell.Tab.0.left/0.38.1512.887@0.38.1512.887" timestamp="1710267890874" />
+    <state width="308" height="429" key="GridCell.Tab.0.left/0.38.1512.890@0.38.1512.890" timestamp="1710268518027" />
+    <state width="1250" height="446" key="GridCell.Tab.0.right" timestamp="1710342947960">
+      <screen x="0" y="38" width="1512" height="883" />
+    </state>
+    <state width="1250" height="446" key="GridCell.Tab.0.right/0.32.1512.950@0.32.1512.950" timestamp="1710328859200" />
+    <state width="1250" height="446" key="GridCell.Tab.0.right/0.38.1512.883@0.38.1512.883" timestamp="1710342947960" />
+    <state width="1196" height="429" key="GridCell.Tab.0.right/0.38.1512.886@0.38.1512.886" timestamp="1710251887342" />
+    <state width="426" height="429" key="GridCell.Tab.0.right/0.38.1512.887@0.38.1512.887" timestamp="1710267890874" />
+    <state width="308" height="429" key="GridCell.Tab.0.right/0.38.1512.890@0.38.1512.890" timestamp="1710268518028" />
+    <state width="1250" height="388" key="GridCell.Tab.1.bottom" timestamp="1710322139063">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state width="1250" height="388" key="GridCell.Tab.1.bottom/0.32.1512.950@0.32.1512.950" timestamp="1710322139063" />
+    <state width="1250" height="388" key="GridCell.Tab.1.bottom/0.38.1512.883@0.38.1512.883" timestamp="1710322025900" />
+    <state width="1470" height="350" key="GridCell.Tab.1.bottom/0.38.1512.887@0.38.1512.887" timestamp="1710252292673" />
+    <state width="1250" height="388" key="GridCell.Tab.1.center" timestamp="1710322139063">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state width="1250" height="388" key="GridCell.Tab.1.center/0.32.1512.950@0.32.1512.950" timestamp="1710322139063" />
+    <state width="1250" height="388" key="GridCell.Tab.1.center/0.38.1512.883@0.38.1512.883" timestamp="1710322025900" />
+    <state width="1470" height="350" key="GridCell.Tab.1.center/0.38.1512.887@0.38.1512.887" timestamp="1710252292673" />
+    <state width="1250" height="388" key="GridCell.Tab.1.left" timestamp="1710322139063">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state width="1250" height="388" key="GridCell.Tab.1.left/0.32.1512.950@0.32.1512.950" timestamp="1710322139063" />
+    <state width="1250" height="388" key="GridCell.Tab.1.left/0.38.1512.883@0.38.1512.883" timestamp="1710322025900" />
+    <state width="1470" height="350" key="GridCell.Tab.1.left/0.38.1512.887@0.38.1512.887" timestamp="1710252292672" />
+    <state width="1250" height="388" key="GridCell.Tab.1.right" timestamp="1710322139063">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state width="1250" height="388" key="GridCell.Tab.1.right/0.32.1512.950@0.32.1512.950" timestamp="1710322139063" />
+    <state width="1250" height="388" key="GridCell.Tab.1.right/0.38.1512.883@0.38.1512.883" timestamp="1710322025900" />
+    <state width="1470" height="350" key="GridCell.Tab.1.right/0.38.1512.887@0.38.1512.887" timestamp="1710252292673" />
+    <state x="344" y="231" key="IDE.errors.dialog" timestamp="1714128823797">
+      <screen x="0" y="32" width="1512" height="950" />
+    </state>
+    <state x="344" y="231" key="IDE.errors.dialog/0.32.1512.950@0.32.1512.950" timestamp="1714128823797" />
+    <state x="344" y="223" key="IDE.errors.dialog/0.38.1512.883@0.38.1512.883" timestamp="1710677891776" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Benefit/avizva-hc-benefitapp/avizva-hc-benefitapp-presentation/src/main/java/com/avizva/hc/benefitapp/presentation/pages/benefit_details_life/benefits_details_information/BenefitsDetailsInformationComponentDataBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/Provider/avizva-hc-providerapp/avizva-hc-providerapp-authorization/target/maven-archiver/pom.properties" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Transcript/avizva-hc-transcriptapp/avizva-hc-transcriptapp-logic/src/main/java/com/avizva/hc/transcriptapp/logic/builders/entities/domain/TranscriptBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/src/main/resources/local.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/src/main/java/com/avizva/hc/contactcenterex/presentation/global/user_session_context/UserSessionContextComponentDataBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/src/main/java/com/avizva/hc/contactcenterex/presentation/global/user_session_context/UserSessionContextComponentData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+          <folding>
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1770#1771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/RejectedExecutionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/intellij/sdk/tool_window/2.0.0/tool_window-2.0.0.jar!/org/intellij/sdk/toolWindow/backend/RunServiceManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#1915#1916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/intellij/sdk/tool_window/2.0.0/tool_window-2.0.0.jar!/org/intellij/sdk/toolWindow/backend/Runner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/src/main/java/com/avizva/hc/common/domainapiinvokers/invokers/bu/GetBuPaymentAccountsDomainApiInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-logic/src/main/java/com/avizva/hc/softphonehandlerapp/logic/services/impl/DispositionPaneServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/src/main/java/com/avizva/hc/common/domainapiinvokers/invokers/bu/AddBuPaymentAccountsDomainApiInvokerRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding>
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/src/main/java/com/avizva/hc/common/domainapiinvokers/invokers/medicalcode/GetIcdCodesDomainApiInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-presentation/src/main/java/com/avizva/hc/softphonehandlerapp/presentation/processes/member_verification/view_form/ViewFormComponentDataBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avizva-hc-taskmanagerapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>avizva-hc-common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+    </states>
+  </component>
+</project>

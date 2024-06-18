@@ -1,0 +1,16 @@
+<module>
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/../../avizva-hc-providerapp" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/../../avizva-hc-providerapp/avizva-hc-providerapp-entities/target" />
+    </content>
+  </component>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="Maven" externalSystemModuleType="AGGREGATOR" externalSystemModuleVersion="223-2" linkedProjectId="$MODULE_DIR$/../../avizva-hc-providerapp/pom.xml" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17" inherit-compiler-output="true">
+    <content url="file://$MODULE_DIR$/../../avizva-hc-providerapp" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

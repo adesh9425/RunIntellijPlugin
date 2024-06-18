@@ -1,0 +1,19 @@
+<project>
+  <component name="ExternalCompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="avizva-hc-common" target="17" />
+      <module name="avizva-hc-common-domainapiinvokers" target="17" />
+      <module name="avizva-hc-common-domainentities" target="17" />
+      <module name="avizva-hc-notesapp" target="17" />
+      <module name="avizva-hc-notesapp-apis" target="17" />
+      <module name="avizva-hc-notesapp-authentication" target="17" />
+      <module name="avizva-hc-notesapp-authorization" target="17" />
+      <module name="avizva-hc-notesapp-dao" target="17" />
+      <module name="avizva-hc-notesapp-entities" target="17" />
+      <module name="avizva-hc-notesapp-logic" target="17" />
+      <module name="avizva-hc-notesapp-presentation" target="17" />
+      <module name="avizva-hc-notesapp-usecases" target="1.5" />
+      <module name="avizva-hc-notesapp-web" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

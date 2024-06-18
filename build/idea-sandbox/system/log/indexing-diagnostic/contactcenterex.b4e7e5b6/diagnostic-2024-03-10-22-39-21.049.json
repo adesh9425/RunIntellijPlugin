@@ -1,0 +1,257 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:21.329Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-10T17:09:21.052095Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "contactcenterex",
+    "times" : {
+      "indexingReason" : "On refresh of files in contactcenterex",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 7018226000,
+      "indexingTime" : 6990714000,
+      "contentLoadingVisibleTime" : 130038853,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 942415762,
+      "updatingStart" : "2024-03-10T17:09:14.026225Z",
+      "updatingEnd" : "2024-03-10T17:09:21.044742Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 438,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 438,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 438
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 61063108748,
+        "total" : 61063108748
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1146015791,
+        "total" : 1146015791
+      },
+      "totalNumberOfFiles" : 438,
+      "totalFilesSize" : 314323,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 61063108748
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 438,
+        "totalFilesSize" : 314323,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 61063108748,
+          "total" : 61063108748
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 25187774204,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 25187774204
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 5079040793,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 5079040793
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 4399279419,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 4399279419
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 3592458915,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 3592458915
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 1582874339,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 1582874339
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 638276473,
+        "total" : 40479704143
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 638276473
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 438,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 438,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 11097667,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 438,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 6928854500,
+      "contentLoadingVisibleTime" : 130038853,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "RenaissanceEmailType.java",
+        "processingTime" : 744504500,
+        "evaluationOfIndexValueChangerTime" : 269567084,
+        "contentLoadingTime" : 4606583
+      }, {
+        "fileName" : "ExternalRef.java",
+        "processingTime" : 842867792,
+        "evaluationOfIndexValueChangerTime" : 461161459,
+        "contentLoadingTime" : 12732792
+      }, {
+        "fileName" : "VerificationDetail.java",
+        "processingTime" : 843160209,
+        "evaluationOfIndexValueChangerTime" : 461353293,
+        "contentLoadingTime" : 12670542
+      }, {
+        "fileName" : "Transcript.java",
+        "processingTime" : 851571834,
+        "evaluationOfIndexValueChangerTime" : 604948917,
+        "contentLoadingTime" : 12832375
+      }, {
+        "fileName" : "CommSummary.java",
+        "processingTime" : 843987667,
+        "evaluationOfIndexValueChangerTime" : 422090875,
+        "contentLoadingTime" : 12617500
+      }, {
+        "fileName" : "TranscriptConfig.java",
+        "processingTime" : 856394750,
+        "evaluationOfIndexValueChangerTime" : 604270375,
+        "contentLoadingTime" : 13212958
+      }, {
+        "fileName" : "PhoneNumber.java",
+        "processingTime" : 856431500,
+        "evaluationOfIndexValueChangerTime" : 713233083,
+        "contentLoadingTime" : 13516750
+      }, {
+        "fileName" : "ContactOverview.java",
+        "processingTime" : 933870000,
+        "evaluationOfIndexValueChangerTime" : 729012999,
+        "contentLoadingTime" : 13174791
+      }, {
+        "fileName" : "NavigationDetail.java",
+        "processingTime" : 939891167,
+        "evaluationOfIndexValueChangerTime" : 718402416,
+        "contentLoadingTime" : 12723542
+      }, {
+        "fileName" : "ContactStep.java",
+        "processingTime" : 852984166,
+        "evaluationOfIndexValueChangerTime" : 457274458,
+        "contentLoadingTime" : 12065583
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 942415762
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.1134703856725431
+  }
+}

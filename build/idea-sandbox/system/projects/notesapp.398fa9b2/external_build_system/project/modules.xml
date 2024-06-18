@@ -1,0 +1,19 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/avizva-hc-common-domainapiinvokers.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/avizva-hc-common-domainapiinvokers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/avizva-hc-common-domainentities.iml" filepath="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/avizva-hc-common-domainentities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-apis/avizva-hc-notesapp-apis.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-apis/avizva-hc-notesapp-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authentication/avizva-hc-notesapp-authentication.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authentication/avizva-hc-notesapp-authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authorization/avizva-hc-notesapp-authorization.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authorization/avizva-hc-notesapp-authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-dao/avizva-hc-notesapp-dao.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-dao/avizva-hc-notesapp-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-entities/avizva-hc-notesapp-entities.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-entities/avizva-hc-notesapp-entities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-logic/avizva-hc-notesapp-logic.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-logic/avizva-hc-notesapp-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-presentation/avizva-hc-notesapp-presentation.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-presentation/avizva-hc-notesapp-presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp-usecases/avizva-hc-notesapp-usecases.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp-usecases/avizva-hc-notesapp-usecases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-web/avizva-hc-notesapp-web.iml" filepath="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-web/avizva-hc-notesapp-web.iml" />
+    </modules>
+  </component>
+</project>

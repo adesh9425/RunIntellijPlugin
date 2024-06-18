@@ -1,0 +1,11 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <f p="./.idea/vcs.xml" t="1709471076" />
+    <f p="./.idea/workspace.xml" t="1709486573" />
+    <f p="./.idea/runConfigurations/runservice.xml" t="1709469619" />
+    <f p="./.idea/libraries/tool_window_2_0_0.xml" t="1709481985" />
+  </project-files>
+</conversion>

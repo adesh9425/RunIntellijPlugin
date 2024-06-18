@@ -1,0 +1,61 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/contactcenterex">
+          <value>
+            <RecentProjectMetaInfo frameTitle="contactcenterex – local.yml [avizva-hc-contactcenterex-web]" projectWorkspaceId="2bd0109BjU9IWHbxCCCbkhP3l5R">
+              <option name="activationTimestamp" value="1710153915018" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-231.9392.1" />
+              <option name="buildTimestamp" value="1690276151779" />
+              <frame x="0" y="37" width="1512" height="945" fullScreen="true" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1710154109998" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/CCEX/CCEX/avizva-hc-claimapp">
+          <value>
+            <RecentProjectMetaInfo frameTitle="avizva-hc-claimapp – ~/Avizva/Projects/CCEX/CCEX/CCEX/avizva-hc-claimapp/README.md" projectWorkspaceId="2fdRPTltO7ymCaSItqqgZ6LV0vD">
+              <option name="activationTimestamp" value="1714128943930" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-231.9392.1" />
+              <option name="buildTimestamp" value="1690276144918" />
+              <frame x="56" y="58" width="1400" height="848" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1714128945976" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/notesapp">
+          <value>
+            <RecentProjectMetaInfo frameTitle="notesapp" projectWorkspaceId="2beyOewuudgkjI6Ntf33QR82gxZ">
+              <option name="activationTimestamp" value="1714128983443" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-231.9392.1" />
+              <option name="buildTimestamp" value="1690276144918" />
+              <frame x="56" y="58" width="1400" height="845" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1714128985327" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Avizva/Projects/CCEX/CCEX/CCEX">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CCEX – pom.xml (avizva-hc-taskmanagerapp)" opened="true" projectWorkspaceId="2cyyzkitxhBR7KPmomo0w17iNCV">
+              <option name="activationTimestamp" value="1714130358513" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-231.9392.1" />
+              <option name="buildTimestamp" value="1690276144918" />
+              <frame x="56" y="58" width="1400" height="848" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1714129009888" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Avizva/Projects/CCEX/CCEX/CCEX" />
+  </component>
+</application>

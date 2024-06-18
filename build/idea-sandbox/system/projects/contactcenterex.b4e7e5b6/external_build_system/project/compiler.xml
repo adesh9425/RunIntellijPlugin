@@ -1,0 +1,19 @@
+<project>
+  <component name="ExternalCompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="avizva-hc-common" target="17" />
+      <module name="avizva-hc-common-domainapiinvokers" target="17" />
+      <module name="avizva-hc-common-domainentities" target="17" />
+      <module name="avizva-hc-contactcenterex" target="17" />
+      <module name="avizva-hc-contactcenterex-apis" target="17" />
+      <module name="avizva-hc-contactcenterex-authentication" target="17" />
+      <module name="avizva-hc-contactcenterex-authorization" target="17" />
+      <module name="avizva-hc-contactcenterex-dao" target="17" />
+      <module name="avizva-hc-contactcenterex-entities" target="17" />
+      <module name="avizva-hc-contactcenterex-logic" target="17" />
+      <module name="avizva-hc-contactcenterex-presentation" target="17" />
+      <module name="avizva-hc-contactcenterex-usecases" target="1.5" />
+      <module name="avizva-hc-contactcenterex-web" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

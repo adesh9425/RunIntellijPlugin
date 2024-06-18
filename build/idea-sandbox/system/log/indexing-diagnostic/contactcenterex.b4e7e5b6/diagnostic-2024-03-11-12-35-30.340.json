@@ -1,0 +1,115 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:47.129Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-11T07:05:30.341658Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "contactcenterex",
+    "times" : {
+      "indexingReason" : "changes in: \"Library Maven: com.avizva.frameworks:avizva-restapiinvoker:4.0.0 (#1 class roots, #0 source roots)\", \"Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)\", \"Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)\", \"Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)\", \"Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)\"",
+      "scanningType" : "PARTIAL",
+      "totalUpdatingTime" : 94014209,
+      "indexingTime" : 0,
+      "contentLoadingVisibleTime" : 0,
+      "creatingIteratorsTime" : 1000,
+      "scanFilesTime" : 84357000,
+      "pushPropertiesTime" : 664000,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 0,
+      "updatingStart" : "2024-03-11T07:05:30.24559Z",
+      "updatingEnd" : "2024-03-11T07:05:30.339775Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 5,
+      "numberOfScannedFiles" : 150,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 149,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 0
+    },
+    "totalStatsPerFileType" : [ ],
+    "totalStatsPerIndexer" : [ ],
+    "scanningStatistics" : [ {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)",
+      "numberOfScannedFiles" : 38,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 38,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 19527249,
+      "scanningTime" : 33824629,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 5363922,
+      "timeIndexingWithoutContent" : 122879,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+      "numberOfScannedFiles" : 69,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 68,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 15788162,
+      "scanningTime" : 30123083,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 4082925,
+      "timeIndexingWithoutContent" : 187042,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-restapiinvoker:4.0.0 (#1 class roots, #0 source roots)",
+      "numberOfScannedFiles" : 16,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 16,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 10384498,
+      "scanningTime" : 29858458,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 5031127,
+      "timeIndexingWithoutContent" : 786961,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)",
+      "numberOfScannedFiles" : 19,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 19,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 13245833,
+      "scanningTime" : 29819002,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 3667537,
+      "timeIndexingWithoutContent" : 86418,
+      "roots" : [ ]
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)",
+      "numberOfScannedFiles" : 8,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 8,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 10356042,
+      "scanningTime" : 27875832,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 5110623,
+      "timeIndexingWithoutContent" : 732457,
+      "roots" : [ ]
+    } ],
+    "fileProviderStatistics" : [ ],
+    "visibleTimeToAllThreadTimeRatio" : 0.0
+  }
+}

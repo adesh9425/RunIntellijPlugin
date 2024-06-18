@@ -1,0 +1,54 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="notesapp" />
+              <option name="systemId" value="MAVEN" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/pom.xml" value="2277636160" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/pom.xml" value="206096193" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/pom.xml" value="1041423329" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp-usecases/pom.xml" value="1100966242" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-apis/pom.xml" value="861302265" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authentication/pom.xml" value="259956112" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authorization/pom.xml" value="2327155001" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-dao/pom.xml" value="3854059129" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-entities/pom.xml" value="3690070689" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-logic/pom.xml" value="2997161791" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-presentation/pom.xml" value="374678925" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-web/pom.xml" value="2979780849" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/pom.xml" value="2391164486" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="PermissionStore">
+    <excludedFiles>
+      <Path>$PROJECT_DIR$/.idea</Path>
+    </excludedFiles>
+    <fileAccess>Readonly</fileAccess>
+    <terminalAccess>Readonly</terminalAccess>
+    <runAccess>Readonly</runAccess>
+    <toolWindowAccess>Disabled</toolWindowAccess>
+  </component>
+  <component name="VcsLogIndexCollector">
+    <option name="indexTime" value="3185" />
+  </component>
+</project>

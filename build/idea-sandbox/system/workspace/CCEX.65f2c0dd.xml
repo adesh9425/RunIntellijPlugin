@@ -1,0 +1,158 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="CCEX" />
+              <option name="systemId" value="MAVEN" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-benefitapp-usecases/pom.xml" value="101417624" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-claimapp-usecases/pom.xml" value="2503411303" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-contactcenterex-usecases/pom.xml" value="3662007645" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-memberapp-usecases/pom.xml" value="3111030409" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-notesapp-usecases/pom.xml" value="1100966242" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-providerapp-usecases/pom.xml" value="3762515971" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-softphonehandlerapp-usecases/pom.xml" value="3591334592" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-taskmanagerapp-usecases/pom.xml" value="1902365037" />
+                      <entry key="$PROJECT_DIR$/Usecases/avizva-hc-transcriptapp-usecases/pom.xml" value="364944070" />
+                      <entry key="$PROJECT_DIR$/Usecases/pom.xml" value="2947449056" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-apis/pom.xml" value="2969885017" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-authentication/pom.xml" value="93275845" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-authorization/pom.xml" value="2239241685" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-dao/pom.xml" value="1789607664" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-entities/pom.xml" value="3958637836" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-logic/pom.xml" value="3693003153" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-presentation/pom.xml" value="3038581644" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/avizva-hc-benefitapp-web/pom.xml" value="407347471" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-benefitapp/pom.xml" value="4150945954" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-apis/pom.xml" value="3487474052" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-authentication/pom.xml" value="2426255269" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-authorization/pom.xml" value="544575720" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-dao/pom.xml" value="3300467256" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-logic/pom.xml" value="2725013172" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-presentation/pom.xml" value="873783607" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/avizva-hc-careex-web/pom.xml" value="1514142980" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-careex/pom.xml" value="1368351579" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-apis/pom.xml" value="3312368081" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-authentication/pom.xml" value="2877069895" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-authorization/pom.xml" value="282725616" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-dao/pom.xml" value="2718353446" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-logic/pom.xml" value="2650346577" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-presentation/pom.xml" value="1413749824" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/avizva-hc-claimapp-web/pom.xml" value="2391289664" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-claimapp/pom.xml" value="225083702" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/pom.xml" value="2277636160" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/pom.xml" value="206096193" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/pom.xml" value="1041423329" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-apis/pom.xml" value="3633914571" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authentication/pom.xml" value="3522814178" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authorization/pom.xml" value="437373488" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-dao/pom.xml" value="4041836865" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-logic/pom.xml" value="3516910605" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/pom.xml" value="3088283029" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/pom.xml" value="2721105460" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/pom.xml" value="4051976008" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-apis/pom.xml" value="785936917" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-authentication/pom.xml" value="1698637297" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-authorization/pom.xml" value="1810522543" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-dao/pom.xml" value="1858899788" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-logic/pom.xml" value="2366681982" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-presentation/pom.xml" value="818293674" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/avizva-hc-memberapp-web/pom.xml" value="3746128041" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-memberapp/pom.xml" value="2671934554" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-apis/pom.xml" value="861302265" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authentication/pom.xml" value="259956112" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-authorization/pom.xml" value="2327155001" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-dao-elasticsearch/pom.xml" value="2618834552" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-dao/pom.xml" value="3854059129" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-logic/pom.xml" value="2351452970" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-presentation/pom.xml" value="3858129652" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/avizva-hc-notesapp-web/pom.xml" value="2979780849" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-notesapp/pom.xml" value="1246198098" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-apis/pom.xml" value="3289210112" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-authentication/pom.xml" value="1784326082" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-authorization/pom.xml" value="448805838" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-dao/pom.xml" value="584145635" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-logic/pom.xml" value="2501984882" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-presentation/pom.xml" value="3860919273" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/avizva-hc-providerapp-web/pom.xml" value="3119635703" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-providerapp/pom.xml" value="700223930" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-apis/pom.xml" value="315092965" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-authentication/pom.xml" value="3038524527" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-authorization/pom.xml" value="436467098" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-dao-cognitiveengine/pom.xml" value="1922623514" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-dao-elasticsearch/pom.xml" value="3363837954" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-dao-softphone/pom.xml" value="2260991630" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-dao-telephonysystem/pom.xml" value="2312948977" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-dao/pom.xml" value="2471250621" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-logic/pom.xml" value="2210194146" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-presentation/pom.xml" value="2570984979" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/avizva-hc-softphonehandlerapp-web/pom.xml" value="2409311034" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-softphonehandlerapp/pom.xml" value="2329935013" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-apis/pom.xml" value="3134680607" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-authentication/pom.xml" value="3057814040" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-authorization/pom.xml" value="3960617803" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-dao-jira/pom.xml" value="897400659" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-dao/pom.xml" value="4053497728" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-entities/pom.xml" value="3117186999" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-logic/pom.xml" value="817844118" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-presentation/pom.xml" value="2267228119" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/avizva-hc-taskmanagerapp-web/pom.xml" value="167676188" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-taskmanagerapp/pom.xml" value="849074096" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-apis/pom.xml" value="3679124334" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-authentication/pom.xml" value="502556913" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-authorization/pom.xml" value="1785346733" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-dao-cognitiveengine/pom.xml" value="1677110959" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-dao/pom.xml" value="516495480" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-logic/pom.xml" value="3557443638" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-presentation/pom.xml" value="2822199419" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/avizva-hc-transcriptapp-web/pom.xml" value="2258002887" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-transcriptapp/pom.xml" value="2617334115" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-apis/pom.xml" value="341792424" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-authentication/pom.xml" value="531349334" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-authorization/pom.xml" value="3945925752" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-dao-cognitiveengine/pom.xml" value="2310638488" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-dao/pom.xml" value="4237163784" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-logic/pom.xml" value="3750305748" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-presentation/pom.xml" value="1742821612" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/avizva-hc-zenoapp-web/pom.xml" value="3459587148" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-zenoapp/pom.xml" value="3382551394" />
+                      <entry key="$PROJECT_DIR$/pom.xml" value="3698074257" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="PermissionStore">
+    <excludedFiles>
+      <Path>$PROJECT_DIR$/.idea</Path>
+    </excludedFiles>
+    <fileAccess>Readonly</fileAccess>
+    <terminalAccess>Readonly</terminalAccess>
+    <runAccess>Readonly</runAccess>
+    <toolWindowAccess>Disabled</toolWindowAccess>
+  </component>
+  <component name="ProcessedFilesStorage">
+    <timestamps>
+      <entry key="d3f8a269fa312930a3210c38b9cc0425" value="1714129036846" />
+    </timestamps>
+  </component>
+  <component name="VcsLogIndexCollector">
+    <option name="indexTime" value="10343" />
+  </component>
+</project>

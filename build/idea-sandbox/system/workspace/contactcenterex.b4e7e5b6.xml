@@ -1,0 +1,54 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="contactcenterex" />
+              <option name="systemId" value="MAVEN" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainapiinvokers/pom.xml" value="2277636160" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/avizva-hc-common-domainentities/pom.xml" value="206096193" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-common/pom.xml" value="1041423329" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex-usecases/pom.xml" value="3662007645" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-apis/pom.xml" value="3633914571" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authentication/pom.xml" value="3522814178" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-authorization/pom.xml" value="437373488" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-dao/pom.xml" value="4041836865" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-entities/pom.xml" value="2764432410" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-logic/pom.xml" value="3821377295" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-presentation/pom.xml" value="188392967" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/avizva-hc-contactcenterex-web/pom.xml" value="1311535170" />
+                      <entry key="$PROJECT_DIR$/avizva-hc-contactcenterex/pom.xml" value="1148442704" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="PermissionStore">
+    <excludedFiles>
+      <Path>$PROJECT_DIR$/.idea</Path>
+    </excludedFiles>
+    <fileAccess>Readonly</fileAccess>
+    <terminalAccess>Readonly</terminalAccess>
+    <runAccess>Readonly</runAccess>
+    <toolWindowAccess>Disabled</toolWindowAccess>
+  </component>
+  <component name="VcsLogIndexCollector">
+    <option name="indexTime" value="1202" />
+  </component>
+</project>

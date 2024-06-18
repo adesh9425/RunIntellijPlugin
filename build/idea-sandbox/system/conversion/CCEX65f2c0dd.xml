@@ -1,0 +1,29 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <f p="./.idea/runConfigurations/runservice.xml" t="1712915462" />
+    <f p="./.idea/misc.xml" t="1710329555" />
+    <f p="./.idea/runConfigurations/command.xml" t="1712294261" />
+    <f p="./.idea/runConfigurations/kill.xml" t="1710159204" />
+    <f p="./.idea/markdown.xml" t="1709153031" />
+    <f p="./.idea/jpa-buddy.xml" t="1709270641" />
+    <f p="./.idea/git_toolbox_prj.xml" t="1713331675" />
+    <f p="./.idea/jarRepositories.xml" t="1709270185" />
+    <f p="./.idea/workspace.xml" t="1714130363" />
+    <f p="./.idea/runConfigurations/run.xml" t="1711005926" />
+    <f p="./.idea/compiler.xml" t="1714130363" />
+    <f p="./.idea/libraries/maven_invoker_3_2_0.xml" t="1709153797" />
+    <f p="./.idea/runConfigurations/Build.xml" t="1710919240" />
+    <f p="./.idea/vcs.xml" t="1714130363" />
+    <f p="./.idea/runConfigurations/stash.xml" t="1709271334" />
+    <f p="./.idea/modules.xml" t="1714130363" />
+    <f p="./.idea/runConfigurations/checkout.xml" t="1712123769" />
+    <f p="./.idea/libraries/3_2.xml" t="1709153797" />
+    <f p="./.idea/libraries/snakeyaml_2_2.xml" t="1709153797" />
+    <f p="./.idea/encodings.xml" t="1713173086" />
+    <f p="./.idea/uiDesigner.xml" t="1710157474" />
+    <f p="./.idea/runConfigurations/pull.xml" t="1709271210" />
+  </project-files>
+</conversion>

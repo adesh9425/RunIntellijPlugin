@@ -1,0 +1,28 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <f p="./.idea/runConfigurations/RunServiceManager.xml" t="1709985615" />
+    <f p="./.idea/runConfigurations/run.xml" t="1706604305" />
+    <f p="./.idea/modules.xml" t="1709186946" />
+    <f p="./.idea/jpa-buddy.xml" t="1706603090" />
+    <f p="./.idea/jarRepositories.xml" t="1706603090" />
+    <f p="./.idea/runConfigurations/build.xml" t="1706604305" />
+    <f p="./.idea/workspace.xml" t="1710140001" />
+    <f p="./.idea/runConfigurations/RunServiceManager1.xml" t="1710055802" />
+    <f p="./.idea/runConfigurations/ok.xml" t="1709113737" />
+    <f p="./.idea/runConfigurations/checkout.xml" t="1708417272" />
+    <f p="./.idea/compiler.xml" t="1706603090" />
+    <f p="./.idea/runConfigurations/RunServiceManager11.xml" t="1710059211" />
+    <f p="./.idea/libraries/maven_invoker_3_2_0.xml" t="1709184521" />
+    <f p="./.idea/contactcenterex.iml" t="1709984726" />
+    <f p="./.idea/vcs.xml" t="1710094953" />
+    <f p="./.idea/misc.xml" t="1706604305" />
+    <f p="./.idea/runConfigurations/pull.xml" t="1706604305" />
+    <f p="./.idea/runConfigurations/runservice.xml" t="1710840727" />
+    <f p="./.idea/encodings.xml" t="1709984326" />
+    <f p="./.idea/runConfigurations/master.xml" t="1706604305" />
+    <f p="./.idea/runConfigurations/kill.xml" t="1708685192" />
+  </project-files>
+</conversion>

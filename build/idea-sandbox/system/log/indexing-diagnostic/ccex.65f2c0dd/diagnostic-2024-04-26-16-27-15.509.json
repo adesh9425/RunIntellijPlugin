@@ -1,0 +1,2522 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:04.918Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-04-26T10:57:15.51366Z",
+    "os" : "macOS 14.4.1",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "CCEX",
+    "times" : {
+      "indexingReason" : "Merged On project open with On refresh of files in CCEX",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 8923379167,
+      "indexingTime" : 8902947000,
+      "contentLoadingVisibleTime" : 371568097,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1379893023,
+      "updatingStart" : "2024-04-26T10:57:06.579301Z",
+      "updatingEnd" : "2024-04-26T10:57:15.502451Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 272,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 272,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 2190
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "CLASS",
+      "partOfTotalProcessingTime" : {
+        "part" : 34397377411,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1772292477,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 1508,
+      "totalFilesSize" : 3650036,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3650036,
+        "totalTime" : 34397377411
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 61,
+        "totalFilesSize" : 143826,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 6781776583,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 197,
+        "totalFilesSize" : 360715,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3271739368,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 116,
+        "totalFilesSize" : 349842,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3263108621,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : 42488,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2898798586,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 148,
+        "totalFilesSize" : 280650,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2778917579,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 69,
+        "totalFilesSize" : 124319,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1903429290,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 48,
+        "totalFilesSize" : 116397,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1853020496,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 51,
+        "totalFilesSize" : 270078,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1517853460,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-authorization:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : 37630,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1279647876,
+          "total" : 34397377411
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : 39172,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 945507832,
+          "total" : 34397377411
+        }
+      } ]
+    }, {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 30800043164,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 640453962,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 285,
+      "totalFilesSize" : 657655,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 657655,
+        "totalTime" : 30800043164
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao)",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : 19352,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9032440541,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)",
+        "numberOfFiles" : 35,
+        "totalFilesSize" : 101514,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5810909332,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation)",
+        "numberOfFiles" : 24,
+        "totalFilesSize" : 60028,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2450608918,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+        "numberOfFiles" : 25,
+        "totalFilesSize" : 120770,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1763727543,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 6729,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1562813208,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-dao' (avizva-hc-softphonehandlerapp-dao)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 6789,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1335243667,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-presentation' (avizva-hc-taskmanagerapp-presentation)",
+        "numberOfFiles" : 25,
+        "totalFilesSize" : 46213,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1143712750,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation)",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : 51830,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 711576709,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : 15542,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 707544083,
+          "total" : 30800043164
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 6765,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 543280166,
+          "total" : 30800043164
+        }
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalProcessingTime" : {
+        "part" : 3242203460,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 224974960,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 104,
+      "totalFilesSize" : 452176,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 452176,
+        "totalTime" : 3242203460
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 25965,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1283816792,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)",
+        "numberOfFiles" : 20,
+        "totalFilesSize" : 134614,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 654722957,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 33,
+        "totalFilesSize" : 64716,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 329745042,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation)",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : 80760,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 205299375,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 2670,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 175934624,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation)",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : 63730,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 131191170,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'CCEX' (CCEX)",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 18370,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 131110667,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 11195,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 110606041,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-presentation' (avizva-hc-zenoapp-presentation)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 5871,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 78004042,
+          "total" : 3242203460
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-transcriptapp-presentation' (avizva-hc-transcriptapp-presentation)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2174,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 69730708,
+          "total" : 3242203460
+        }
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalProcessingTime" : {
+        "part" : 2498138166,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 172760580,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 47,
+      "totalFilesSize" : 90352,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 2498138166
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 7350,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 270411083,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 846,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 251025333,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3433,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 182094250,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 840,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 129150000,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 832,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 97561417,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1185,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 93825167,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1625,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 86991083,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 800,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 83248625,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1503,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 82188750,
+          "total" : 2498138166
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 4549,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 77997250,
+          "total" : 2498138166
+        }
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalProcessingTime" : {
+        "part" : 2015178083,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 176571457,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 84,
+      "totalFilesSize" : 23507,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 23507,
+        "totalTime" : 2015178083
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 111,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 322044167,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 835,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 121780625,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 86,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 117817916,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2196,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 114714125,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 210,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 93241834,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 83,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 79708375,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 78,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 76197667,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 2344,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 75259583,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 77,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 73189666,
+          "total" : 2015178083
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1595,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 71470584,
+          "total" : 2015178083
+        }
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalProcessingTime" : {
+        "part" : 1634237709,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 31009208,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : 10342,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 10342,
+        "totalTime" : 1634237709
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CCEX' (CCEX)",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : 10342,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1634237709,
+          "total" : 1634237709
+        }
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalProcessingTime" : {
+        "part" : 895268873,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 28067167,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 61,
+      "totalFilesSize" : 460545,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 460545,
+        "totalTime" : 895268873
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CCEX' (CCEX)",
+        "numberOfFiles" : 60,
+        "totalFilesSize" : 459068,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 893766040,
+          "total" : 895268873
+        }
+      }, {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1477,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1502833,
+          "total" : 895268873
+        }
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalProcessingTime" : {
+        "part" : 821149165,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 6631833,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 9,
+      "totalFilesSize" : 16585,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 16585,
+        "totalTime" : 821149165
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1693,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 139934166,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-web' (avizva-hc-softphonehandlerapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1794,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 139700125,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2967,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 117047000,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1136,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 103011167,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1225,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 97053708,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2704,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 94414458,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3663,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 67879875,
+          "total" : 821149165
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1403,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 62108666,
+          "total" : 821149165
+        }
+      } ]
+    }, {
+      "fileType" : "Manifest",
+      "partOfTotalProcessingTime" : {
+        "part" : 578393336,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 110851378,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 42,
+      "totalFilesSize" : 6619,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 6619,
+        "totalTime" : 578393336
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 163,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 73307459,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 166,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 72510916,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 157,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 68791625,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 155,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 46144792,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 155,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 39623834,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 157,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 35098375,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 165,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 27064167,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 150,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 22611375,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 154,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 21003958,
+          "total" : 578393336
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 156,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 19109875,
+          "total" : 578393336
+        }
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalProcessingTime" : {
+        "part" : 352448126,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5689500,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 3197,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3197,
+        "totalTime" : 352448126
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2455,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 274222083,
+          "total" : 352448126
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 742,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 78226043,
+          "total" : 352448126
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 274730420,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 12253084,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 23,
+      "totalFilesSize" : 59990,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 59990,
+        "totalTime" : 274730420
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : 59177,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 228432837,
+          "total" : 274730420
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 113,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 20910417,
+          "total" : 274730420
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-logic' (avizva-hc-memberapp-logic)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 487,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 15042708,
+          "total" : 274730420
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 106,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 8432458,
+          "total" : 274730420
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 107,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1912000,
+          "total" : 274730420
+        }
+      } ]
+    }, {
+      "fileType" : "ARCHIVE",
+      "partOfTotalProcessingTime" : {
+        "part" : 180846376,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 66413376,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 180846376
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 180846376,
+          "total" : 180846376
+        }
+      } ]
+    }, {
+      "fileType" : "Dictionary",
+      "partOfTotalProcessingTime" : {
+        "part" : 180226625,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 14866791,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 1745,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 1745,
+        "totalTime" : 180226625
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp' (avizva-hc-taskmanagerapp)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 925,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 165630750,
+          "total" : 180226625
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 820,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 14595875,
+          "total" : 180226625
+        }
+      } ]
+    }, {
+      "fileType" : "SPI",
+      "partOfTotalProcessingTime" : {
+        "part" : 171667917,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 26637875,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : 579,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 579,
+        "totalTime" : 171667917
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 116,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 97003833,
+          "total" : 171667917
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 176,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 44657959,
+          "total" : 171667917
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 63,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 23733292,
+          "total" : 171667917
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-notification-core:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 88,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4084750,
+          "total" : 171667917
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 82,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1249958,
+          "total" : 171667917
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-dbsetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 54,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 938125,
+          "total" : 171667917
+        }
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalProcessingTime" : {
+        "part" : 10548167,
+        "total" : 78052456998
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 148708,
+        "total" : 3289622356
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 4382,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 4382,
+        "totalTime" : 10548167
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 4382,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 10548167,
+          "total" : 10548167
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 30589109235,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 1922,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 4406840,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 4406840,
+        "totalTime" : 30589109235
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 4701149456,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 267,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 629406,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 629406,
+        "totalTime" : 4701149456
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 3454406714,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 677,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1785686,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 1785686,
+        "totalTime" : 3454406714
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 2102795058,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 1508,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3650036,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3650036,
+        "totalTime" : 2102795058
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "bytecodeAnalysis",
+      "partOfTotalIndexingTime" : {
+        "part" : 1618802116,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 1508,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3650036,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3650036,
+        "totalTime" : 1618802116
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 1612614413,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 267,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 629406,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 629406,
+        "totalTime" : 1612614413
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 1501655974,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 679,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1787431,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 1787431,
+        "totalTime" : 1501655974
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1478704889,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 1508,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3650036,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3650036,
+        "totalTime" : 1478704889
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 654443875,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 9,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 16585,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 16585,
+        "totalTime" : 654443875
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : {
+        "part" : 325018838,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 104,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 452176,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 452176,
+        "totalTime" : 325018838
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 257059329,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 1508,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3650036,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3650036,
+        "totalTime" : 257059329
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 229087954,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 267,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 629406,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 629406,
+        "totalTime" : 229087954
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : {
+        "part" : 125008667,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 5,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 28135,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 28135,
+        "totalTime" : 125008667
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 122796337,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 122796337
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : {
+        "part" : 53332291,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2455,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 2455,
+        "totalTime" : 53332291
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "HtmlTagIdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 41204333,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2455,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 2455,
+        "totalTime" : 41204333
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.source.module.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 40000795,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 42,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 6619,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 6619,
+        "totalTime" : 40000795
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 18797001,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 42,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 6619,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 6619,
+        "totalTime" : 18797001
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : {
+        "part" : 18708916,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 18708916
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 12880045,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 12880045
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 8625374,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 25680,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 25680,
+        "totalTime" : 8625374
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "NavXmlIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 4022546,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 4022546
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 2805295,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 2805295
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointClassIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 2716792,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 2716792
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 2680083,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 2680083
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 2658374,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 90352,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 90352,
+        "totalTime" : 2658374
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : {
+        "part" : 874041,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 25680,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 25680,
+        "totalTime" : 874041
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 375583,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 25680,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 25680,
+        "totalTime" : 375583
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 314084,
+        "total" : 48982648408
+      },
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 25680,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 25680,
+        "totalTime" : 314084
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 272,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 272,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 5645166,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-dao' (avizva-hc-taskmanagerapp-dao)",
+      "totalNumberOfIndexedFiles" : 17,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1019837432,
+      "contentLoadingVisibleTime" : 8038039,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "TaskStatusTypeJpaRepository.java",
+        "processingTime" : 589632250,
+        "evaluationOfIndexValueChangerTime" : 117919208,
+        "contentLoadingTime" : 151375
+      }, {
+        "fileName" : "TaskRefTypeJpaRepository.java",
+        "processingTime" : 594347625,
+        "evaluationOfIndexValueChangerTime" : 120627416,
+        "contentLoadingTime" : 1189916
+      }, {
+        "fileName" : "PriorityTypeJpaRepository.java",
+        "processingTime" : 590643500,
+        "evaluationOfIndexValueChangerTime" : 117210416,
+        "contentLoadingTime" : 144125
+      }, {
+        "fileName" : "SubTaskJpaRepository.java",
+        "processingTime" : 595352708,
+        "evaluationOfIndexValueChangerTime" : 123509001,
+        "contentLoadingTime" : 2171708
+      }, {
+        "fileName" : "ETask.java",
+        "processingTime" : 974974709,
+        "evaluationOfIndexValueChangerTime" : 143205709,
+        "contentLoadingTime" : 1798875
+      }, {
+        "fileName" : "ESubCategoryType.java",
+        "processingTime" : 684036167,
+        "evaluationOfIndexValueChangerTime" : 108591500,
+        "contentLoadingTime" : 900708
+      }, {
+        "fileName" : "CategoryTypeJpaRepository.java",
+        "processingTime" : 592062083,
+        "evaluationOfIndexValueChangerTime" : 117083626,
+        "contentLoadingTime" : 526083
+      }, {
+        "fileName" : "ETaskStatusType.java",
+        "processingTime" : 740020459,
+        "evaluationOfIndexValueChangerTime" : 129509791,
+        "contentLoadingTime" : 4665417
+      }, {
+        "fileName" : "TaskJpaRepository.java",
+        "processingTime" : 625265416,
+        "evaluationOfIndexValueChangerTime" : 121622751,
+        "contentLoadingTime" : 297750
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 212531662
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-crosscutting:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 68,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 848038316,
+      "contentLoadingVisibleTime" : 54826483,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 117716298
+    }, {
+      "providerName" : "Module 'avizva-hc-softphonehandlerapp-presentation' (avizva-hc-softphonehandlerapp-presentation)",
+      "totalNumberOfIndexedFiles" : 56,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 734993776,
+      "contentLoadingVisibleTime" : 20109192,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "EditCallbackFormComponentDataBuilder.java",
+        "processingTime" : 539899959,
+        "evaluationOfIndexValueChangerTime" : 530528498,
+        "contentLoadingTime" : 1655375
+      }, {
+        "fileName" : "ListingComponentDataBuilder.java",
+        "processingTime" : 623737166,
+        "evaluationOfIndexValueChangerTime" : 595608376,
+        "contentLoadingTime" : 1651750
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 47754538
+    }, {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 272,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 511704250,
+      "contentLoadingVisibleTime" : 41288394,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 164278662
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-authentication:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 120,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 394153630,
+      "contentLoadingVisibleTime" : 20378708,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 59675607
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 377130941,
+      "contentLoadingVisibleTime" : 14375794,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 78750527
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-presentation:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 157,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 366909532,
+      "contentLoadingVisibleTime" : 5846626,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 35001777
+    }, {
+      "providerName" : "Module 'CCEX' (CCEX)",
+      "totalNumberOfIndexedFiles" : 84,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 337611971,
+      "contentLoadingVisibleTime" : 7317939,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 49923149
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-presentation' (avizva-hc-memberapp-presentation)",
+      "totalNumberOfIndexedFiles" : 36,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 291506637,
+      "contentLoadingVisibleTime" : 2553769,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7584657
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 72,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 246771812,
+      "contentLoadingVisibleTime" : 23051064,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 46581092
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 51,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 227247507,
+      "contentLoadingVisibleTime" : 7187511,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 37884292
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+      "totalNumberOfIndexedFiles" : 25,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 199139464,
+      "contentLoadingVisibleTime" : 6292981,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6217567
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-elasticsearch:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 55,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 192012862,
+      "contentLoadingVisibleTime" : 3444629,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 24215351
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-dao' (avizva-hc-memberapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 176454569,
+      "contentLoadingVisibleTime" : 4759371,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "ApplicationDaoAppConfig.java",
+        "processingTime" : 551526125,
+        "evaluationOfIndexValueChangerTime" : 418394208,
+        "contentLoadingTime" : 14115042
+      }, {
+        "fileName" : "BaseJpaEntity.java",
+        "processingTime" : 554816208,
+        "evaluationOfIndexValueChangerTime" : 427857292,
+        "contentLoadingTime" : 14057208
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 15113476
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-authorization:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 30,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 155110602,
+      "contentLoadingVisibleTime" : 5140587,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 29072154
+    }, {
+      "providerName" : "Module 'avizva-hc-softphonehandlerapp-dao' (avizva-hc-softphonehandlerapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 150760081,
+      "contentLoadingVisibleTime" : 575079,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 100225952
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 144953561,
+      "contentLoadingVisibleTime" : 7848264,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 29992177
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-presentation' (avizva-hc-taskmanagerapp-presentation)",
+      "totalNumberOfIndexedFiles" : 31,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 135873151,
+      "contentLoadingVisibleTime" : 6593703,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 14501823
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 14,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 118686213,
+      "contentLoadingVisibleTime" : 6866912,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 38130395
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-presentation' (avizva-hc-claimapp-presentation)",
+      "totalNumberOfIndexedFiles" : 21,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 106197926,
+      "contentLoadingVisibleTime" : 5509364,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6983570
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-plan:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 73,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 100378318,
+      "contentLoadingVisibleTime" : 2179308,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 42262434
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-propertymanager:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 10,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 89387457,
+      "contentLoadingVisibleTime" : 12215684,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 13926461
+    }, {
+      "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+      "totalNumberOfIndexedFiles" : 14,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 79887593,
+      "contentLoadingVisibleTime" : 1150784,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7071643
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 66,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 77552335,
+      "contentLoadingVisibleTime" : 5835933,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 9370476
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-claim:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 80,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 74921572,
+      "contentLoadingVisibleTime" : 5096595,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6857639
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 39,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 73228055,
+      "contentLoadingVisibleTime" : 6982389,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5461990
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+      "totalNumberOfIndexedFiles" : 6,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 70561241,
+      "contentLoadingVisibleTime" : 2059386,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 17320480
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-websetup:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 40,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 68774148,
+      "contentLoadingVisibleTime" : 1371158,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 9691816
+    }, {
+      "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 64856794,
+      "contentLoadingVisibleTime" : 1730629,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5773231
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 61340835,
+      "contentLoadingVisibleTime" : 1072854,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4350361
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-coverage:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 56433704,
+      "contentLoadingVisibleTime" : 5562257,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4790378
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainentities:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 54246515,
+      "contentLoadingVisibleTime" : 18692273,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1090040
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-notification-core:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 80,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 51823466,
+      "contentLoadingVisibleTime" : 5336252,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 11401696
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 50123260,
+      "contentLoadingVisibleTime" : 672462,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 11093808
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-logic' (avizva-hc-memberapp-logic)",
+      "totalNumberOfIndexedFiles" : 16,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 49961448,
+      "contentLoadingVisibleTime" : 3165360,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3350624
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 48063752,
+      "contentLoadingVisibleTime" : 741882,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5690464
+    }, {
+      "providerName" : "Module 'avizva-hc-providerapp-dao' (avizva-hc-providerapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 47872965,
+      "contentLoadingVisibleTime" : 127252,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 905980
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-dao' (avizva-hc-notesapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 47480688,
+      "contentLoadingVisibleTime" : 6340750,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1060970
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-policy:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 15,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 45542109,
+      "contentLoadingVisibleTime" : 597764,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1045366
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-logic' (avizva-hc-taskmanagerapp-logic)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 42144850,
+      "contentLoadingVisibleTime" : 1460962,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2013907
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-filestore:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 39355685,
+      "contentLoadingVisibleTime" : 1033722,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1051862
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 38023640,
+      "contentLoadingVisibleTime" : 740259,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 703446
+    }, {
+      "providerName" : "Module 'avizva-hc-softphonehandlerapp-web' (avizva-hc-softphonehandlerapp-web)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 37118742,
+      "contentLoadingVisibleTime" : 509291,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2329580
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+      "totalNumberOfIndexedFiles" : 6,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 34688866,
+      "contentLoadingVisibleTime" : 2053251,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 877400
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-common:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 37,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 33809884,
+      "contentLoadingVisibleTime" : 1610062,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7947280
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-medicalcode:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 28,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 33197634,
+      "contentLoadingVisibleTime" : 937350,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3202139
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-logic' (avizva-hc-notesapp-logic)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 31346682,
+      "contentLoadingVisibleTime" : 1228583,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1079944
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+      "totalNumberOfIndexedFiles" : 9,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 30038813,
+      "contentLoadingVisibleTime" : 263179,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1041663
+    }, {
+      "providerName" : "Module 'avizva-hc-transcriptapp-presentation' (avizva-hc-transcriptapp-presentation)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 28166139,
+      "contentLoadingVisibleTime" : 1618460,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 610561
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-dao-jira' (avizva-hc-taskmanagerapp-dao-jira)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 27135499,
+      "contentLoadingVisibleTime" : 1221361,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 553358
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-web' (avizva-hc-notesapp-web)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 26260069,
+      "contentLoadingVisibleTime" : 1161958,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 760983
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-apisetup:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25778788,
+      "contentLoadingVisibleTime" : 713401,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1550484
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-dbsetup:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25745376,
+      "contentLoadingVisibleTime" : 1107724,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3853936
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25668096,
+      "contentLoadingVisibleTime" : 2302242,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7086844
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-restapiinvoker:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 16,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25644149,
+      "contentLoadingVisibleTime" : 2937135,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1503910
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-member:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 45,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25296387,
+      "contentLoadingVisibleTime" : 857091,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2525866
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-dao' (avizva-hc-zenoapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 23815548,
+      "contentLoadingVisibleTime" : 368885,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 244460
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-livewire:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 41,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 22338331,
+      "contentLoadingVisibleTime" : 961743,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3781816
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 13,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 22076375,
+      "contentLoadingVisibleTime" : 199382,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 10407848
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 18777712,
+      "contentLoadingVisibleTime" : 702910,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1595229
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-client:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 18712211,
+      "contentLoadingVisibleTime" : 1927255,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4070085
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp' (avizva-hc-taskmanagerapp)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 18701085,
+      "contentLoadingVisibleTime" : 1593488,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 8501702
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-logic' (avizva-hc-zenoapp-logic)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 18192640,
+      "contentLoadingVisibleTime" : 387496,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 539805
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-apiaudit:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 37,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 16372379,
+      "contentLoadingVisibleTime" : 1071937,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4604710
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-webentities:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 15805980,
+      "contentLoadingVisibleTime" : 2051811,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 460764
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-presentation' (avizva-hc-zenoapp-presentation)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 13808632,
+      "contentLoadingVisibleTime" : 296530,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1283259
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 13215576,
+      "contentLoadingVisibleTime" : 31764,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 87405
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-preauth:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 13108036,
+      "contentLoadingVisibleTime" : 241289,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 8092123
+    }, {
+      "providerName" : "Module 'avizva-hc-transcriptapp-dao' (avizva-hc-transcriptapp-dao)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 12054192,
+      "contentLoadingVisibleTime" : 126109,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1078495
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11927344,
+      "contentLoadingVisibleTime" : 109488,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 215255
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-broker:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 9,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11402377,
+      "contentLoadingVisibleTime" : 2381165,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1264022
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-pharmacyclaim:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 17,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11259906,
+      "contentLoadingVisibleTime" : 1781024,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2540600
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10958168,
+      "contentLoadingVisibleTime" : 137738,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 70976
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10897461,
+      "contentLoadingVisibleTime" : 267127,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 450461
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-device:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 17,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10427423,
+      "contentLoadingVisibleTime" : 403486,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1110716
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 35,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10241977,
+      "contentLoadingVisibleTime" : 352019,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1529065
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-invoice:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 20,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 9355110,
+      "contentLoadingVisibleTime" : 651080,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1403628
+    }, {
+      "providerName" : "Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 7780929,
+      "contentLoadingVisibleTime" : 105955,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 167871
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-buhierarchy:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 16,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 6227376,
+      "contentLoadingVisibleTime" : 468771,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2655852
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-dao-cognitiveengine' (avizva-hc-zenoapp-dao-cognitiveengine)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5078854,
+      "contentLoadingVisibleTime" : 41719,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 28589
+    }, {
+      "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 2168911,
+      "contentLoadingVisibleTime" : 113256,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 148210
+    }, {
+      "providerName" : "Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1752044,
+      "contentLoadingVisibleTime" : 32559,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 37198
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-entities' (avizva-hc-taskmanagerapp-entities)",
+      "totalNumberOfIndexedFiles" : 1,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1129261,
+      "contentLoadingVisibleTime" : 70699,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 179133
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.11329932815867605
+  }
+}

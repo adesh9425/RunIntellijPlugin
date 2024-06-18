@@ -1,0 +1,1411 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:05.253Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-19T09:32:03.770899Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "contactcenterex",
+    "times" : {
+      "indexingReason" : "Merged On project open with On refresh of files in contactcenterex",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 5247706750,
+      "indexingTime" : 5244297000,
+      "contentLoadingVisibleTime" : 142748857,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 562183297,
+      "updatingStart" : "2024-03-19T09:31:58.514754Z",
+      "updatingEnd" : "2024-03-19T09:32:03.762154Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 2,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 2,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 1039
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 24026262916,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 461722998,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 438,
+      "totalFilesSize" : 314323,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 24026262916
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+        "numberOfFiles" : 212,
+        "totalFilesSize" : 121106,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 16641439665,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+        "numberOfFiles" : 139,
+        "totalFilesSize" : 121279,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3297180539,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : 14574,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1419495542,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : 24667,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1157663335,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : 10743,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 592223833,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-entities' (avizva-hc-contactcenterex-entities)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 3370,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 457383834,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : 12894,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 394436751,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 5635,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 54525750,
+          "total" : 24026262916
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 55,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 11913667,
+          "total" : 24026262916
+        }
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalProcessingTime" : {
+        "part" : 8964589459,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 86344501,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 66,
+      "totalFilesSize" : 166690,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 166690,
+        "totalTime" : 8964589459
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 29,
+        "totalFilesSize" : 135013,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 6409008168,
+          "total" : 8964589459
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)",
+        "numberOfFiles" : 35,
+        "totalFilesSize" : 30547,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1772062957,
+          "total" : 8964589459
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 565,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 640668792,
+          "total" : 8964589459
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 565,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 142849542,
+          "total" : 8964589459
+        }
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalProcessingTime" : {
+        "part" : 3257005666,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 40131462,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 34,
+      "totalFilesSize" : 113504,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 3257005666
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : 81991,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1884418875,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3274,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 459303708,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 12905,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 270535749,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-entities' (avizva-hc-contactcenterex-entities)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 995,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 136050500,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1262,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 109602917,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 986,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 75783667,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2485,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 73600083,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2265,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 52449708,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1495,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 43650292,
+          "total" : 3257005666
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-authorization' (avizva-hc-contactcenterex-authorization)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1009,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 43145833,
+          "total" : 3257005666
+        }
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalProcessingTime" : {
+        "part" : 2462825704,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 146430957,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 156,
+      "totalFilesSize" : 818598,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 818598,
+        "totalTime" : 2462825704
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 156,
+        "totalFilesSize" : 818598,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2462825704,
+          "total" : 2462825704
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 1960281288,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 79192043,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 65,
+      "totalFilesSize" : 531755,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 531755,
+        "totalTime" : 1960281288
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 60,
+        "totalFilesSize" : 526647,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1686255914,
+          "total" : 1960281288
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 426,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 258366083,
+          "total" : 1960281288
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 488,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9823250,
+          "total" : 1960281288
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 4194,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5836041,
+          "total" : 1960281288
+        }
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalProcessingTime" : {
+        "part" : 1143146874,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 40427959,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 15,
+      "totalFilesSize" : 48500,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 48500,
+        "totalTime" : 1143146874
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : 45669,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 580415833,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 55,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 395463000,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1733,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 68362417,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 590,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 47977666,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 121,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 23904625,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 60,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 13990958,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 108,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4757500,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-authorization' (avizva-hc-contactcenterex-authorization)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4181542,
+          "total" : 1143146874
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 164,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4093333,
+          "total" : 1143146874
+        }
+      } ]
+    }, {
+      "fileType" : "AUTO_DETECTED",
+      "partOfTotalProcessingTime" : {
+        "part" : 841930414,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 10156377,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 147,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 841930414
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 147,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 841930414,
+          "total" : 841930414
+        }
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalProcessingTime" : {
+        "part" : 689702790,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 11008580,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 14,
+      "totalFilesSize" : 54251,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 54251,
+        "totalTime" : 689702790
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : 54251,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 689702790,
+          "total" : 689702790
+        }
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalProcessingTime" : {
+        "part" : 672263996,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 20361041,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 36,
+      "totalFilesSize" : 216059,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 216059,
+        "totalTime" : 672263996
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 28,
+        "totalFilesSize" : 60672,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 385787704,
+          "total" : 672263996
+        }
+      }, {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 152298,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 283887542,
+          "total" : 672263996
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 3089,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2588750,
+          "total" : 672263996
+        }
+      } ]
+    }, {
+      "fileType" : "GitIgnore file",
+      "partOfTotalProcessingTime" : {
+        "part" : 603216166,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 25300876,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : 3754,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3754,
+        "totalTime" : 603216166
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 1882,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 336128416,
+          "total" : 603216166
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 621,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 252382334,
+          "total" : 603216166
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 629,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 12352875,
+          "total" : 603216166
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 622,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2352541,
+          "total" : 603216166
+        }
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalProcessingTime" : {
+        "part" : 459754708,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 270786500,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 1935,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 1935,
+        "totalTime" : 459754708
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1935,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 459754708,
+          "total" : 459754708
+        }
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalProcessingTime" : {
+        "part" : 301531254,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5881253,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 52,
+      "totalFilesSize" : 68580,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 68580,
+        "totalTime" : 301531254
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : 16283,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 229345291,
+          "total" : 301531254
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)",
+        "numberOfFiles" : 39,
+        "totalFilesSize" : 51534,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 65995880,
+          "total" : 301531254
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 361,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5068458,
+          "total" : 301531254
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 402,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1121625,
+          "total" : 301531254
+        }
+      } ]
+    }, {
+      "fileType" : "Dictionary",
+      "partOfTotalProcessingTime" : {
+        "part" : 262246541,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 13080875,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : 986,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 986,
+        "totalTime" : 262246541
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 325,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 252164333,
+          "total" : 262246541
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 661,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9791208,
+          "total" : 262246541
+        }
+      }, {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 291000,
+          "total" : 262246541
+        }
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalProcessingTime" : {
+        "part" : 143102708,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5678375,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 4350,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 4350,
+        "totalTime" : 143102708
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3214,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 73484916,
+          "total" : 143102708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1136,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 69617792,
+          "total" : 143102708
+        }
+      } ]
+    }, {
+      "fileType" : "UNKNOWN",
+      "partOfTotalProcessingTime" : {
+        "part" : 31433626,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 7909126,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 31433626
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 31433626,
+          "total" : 31433626
+        }
+      } ]
+    }, {
+      "fileType" : "TOML",
+      "partOfTotalProcessingTime" : {
+        "part" : 25823792,
+        "total" : 45845117902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 571750,
+        "total" : 1224984673
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 396,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 396,
+        "totalTime" : 25823792
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'contactcenterex' (contactcenterex)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 396,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 25823792,
+          "total" : 25823792
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 25844127251,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 555,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 644952,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 644952,
+        "totalTime" : 25844127251
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 4631266909,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 887,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2342695,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 2342695,
+        "totalTime" : 4631266909
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 2057990231,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 1037,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2343681,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 2343681,
+        "totalTime" : 2057990231
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 758125718,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 758125718
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 658304573,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 658304573
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : {
+        "part" : 230157248,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 230157248
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : {
+        "part" : 142247417,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 36,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 115439,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 115439,
+        "totalTime" : 142247417
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 105172999,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 4350,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 4350,
+        "totalTime" : 105172999
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 84170333,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 84170333
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 75096390,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 438,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 314323,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 314323,
+        "totalTime" : 75096390
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 69970876,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 69970876
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 42782458,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 42782458
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : {
+        "part" : 41484372,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 36,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 216059,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 216059,
+        "totalTime" : 41484372
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : {
+        "part" : 17111126,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1935,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 1935,
+        "totalTime" : 17111126
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 14385843,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 156,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 818598,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 818598,
+        "totalTime" : 14385843
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "NavXmlIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 13549833,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 13549833
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : {
+        "part" : 12507207,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 12507207
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 10243917,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 10243917
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 9171501,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 9171501
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 7528877,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 7528877
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 6644502,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 6644502
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "HtmlTagIdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 3867250,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1935,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 1935,
+        "totalTime" : 3867250
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointClassIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 219084,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 219084
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 183252,
+        "total" : 34836309167
+      },
+      "totalNumberOfFiles" : 34,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 113504,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 113504,
+        "totalTime" : 183252
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 2,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 2,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 1200250,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'avizva-hc-common-domainapiinvokers' (avizva-hc-common-domainapiinvokers)",
+      "totalNumberOfIndexedFiles" : 214,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1923775931,
+      "contentLoadingVisibleTime" : 35750832,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 214845939
+    }, {
+      "providerName" : "Module 'contactcenterex' (contactcenterex)",
+      "totalNumberOfIndexedFiles" : 453,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1755201672,
+      "contentLoadingVisibleTime" : 43728674,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "README.md",
+        "processingTime" : 639909000,
+        "evaluationOfIndexValueChangerTime" : 518917376,
+        "contentLoadingTime" : 7121666
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 215378078
+    }, {
+      "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+      "totalNumberOfIndexedFiles" : 140,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 383682402,
+      "contentLoadingVisibleTime" : 7131297,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 34028698
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex' (avizva-hc-contactcenterex)",
+      "totalNumberOfIndexedFiles" : 6,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 256892285,
+      "contentLoadingVisibleTime" : 5509909,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "README.md",
+        "processingTime" : 640668792,
+        "evaluationOfIndexValueChangerTime" : 521705250,
+        "contentLoadingTime" : 9147167
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 47849369
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+      "totalNumberOfIndexedFiles" : 48,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 220541891,
+      "contentLoadingVisibleTime" : 3723197,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 14640777
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-usecases' (avizva-hc-contactcenterex-usecases)",
+      "totalNumberOfIndexedFiles" : 78,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 213966697,
+      "contentLoadingVisibleTime" : 1698061,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "README.md",
+        "processingTime" : 543205375,
+        "evaluationOfIndexValueChangerTime" : 540427333,
+        "contentLoadingTime" : 304708
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5736646
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-web' (avizva-hc-contactcenterex-web)",
+      "totalNumberOfIndexedFiles" : 18,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 141894288,
+      "contentLoadingVisibleTime" : 33116689,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4853402
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-dao' (avizva-hc-contactcenterex-dao)",
+      "totalNumberOfIndexedFiles" : 27,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 134962513,
+      "contentLoadingVisibleTime" : 1102364,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 9136541
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-entities' (avizva-hc-contactcenterex-entities)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 67504514,
+      "contentLoadingVisibleTime" : 456075,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3910073
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+      "totalNumberOfIndexedFiles" : 23,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 50299030,
+      "contentLoadingVisibleTime" : 4218920,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6244635
+    }, {
+      "providerName" : "Module 'avizva-hc-common' (avizva-hc-common)",
+      "totalNumberOfIndexedFiles" : 7,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 28711940,
+      "contentLoadingVisibleTime" : 1498913,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 782028
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-apis' (avizva-hc-contactcenterex-apis)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 18002579,
+      "contentLoadingVisibleTime" : 309993,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 885850
+    }, {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 17104541,
+      "contentLoadingVisibleTime" : 4303734,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1097885
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10592153,
+      "contentLoadingVisibleTime" : 193194,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2108517
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-authorization' (avizva-hc-contactcenterex-authorization)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5383597,
+      "contentLoadingVisibleTime" : 7005,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 684859
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.5441478816347818
+  }
+}

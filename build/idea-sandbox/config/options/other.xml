@@ -1,0 +1,54 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "MultipleBuildsView.Splitter.Proportion": "0.14447592",
+    "RunOnceActivity.se.text.search": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "IC-231.9392.1",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "decompiler.legal.notice.accepted": "true",
+    "defaultJdkConfigured": "true",
+    "experimental.ui.first.promotion.localdate": "2024-02-29",
+    "file.gist.reindex.count": "58",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "IC-231.9392.1",
+    "ide.memory.adjusted": "true",
+    "installed.kotlin.plugin.version": "231-1.8.21-IJ9392.1",
+    "migrate.android.sdk.path.to.roamable.storage": "false",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_IntelliJ Light",
+    "registry.to.advanced.settings.migration.build": "IC-231.9392.1",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips"><![CDATA[{
+  "shownTips": {
+    "Rename": 1710657678336,
+    "CtrlW": 1709492109285,
+    "SpeedSearch": 1709968119873,
+    "FocusProjectToolWindow": 1710100398634,
+    "SearchEverywhere": 1714128960460,
+    "CommentCode": 1710841065603,
+    "FindReplaceToggle": 1709915482093,
+    "ShowUsages": 1710243028110,
+    "ContextActions": 1710268479849,
+    "FindInPath": 1710018419585
+  }
+}]]></component>
+</application>

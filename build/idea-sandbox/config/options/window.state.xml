@@ -1,0 +1,26 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.3024.1964@192dpi" x="1072" y="304" />
+    <size key="GridCell.Tab.0.left.0.0.3024.1964@192dpi" width="2500" height="892" />
+    <size key="GridCell.Tab.0.center.0.0.3024.1964@192dpi" width="2500" height="892" />
+    <size key="GridCell.Tab.0.right.0.0.3024.1964@192dpi" width="2500" height="892" />
+    <size key="GridCell.Tab.0.bottom.0.0.3024.1964@192dpi" width="2500" height="892" />
+    <size key="find.popup.0.0.3024.1964@192dpi" width="1174" height="1434" />
+    <size key="GridCell.Tab.1.left.0.0.3024.1964@192dpi" width="2500" height="776" />
+    <size key="GridCell.Tab.1.center.0.0.3024.1964@192dpi" width="2500" height="776" />
+    <size key="GridCell.Tab.1.right.0.0.3024.1964@192dpi" width="2500" height="776" />
+    <size key="GridCell.Tab.1.bottom.0.0.3024.1964@192dpi" width="2500" height="776" />
+  </component>
+  <component name="WindowManager">
+    <frame x="56" y="58" width="1400" height="848" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="756" y="482" width="1512" height="888" key="WELCOME_SCREEN" timestamp="1714128996299">
+      <screen x="0" y="38" width="1512" height="888" />
+    </state>
+    <state x="756" y="479" width="1512" height="883" key="WELCOME_SCREEN/0.38.1512.883" timestamp="1710843614499" />
+    <state x="756" y="480" width="800" height="884" key="WELCOME_SCREEN/0.38.1512.884" timestamp="1710161794170" />
+    <state x="756" y="480" width="800" height="885" key="WELCOME_SCREEN/0.38.1512.885" timestamp="1710154123923" />
+    <state x="756" y="482" width="1512" height="888" key="WELCOME_SCREEN/0.38.1512.888" timestamp="1714128996299" />
+  </component>
+</application>

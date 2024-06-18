@@ -1,0 +1,3910 @@
+{
+  "appInfo" : {
+    "build" : "231.9392.1",
+    "buildDate" : "2023-07-25T09:09:25.4Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2024-03-19T09:43:33.076238Z",
+    "os" : "macOS 14.0",
+    "runtime" : "JetBrains s.r.o. 17.0.7 17.0.7+10-b829.16"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 786432000,
+    "numberOfProcessors" : 10,
+    "maxNumberOfIndexingThreads" : 9,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "CCEX",
+    "times" : {
+      "indexingReason" : "On project open",
+      "scanningType" : "REFRESH",
+      "totalUpdatingTime" : 34113412208,
+      "indexingTime" : 34098950000,
+      "contentLoadingVisibleTime" : 2152910093,
+      "creatingIteratorsTime" : 0,
+      "scanFilesTime" : 0,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7568024250,
+      "updatingStart" : "2024-03-19T09:42:58.951328Z",
+      "updatingEnd" : "2024-03-19T09:43:33.063839Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 5,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 5,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 62233
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "CLASS",
+      "partOfTotalProcessingTime" : {
+        "part" : 223646261173,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 15591029830,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 59885,
+      "totalFilesSize" : 244485053,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 244485053,
+        "totalTime" : 223646261173
+      },
+      "biggestContributors" : [ {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 17276,
+        "totalFilesSize" : 85849459,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 68392558923,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 7206,
+        "totalFilesSize" : 35424871,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 36648523399,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 6728,
+        "totalFilesSize" : 29151496,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 22107954314,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 643,
+        "totalFilesSize" : 4281793,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 8079422342,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.bouncycastle:bcprov-jdk15on:1.70 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 4322,
+        "totalFilesSize" : 9350400,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 7190389370,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-core:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2188,
+        "totalFilesSize" : 7156966,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 6476011622,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 442,
+        "totalFilesSize" : 1836420,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5014299118,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.aspectj:aspectjweaver:1.9.21 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 971,
+        "totalFilesSize" : 4421017,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4906467672,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 581,
+        "totalFilesSize" : 3086292,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4702527418,
+          "total" : 223646261173
+        }
+      }, {
+        "providerName" : "Library Maven: com.google.guava:guava:21.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1837,
+        "totalFilesSize" : 5517505,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4584724407,
+          "total" : 223646261173
+        }
+      } ]
+    }, {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 30118371586,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1238081084,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 779,
+      "totalFilesSize" : 965751,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 965751,
+        "totalTime" : 30118371586
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)",
+        "numberOfFiles" : 48,
+        "totalFilesSize" : 42256,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9503470752,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+        "numberOfFiles" : 285,
+        "totalFilesSize" : 381027,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4704248035,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)",
+        "numberOfFiles" : 23,
+        "totalFilesSize" : 44796,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3062444794,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+        "numberOfFiles" : 25,
+        "totalFilesSize" : 17256,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3038009418,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+        "numberOfFiles" : 100,
+        "totalFilesSize" : 106710,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1462470420,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)",
+        "numberOfFiles" : 51,
+        "totalFilesSize" : 60753,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1385631836,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-authentication' (avizva-hc-zenoapp-authentication)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 2821,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1345499749,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-dao-softphone' (avizva-hc-softphonehandlerapp-dao-softphone)",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : 4591,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 935100124,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+        "numberOfFiles" : 31,
+        "totalFilesSize" : 19100,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 768708249,
+          "total" : 30118371586
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-dao-cognitiveengine' (avizva-hc-zenoapp-dao-cognitiveengine)",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 3080,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 707277249,
+          "total" : 30118371586
+        }
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalProcessingTime" : {
+        "part" : 17447900496,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 321605591,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 200,
+      "totalFilesSize" : 5977847,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 17447900496
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : 3089985,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4956721791,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 24,
+        "totalFilesSize" : 1136575,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2527182082,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : 25361,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1068494416,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 57374,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 722058292,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : 904588,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 666239250,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.opensaml:opensaml-xmlsec-api:4.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 28210,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 656669707,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1167,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 414775041,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.commons:commons-lang3:3.13.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 30981,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 391928042,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: com.github.stephenc.jcip:jcip-annotations:1.0-1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 5428,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 386474291,
+          "total" : 17447900496
+        }
+      }, {
+        "providerName" : "Library Maven: org.opensaml:opensaml-core:4.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 113085,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 339706459,
+          "total" : 17447900496
+        }
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalProcessingTime" : {
+        "part" : 8898694995,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 307156300,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 370,
+      "totalFilesSize" : 2323596,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 2323596,
+        "totalTime" : 8898694995
+      },
+      "biggestContributors" : [ {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 189,
+        "totalFilesSize" : 1872254,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5190037576,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 71,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 413448417,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: org.glassfish.jaxb:jaxb-core:4.0.4 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : 37141,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 396357458,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: com.github.stephenc.jcip:jcip-annotations:1.0-1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 125,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 294456792,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 23,
+        "totalFilesSize" : 110522,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 272978166,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 74,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 271556542,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: joda-time:joda-time:2.8.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : 6554,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 153510625,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 118936542,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: com.google.guava:guava:21.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 129,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 112600750,
+          "total" : 8898694995
+        }
+      }, {
+        "providerName" : "Library Maven: io.dropwizard.metrics:metrics-core:4.2.23 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 69,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 101282167,
+          "total" : 8898694995
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 5974066411,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 430960838,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 384,
+      "totalFilesSize" : 2870291,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 2870291,
+        "totalTime" : 5974066411
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : 57763,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 903335293,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 40,
+        "totalFilesSize" : 172246,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 819018002,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.bouncycastle:bcprov-jdk15on:1.70 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1175802,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 662324083,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-log4j2:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 11569,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 407453000,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 48,
+        "totalFilesSize" : 229072,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 379354328,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 6811,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 365454125,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : 48918,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 343862207,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-authentication' (avizva-hc-zenoapp-authentication)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 6072,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 281245542,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: commons-codec:commons-codec:1.16.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 130,
+        "totalFilesSize" : 245348,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 243010370,
+          "total" : 5974066411
+        }
+      }, {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch-x-content:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 34675,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 192177458,
+          "total" : 5974066411
+        }
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalProcessingTime" : {
+        "part" : 4383507541,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 10808624,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 17,
+      "totalFilesSize" : 106347,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 106347,
+        "totalTime" : 4383507541
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.junit.jupiter:junit-jupiter-params:5.10.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 23854,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1459159708,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: org.glassfish.jaxb:jaxb-core:4.0.4 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 6159,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 977102458,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: org.junit.platform:junit-platform-engine:1.10.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 14551,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 621197501,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: org.glassfish.jaxb:txw2:4.0.4 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 6159,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 493347958,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp' (avizva-hc-notesapp)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 440,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 335710750,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: org.junit.platform:junit-platform-commons:1.10.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 14551,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 157403667,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: org.eclipse.angus:angus-activation:2.0.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 3023,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 141557125,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: jakarta.annotation:jakarta.annotation-api:2.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 36536,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 115654833,
+          "total" : 4383507541
+        }
+      }, {
+        "providerName" : "Library Maven: jakarta.inject:jakarta.inject-api:2.0.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1074,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 82373541,
+          "total" : 4383507541
+        }
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalProcessingTime" : {
+        "part" : 3235945083,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 552830500,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 11,
+      "totalFilesSize" : 14055,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 14055,
+        "totalTime" : 3235945083
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1935,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 844637167,
+          "total" : 3235945083
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1946,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 791525250,
+          "total" : 3235945083
+        }
+      }, {
+        "providerName" : "Library Maven: org.aspectj:aspectjweaver:1.9.21 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 4359,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 552502500,
+          "total" : 3235945083
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1932,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 546218750,
+          "total" : 3235945083
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1911,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 258163958,
+          "total" : 3235945083
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1972,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 242897458,
+          "total" : 3235945083
+        }
+      } ]
+    }, {
+      "fileType" : "Manifest",
+      "partOfTotalProcessingTime" : {
+        "part" : 2140760087,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 156102047,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 113,
+      "totalFilesSize" : 965472,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 965472,
+        "totalTime" : 2140760087
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.bouncycastle:bcprov-jdk15on:1.70 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 611126,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 491334375,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-log4j2:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 299,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 230080750,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 190,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 155956625,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch-x-content:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 686,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 112003875,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: io.dropwizard.metrics:metrics-core:4.2.23 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 896,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 67968584,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.attoparser:attoparser:2.0.7.RELEASE (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2081,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 59529542,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-core:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 537,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 52019042,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: com.google.guava:guava:21.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2483,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 51200084,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 191,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 48497834,
+          "total" : 2140760087
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 170,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 42986833,
+          "total" : 2140760087
+        }
+      } ]
+    }, {
+      "fileType" : "RNG Compact",
+      "partOfTotalProcessingTime" : {
+        "part" : 1943422751,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 140263621,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 141,
+      "totalFilesSize" : 1519126,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 1519126,
+        "totalTime" : 1943422751
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : 1042839,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1440277208,
+          "total" : 1943422751
+        }
+      }, {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 124,
+        "totalFilesSize" : 476287,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 503145543,
+          "total" : 1943422751
+        }
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalProcessingTime" : {
+        "part" : 1573905118,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 112560001,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 159,
+      "totalFilesSize" : 1362337,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 1362337,
+        "totalTime" : 1573905118
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : 53361,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1021525747,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+        "numberOfFiles" : 69,
+        "totalFilesSize" : 121862,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 187122248,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 650830,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 117052541,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 398091,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 80889750,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+        "numberOfFiles" : 29,
+        "totalFilesSize" : 67818,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 52080710,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : 15525,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 51334498,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 81,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 11673375,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.18 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 1334,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 10061124,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Library Maven: io.netty:netty-resolver-dns:4.1.105.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 985,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9493291,
+          "total" : 1573905118
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.18 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 210,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9352917,
+          "total" : 1573905118
+        }
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalProcessingTime" : {
+        "part" : 769637708,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2227791,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : 6592,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 6592,
+        "totalTime" : 769637708
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1691,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 242349916,
+          "total" : 769637708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 749,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 202874584,
+          "total" : 769637708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1015,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 150635458,
+          "total" : 769637708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1164,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 117147667,
+          "total" : 769637708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-apis' (avizva-hc-zenoapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 1133,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 35383458,
+          "total" : 769637708
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 840,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 21246625,
+          "total" : 769637708
+        }
+      } ]
+    }, {
+      "fileType" : "DTD",
+      "partOfTotalProcessingTime" : {
+        "part" : 549638706,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 64921622,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 72,
+      "totalFilesSize" : 920351,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 920351,
+        "totalTime" : 549638706
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 64,
+        "totalFilesSize" : 812613,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 388545748,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 48725,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 67899083,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "Library Maven: org.opensaml:opensaml-core:4.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 22445,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 38354167,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2880,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 29464208,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "Library Maven: org.aspectj:aspectjweaver:1.9.21 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 8082,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 15890000,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 22641,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4979625,
+          "total" : 549638706
+        }
+      }, {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2965,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 4505875,
+          "total" : 549638706
+        }
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalProcessingTime" : {
+        "part" : 461509167,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2817125,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : 514483,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 514483,
+        "totalTime" : 461509167
+      },
+      "biggestContributors" : [ {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : 514483,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 461509167,
+          "total" : 461509167
+        }
+      } ]
+    }, {
+      "fileType" : "SPI",
+      "partOfTotalProcessingTime" : {
+        "part" : 319897165,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 31846082,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 34,
+      "totalFilesSize" : 24100,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 24100,
+        "totalTime" : 319897165
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-core:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 3487,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 123831458,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 66,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 42479083,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.18 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 2501,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 23543166,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 10153,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 21338708,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.opensaml:opensaml-core:4.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 171,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 19389834,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 246,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 16963500,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 47,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 15583333,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.opensaml:opensaml-xmlsec-api:4.1.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2912,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 12063333,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 276,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9789750,
+          "total" : 319897165
+        }
+      }, {
+        "providerName" : "Library Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 61,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 6197416,
+          "total" : 319897165
+        }
+      } ]
+    }, {
+      "fileType" : "kotlin_module",
+      "partOfTotalProcessingTime" : {
+        "part" : 183324749,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 25604917,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : 559,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 559,
+        "totalTime" : 183324749
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 172,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 78869291,
+          "total" : 183324749
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 119,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 51374625,
+          "total" : 183324749
+        }
+      }, {
+        "providerName" : "Library Maven: org.junit.jupiter:junit-jupiter-params:5.10.1 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 80,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 28900959,
+          "total" : 183324749
+        }
+      }, {
+        "providerName" : "Library Maven: org.springframework:spring-jdbc:6.1.3 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 164,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 15956708,
+          "total" : 183324749
+        }
+      }, {
+        "providerName" : "Library Maven: org.springdoc:springdoc-openapi-starter-common:2.3.0 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 24,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 8223166,
+          "total" : 183324749
+        }
+      } ]
+    }, {
+      "fileType" : "XHTML",
+      "partOfTotalProcessingTime" : {
+        "part" : 168976542,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 6609792,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 2908,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 2908,
+        "totalTime" : 168976542
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2908,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 168976542,
+          "total" : 168976542
+        }
+      } ]
+    }, {
+      "fileType" : "UNKNOWN",
+      "partOfTotalProcessingTime" : {
+        "part" : 103717042,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 29701375,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 103717042
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 103717042,
+          "total" : 103717042
+        }
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalProcessingTime" : {
+        "part" : 92359707,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5991834,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 9,
+      "totalFilesSize" : 18275,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 18275,
+        "totalTime" : 92359707
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 187,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 41499916,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 16013,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 24732667,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 381,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 10745625,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-apis' (avizva-hc-memberapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 361,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3994291,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 166,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3880167,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-softphonehandlerapp-apis' (avizva-hc-softphonehandlerapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 361,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2169291,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 175,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1840916,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-zenoapp-apis' (avizva-hc-zenoapp-apis)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 247,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1823334,
+          "total" : 92359707
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 384,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1673500,
+          "total" : 92359707
+        }
+      } ]
+    }, {
+      "fileType" : "Shrinker Config File",
+      "partOfTotalProcessingTime" : {
+        "part" : 70421375,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 12844710,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 8,
+      "totalFilesSize" : 4948,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 4948,
+        "totalTime" : 70421375
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: com.google.guava:guava:32.1.1-jre (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : 4948,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 70421375,
+          "total" : 70421375
+        }
+      } ]
+    }, {
+      "fileType" : "DGM",
+      "partOfTotalProcessingTime" : {
+        "part" : 68415125,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 29525250,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 179,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 179,
+        "totalTime" : 68415125
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.apache.groovy:groovy-jsr223:4.0.17 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 179,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 68415125,
+          "total" : 68415125
+        }
+      } ]
+    }, {
+      "fileType" : "CSS",
+      "partOfTotalProcessingTime" : {
+        "part" : 67956335,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 4798125,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : 35276,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 35276,
+        "totalTime" : 67956335
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 5538,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 38149000,
+          "total" : 67956335
+        }
+      }, {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 29738,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 29807335,
+          "total" : 67956335
+        }
+      } ]
+    }, {
+      "fileType" : "AUTO_DETECTED",
+      "partOfTotalProcessingTime" : {
+        "part" : 55756292,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 17209,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalTime" : 55756292
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 55756292,
+          "total" : 55756292
+        }
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalProcessingTime" : {
+        "part" : 42900999,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 23124,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 221,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 221,
+        "totalTime" : 42900999
+      },
+      "biggestContributors" : [ {
+        "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 221,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 42900999,
+          "total" : 42900999
+        }
+      } ]
+    }, {
+      "fileType" : "JSP",
+      "partOfTotalProcessingTime" : {
+        "part" : 23999459,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2934459,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 8,
+      "totalFilesSize" : 7372,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 7372,
+        "totalTime" : 23999459
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 3686,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 14669207,
+          "total" : 23999459
+        }
+      }, {
+        "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 3686,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9330252,
+          "total" : 23999459
+        }
+      } ]
+    }, {
+      "fileType" : "GitIgnore file",
+      "partOfTotalProcessingTime" : {
+        "part" : 8974875,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2419333,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 617,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 617,
+        "totalTime" : 8974875
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-notesapp' (avizva-hc-notesapp)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 617,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 8974875,
+          "total" : 8974875
+        }
+      } ]
+    }, {
+      "fileType" : "Dictionary",
+      "partOfTotalProcessingTime" : {
+        "part" : 5280125,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1486750,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 32,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 32,
+        "totalTime" : 5280125
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'avizva-hc-notesapp' (avizva-hc-notesapp)",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 32,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5280125,
+          "total" : 5280125
+        }
+      } ]
+    }, {
+      "fileType" : "PATCH",
+      "partOfTotalProcessingTime" : {
+        "part" : 3147083,
+        "total" : 302358747695
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 313541,
+        "total" : 19085481475
+      },
+      "totalNumberOfFiles" : 8,
+      "totalFilesSize" : 4449,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 4449,
+        "totalTime" : 3147083
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : 4449,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 3147083,
+          "total" : 3147083
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 78063312877,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 61246,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 253844822,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 253844822,
+        "totalTime" : 78063312877
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "bytecodeAnalysis",
+      "partOfTotalIndexingTime" : {
+        "part" : 11736328694,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 59885,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 244485053,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 244485053,
+        "totalTime" : 11736328694
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 8577338024,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 59885,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 244485053,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 244485053,
+        "totalTime" : 8577338024
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 8071280815,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 2328,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 17640144,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 17640144,
+        "totalTime" : 8071280815
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 6335976656,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 762,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 937745,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 937745,
+        "totalTime" : 6335976656
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 3857597865,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 59885,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 244485053,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 244485053,
+        "totalTime" : 3857597865
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 3686933656,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 59885,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 244485053,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 244485053,
+        "totalTime" : 3686933656
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 3468667957,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 762,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 937745,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 937745,
+        "totalTime" : 3468667957
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 2923048588,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 2338,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 17644625,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 17644625,
+        "totalTime" : 2923048588
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "XmlNamespaces",
+      "partOfTotalIndexingTime" : {
+        "part" : 2609827627,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 83,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5251647,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5251647,
+        "totalTime" : 2609827627
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : {
+        "part" : 1006897124,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 47,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 105140,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 105140,
+        "totalTime" : 1006897124
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 883579038,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 883579038
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "SchemaTypeInheritance",
+      "partOfTotalIndexingTime" : {
+        "part" : 788754542,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 11,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 415206,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 415206,
+        "totalTime" : 788754542
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 646534501,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 6592,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 6592,
+        "totalTime" : 646534501
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 567777206,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 762,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 937745,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 937745,
+        "totalTime" : 567777206
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : {
+        "part" : 471688209,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 35,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 47534,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 47534,
+        "totalTime" : 471688209
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "HtmlTagIdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 418945084,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 10,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9696,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 9696,
+        "totalTime" : 418945084
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "XmlTagNames",
+      "partOfTotalIndexingTime" : {
+        "part" : 386827709,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 11,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 415206,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 415206,
+        "totalTime" : 386827709
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : {
+        "part" : 325831417,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 10,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9696,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 9696,
+        "totalTime" : 325831417
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.source.module.name",
+      "partOfTotalIndexingTime" : {
+        "part" : 280895999,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 113,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 965472,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 965472,
+        "totalTime" : 280895999
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 121711529,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 121711529
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : {
+        "part" : 85020163,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 159,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 1362337,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 1362337,
+        "totalTime" : 85020163
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 84410877,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 113,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 965472,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 965472,
+        "totalTime" : 84410877
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 84051082,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 35,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 47534,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 47534,
+        "totalTime" : 84051082
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "NavXmlIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 83190540,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 114,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 695448,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 695448,
+        "totalTime" : 83190540
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 60047332,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 60047332
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 47669709,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 5,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 559,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 559,
+        "totalTime" : 47669709
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointClassIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 37434998,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 37434998
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : {
+        "part" : 33958168,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 114,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 695448,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 695448,
+        "totalTime" : 33958168
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 28371625,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 5,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 559,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 559,
+        "totalTime" : 28371625
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 26488832,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 37,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 95444,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 95444,
+        "totalTime" : 26488832
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 24449752,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 24449752
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 19183332,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 200,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5977847,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 5977847,
+        "totalTime" : 19183332
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 8927874,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 514483,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 514483,
+        "totalTime" : 8927874
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 5707246,
+        "total" : 135858666647
+      },
+      "totalNumberOfFiles" : 37,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 95444,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 95444,
+        "totalTime" : 5707246
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 5,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 5,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 0,
+      "scanningTime" : 17355500,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0,
+      "roots" : [ "Not collected for refresh" ]
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "JDK temurin-17 /Users/adesh.pathak/Library/Java/JavaVirtualMachines/temurin-17.0.10/Contents/Home",
+      "totalNumberOfIndexedFiles" : 17529,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 8401044931,
+      "contentLoadingVisibleTime" : 1041272233,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "Transparency.class",
+        "processingTime" : 659798459,
+        "evaluationOfIndexValueChangerTime" : 37508999,
+        "contentLoadingTime" : 552632375
+      }, {
+        "fileName" : "TexturePaint.class",
+        "processingTime" : 732415458,
+        "evaluationOfIndexValueChangerTime" : 37573542,
+        "contentLoadingTime" : 624951750
+      }, {
+        "fileName" : "MenuShortcut.class",
+        "processingTime" : 975682750,
+        "evaluationOfIndexValueChangerTime" : 37845167,
+        "contentLoadingTime" : 870822042
+      }, {
+        "fileName" : "SplashScreen.class",
+        "processingTime" : 972780666,
+        "evaluationOfIndexValueChangerTime" : 40208667,
+        "contentLoadingTime" : 869493875
+      }, {
+        "fileName" : "PaintContext.class",
+        "processingTime" : 972552875,
+        "evaluationOfIndexValueChangerTime" : 38453708,
+        "contentLoadingTime" : 866066959
+      }, {
+        "fileName" : "FocusManager.class",
+        "processingTime" : 976287500,
+        "evaluationOfIndexValueChangerTime" : 36767666,
+        "contentLoadingTime" : 871452416
+      }, {
+        "fileName" : "MediaTracker.class",
+        "processingTime" : 976447166,
+        "evaluationOfIndexValueChangerTime" : 38340251,
+        "contentLoadingTime" : 869224458
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2271901964
+    }, {
+      "providerName" : "Library Maven: org.elasticsearch:elasticsearch:7.17.10 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 7221,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 4173314576,
+      "contentLoadingVisibleTime" : 111097810,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 942125479
+    }, {
+      "providerName" : "Library Maven: org.hibernate.orm:hibernate-core:6.4.1.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 6772,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 2607275818,
+      "contentLoadingVisibleTime" : 119069741,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 892765453
+    }, {
+      "providerName" : "Library Maven: org.springframework.security:spring-security-config:6.2.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 629,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1317018936,
+      "contentLoadingVisibleTime" : 34911583,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 129166846
+    }, {
+      "providerName" : "Module 'avizva-hc-providerapp-presentation' (avizva-hc-providerapp-presentation)",
+      "totalNumberOfIndexedFiles" : 76,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1226547154,
+      "contentLoadingVisibleTime" : 25580176,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "Value.java",
+        "processingTime" : 514833667,
+        "evaluationOfIndexValueChangerTime" : 416577042,
+        "contentLoadingTime" : 1498000
+      }, {
+        "fileName" : "ListingComponentDataBuilder.java",
+        "processingTime" : 578530375,
+        "evaluationOfIndexValueChangerTime" : 536158000,
+        "contentLoadingTime" : 2226209
+      }, {
+        "fileName" : "SubmitAddFormPresentationRequest.java",
+        "processingTime" : 558771417,
+        "evaluationOfIndexValueChangerTime" : 478042374,
+        "contentLoadingTime" : 2498750
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 57627961
+    }, {
+      "providerName" : "Library Maven: org.apache.lucene:lucene-analyzers-common:8.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 688,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1009058466,
+      "contentLoadingVisibleTime" : 24224142,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 226280645
+    }, {
+      "providerName" : "Library Maven: org.bouncycastle:bcprov-jdk15on:1.70 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 4328,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 945224113,
+      "contentLoadingVisibleTime" : 51870427,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 373616537
+    }, {
+      "providerName" : "Library Maven: org.apache.lucene:lucene-core:8.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 2195,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 757625972,
+      "contentLoadingVisibleTime" : 43089972,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 216553851
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-beans:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 454,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 670834569,
+      "contentLoadingVisibleTime" : 15966186,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 82481805
+    }, {
+      "providerName" : "Library Maven: org.aspectj:aspectjweaver:1.9.21 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 977,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 630100414,
+      "contentLoadingVisibleTime" : 26962032,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "LICENSE-AspectJ.html",
+        "processingTime" : 552502500,
+        "evaluationOfIndexValueChangerTime" : 519693542,
+        "contentLoadingTime" : 2586041
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 253243580
+    }, {
+      "providerName" : "Library Maven: org.springframework.data:spring-data-jpa:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 735,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 585796968,
+      "contentLoadingVisibleTime" : 16730449,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 120058856
+    }, {
+      "providerName" : "Library Maven: com.google.guava:guava:21.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 1840,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 561754362,
+      "contentLoadingVisibleTime" : 33201477,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 141605094
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-presentation' (avizva-hc-benefitapp-presentation)",
+      "totalNumberOfIndexedFiles" : 356,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 555843419,
+      "contentLoadingVisibleTime" : 18800545,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 21870858
+    }, {
+      "providerName" : "Library Maven: com.google.guava:guava:32.1.1-jre (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 2032,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 506385283,
+      "contentLoadingVisibleTime" : 29694364,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 101953555
+    }, {
+      "providerName" : "Library Maven: com.amazonaws:aws-java-sdk-redshift:1.12.664 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 1100,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 430139500,
+      "contentLoadingVisibleTime" : 22054663,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 163497879
+    }, {
+      "providerName" : "Indexable set contributor 'com.intellij.javaee.ExternalResourcesRootsProvider@4ecf334e' (non-project)",
+      "totalNumberOfIndexedFiles" : 226,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 420728649,
+      "contentLoadingVisibleTime" : 20276249,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 63460316
+    }, {
+      "providerName" : "Library Maven: org.elasticsearch:elasticsearch-x-content:7.17.10 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 98,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 417897800,
+      "contentLoadingVisibleTime" : 12291629,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 56443233
+    }, {
+      "providerName" : "Module 'avizva-hc-providerapp-logic' (avizva-hc-providerapp-logic)",
+      "totalNumberOfIndexedFiles" : 25,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 379534200,
+      "contentLoadingVisibleTime" : 4821030,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 23672873
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-logic' (avizva-hc-contactcenterex-logic)",
+      "totalNumberOfIndexedFiles" : 27,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 354649414,
+      "contentLoadingVisibleTime" : 7950695,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 17539873
+    }, {
+      "providerName" : "Library Maven: joda-time:joda-time:2.8.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 261,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 338947976,
+      "contentLoadingVisibleTime" : 6643240,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 66002844
+    }, {
+      "providerName" : "Library Maven: org.junit.jupiter:junit-jupiter-params:5.10.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 352,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 303577122,
+      "contentLoadingVisibleTime" : 9126960,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "LICENSE.md",
+        "processingTime" : 538562292,
+        "evaluationOfIndexValueChangerTime" : 519784541,
+        "contentLoadingTime" : 3038417
+      }, {
+        "fileName" : "LICENSE-univocity-parsers.md",
+        "processingTime" : 542842375,
+        "evaluationOfIndexValueChangerTime" : 524723000,
+        "contentLoadingTime" : 1482333
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 33750884
+    }, {
+      "providerName" : "Library Maven: io.dropwizard.metrics:metrics-core:4.2.23 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 107,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 258359962,
+      "contentLoadingVisibleTime" : 6702025,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 91405074
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-autoconfigure:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 1379,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 255962321,
+      "contentLoadingVisibleTime" : 18140130,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 79151986
+    }, {
+      "providerName" : "Library Maven: org.checkerframework:checker-qual:3.33.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 360,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 255574237,
+      "contentLoadingVisibleTime" : 6306846,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 21324766
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-jdbc:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 307,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 253833573,
+      "contentLoadingVisibleTime" : 11856251,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 49564477
+    }, {
+      "providerName" : "Library Maven: org.opensaml:opensaml-xmlsec-api:4.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 246,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 245007880,
+      "contentLoadingVisibleTime" : 11280622,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 27346065
+    }, {
+      "providerName" : "Library Maven: org.apache.commons:commons-lang3:3.13.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 395,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 238723046,
+      "contentLoadingVisibleTime" : 7555829,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 65935092
+    }, {
+      "providerName" : "Library Maven: org.glassfish.jaxb:jaxb-core:4.0.4 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 132,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 237719753,
+      "contentLoadingVisibleTime" : 7204434,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "NOTICE.md",
+        "processingTime" : 737805542,
+        "evaluationOfIndexValueChangerTime" : 727832458,
+        "contentLoadingTime" : 460292
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 17934407
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-authentication' (avizva-hc-zenoapp-authentication)",
+      "totalNumberOfIndexedFiles" : 12,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 217665866,
+      "contentLoadingVisibleTime" : 10960325,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6947506
+    }, {
+      "providerName" : "Library Maven: com.amazonaws:aws-java-sdk-s3:1.12.664 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 911,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 212751844,
+      "contentLoadingVisibleTime" : 13350603,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 84291590
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-web' (avizva-hc-memberapp-web)",
+      "totalNumberOfIndexedFiles" : 34,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 205780554,
+      "contentLoadingVisibleTime" : 18212163,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5982249
+    }, {
+      "providerName" : "Library Maven: commons-logging:commons-logging:1.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 33,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 186410430,
+      "contentLoadingVisibleTime" : 16507064,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 21351439
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-web' (avizva-hc-taskmanagerapp-web)",
+      "totalNumberOfIndexedFiles" : 20,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 179982718,
+      "contentLoadingVisibleTime" : 33239678,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2193426
+    }, {
+      "providerName" : "Module 'avizva-hc-common-domainentities' (avizva-hc-common-domainentities)",
+      "totalNumberOfIndexedFiles" : 101,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 166706305,
+      "contentLoadingVisibleTime" : 15706982,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6693044
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-logic' (avizva-hc-claimapp-logic)",
+      "totalNumberOfIndexedFiles" : 55,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 163603028,
+      "contentLoadingVisibleTime" : 14473944,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4310297
+    }, {
+      "providerName" : "Library Maven: com.amazonaws:aws-java-sdk-kms:1.12.664 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 468,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 160061235,
+      "contentLoadingVisibleTime" : 5276540,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 45818486
+    }, {
+      "providerName" : "Library Maven: org.mongodb:bson:4.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 384,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 142606538,
+      "contentLoadingVisibleTime" : 3553500,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 43162266
+    }, {
+      "providerName" : "Library Maven: com.microsoft.azure:msal4j:1.14.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 208,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 137106459,
+      "contentLoadingVisibleTime" : 2673988,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 29877412
+    }, {
+      "providerName" : "Library Maven: io.jsonwebtoken:jjwt-impl:0.12.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 342,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 133576820,
+      "contentLoadingVisibleTime" : 9457472,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 45317991
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-web' (avizva-hc-zenoapp-web)",
+      "totalNumberOfIndexedFiles" : 21,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 131821100,
+      "contentLoadingVisibleTime" : 18293597,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1420293
+    }, {
+      "providerName" : "Module 'avizva-hc-softphonehandlerapp-dao-softphone' (avizva-hc-softphonehandlerapp-dao-softphone)",
+      "totalNumberOfIndexedFiles" : 12,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 131231325,
+      "contentLoadingVisibleTime" : 2202309,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2866955
+    }, {
+      "providerName" : "Library Maven: org.junit.platform:junit-platform-engine:1.10.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 139,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 130668492,
+      "contentLoadingVisibleTime" : 3282475,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4519457
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-codec-http:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 396,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 129399552,
+      "contentLoadingVisibleTime" : 4903635,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 25898648
+    }, {
+      "providerName" : "Library Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 29,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 120745856,
+      "contentLoadingVisibleTime" : 8149254,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 13927546
+    }, {
+      "providerName" : "Library Maven: io.swagger.core.v3:swagger-core-jakarta:2.2.19 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 120,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 112744131,
+      "contentLoadingVisibleTime" : 7895879,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 11465543
+    }, {
+      "providerName" : "Library Maven: org.springframework.session:spring-session-core:3.2.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 67,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 112182949,
+      "contentLoadingVisibleTime" : 1994111,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 13928184
+    }, {
+      "providerName" : "Library Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.18 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 191,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 111255115,
+      "contentLoadingVisibleTime" : 4849987,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 19378355
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-weblogic:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 100669461,
+      "contentLoadingVisibleTime" : 2959120,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 58065576
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-dao-cognitiveengine' (avizva-hc-zenoapp-dao-cognitiveengine)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 99554995,
+      "contentLoadingVisibleTime" : 19529495,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 876610
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp-presentation' (avizva-hc-notesapp-presentation)",
+      "totalNumberOfIndexedFiles" : 52,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 98818310,
+      "contentLoadingVisibleTime" : 7048752,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2760621
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-web' (avizva-hc-benefitapp-web)",
+      "totalNumberOfIndexedFiles" : 37,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 95456813,
+      "contentLoadingVisibleTime" : 5429340,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2013510
+    }, {
+      "providerName" : "Library Maven: org.opensaml:opensaml-core:4.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 138,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 94883488,
+      "contentLoadingVisibleTime" : 1730022,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 13140628
+    }, {
+      "providerName" : "Library Maven: org.apache.httpcomponents:httpclient:4.5.13 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 478,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 94167872,
+      "contentLoadingVisibleTime" : 4694621,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 25631689
+    }, {
+      "providerName" : "Library Maven: com.fasterxml.jackson.core:jackson-core:2.15.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 205,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 91340146,
+      "contentLoadingVisibleTime" : 4801715,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 22820530
+    }, {
+      "providerName" : "Library Maven: com.github.stephenc.jcip:jcip-annotations:1.0-1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 7,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 79262803,
+      "contentLoadingVisibleTime" : 1630930,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1628219
+    }, {
+      "providerName" : "Library Maven: org.springframework.ldap:spring-ldap-core:3.2.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 331,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 78046228,
+      "contentLoadingVisibleTime" : 3459309,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 21301412
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-sessionaudit:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 66,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 72710126,
+      "contentLoadingVisibleTime" : 733795,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 10123418
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-log4j2:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 71765633,
+      "contentLoadingVisibleTime" : 1409468,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3358289
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-web' (avizva-hc-claimapp-web)",
+      "totalNumberOfIndexedFiles" : 28,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 71480325,
+      "contentLoadingVisibleTime" : 8731693,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2228960
+    }, {
+      "providerName" : "Library Maven: com.amazon.redshift:redshift-jdbc42:2.1.0.25 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 423,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 68108696,
+      "contentLoadingVisibleTime" : 3340293,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 23989569
+    }, {
+      "providerName" : "Library Maven: org.glassfish.jaxb:txw2:4.0.4 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 62,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 67719011,
+      "contentLoadingVisibleTime" : 642300,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4135522
+    }, {
+      "providerName" : "Library Maven: org.springdoc:springdoc-openapi-starter-common:2.3.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 238,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 62687512,
+      "contentLoadingVisibleTime" : 2055610,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 20723485
+    }, {
+      "providerName" : "Library Maven: org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 17,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 60353522,
+      "contentLoadingVisibleTime" : 7591252,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3731479
+    }, {
+      "providerName" : "Library Maven: org.apache.lucene:lucene-spatial3d:8.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 148,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 58506203,
+      "contentLoadingVisibleTime" : 4502641,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 19731356
+    }, {
+      "providerName" : "Module 'avizva-hc-notesapp' (avizva-hc-notesapp)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 54906236,
+      "contentLoadingVisibleTime" : 1697646,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2541672
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-common:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 500,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 54047961,
+      "contentLoadingVisibleTime" : 3146485,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 25711618
+    }, {
+      "providerName" : "Module 'avizva-hc-transcriptapp-logic' (avizva-hc-transcriptapp-logic)",
+      "totalNumberOfIndexedFiles" : 10,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 53673691,
+      "contentLoadingVisibleTime" : 1506698,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1369769
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-authentication' (avizva-hc-contactcenterex-authentication)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 53183685,
+      "contentLoadingVisibleTime" : 2031066,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3191609
+    }, {
+      "providerName" : "Library Maven: org.attoparser:attoparser:2.0.7.RELEASE (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 163,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 52550247,
+      "contentLoadingVisibleTime" : 12804031,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 9353659
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-buffer:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 144,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 48203138,
+      "contentLoadingVisibleTime" : 3387661,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 11207886
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-transport:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 380,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 42964851,
+      "contentLoadingVisibleTime" : 3049619,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 17239496
+    }, {
+      "providerName" : "Library Maven: commons-codec:commons-codec:1.16.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 242,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 42455262,
+      "contentLoadingVisibleTime" : 10849231,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 17831712
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-aop:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 297,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 42193269,
+      "contentLoadingVisibleTime" : 1832553,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 14708015
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-logic' (avizva-hc-zenoapp-logic)",
+      "totalNumberOfIndexedFiles" : 23,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 39921938,
+      "contentLoadingVisibleTime" : 567176,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4329222
+    }, {
+      "providerName" : "Library Maven: org.ow2.asm:asm:9.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 39,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 39142422,
+      "contentLoadingVisibleTime" : 3111902,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6308868
+    }, {
+      "providerName" : "Library Maven: com.sun.istack:istack-commons-runtime:4.1.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 38908839,
+      "contentLoadingVisibleTime" : 1714362,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5399655
+    }, {
+      "providerName" : "Library Maven: org.checkerframework:checker-qual:3.31.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 360,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 37818444,
+      "contentLoadingVisibleTime" : 2212079,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 12190190
+    }, {
+      "providerName" : "Library Maven: org.opensaml:opensaml-messaging-api:4.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 59,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 34897048,
+      "contentLoadingVisibleTime" : 1126355,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4889977
+    }, {
+      "providerName" : "Library Maven: io.swagger.core.v3:swagger-annotations-jakarta:2.2.19 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 63,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 34440272,
+      "contentLoadingVisibleTime" : 1214172,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2596600
+    }, {
+      "providerName" : "Library Maven: ca.juliusdavies:not-yet-commons-ssl:0.3.9 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 158,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 33520304,
+      "contentLoadingVisibleTime" : 1916950,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6711147
+    }, {
+      "providerName" : "Library Maven: io.searchbox:jest-common:6.3.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 276,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 33512857,
+      "contentLoadingVisibleTime" : 1917307,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 14256365
+    }, {
+      "providerName" : "Library Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.15.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 28,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 30720237,
+      "contentLoadingVisibleTime" : 3817889,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2535894
+    }, {
+      "providerName" : "Library Maven: org.codehaus.woodstox:stax2-api:3.1.4 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 127,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 28432897,
+      "contentLoadingVisibleTime" : 3596904,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4914738
+    }, {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 27401875,
+      "contentLoadingVisibleTime" : 7847055,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4036478
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-resolver-dns:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 119,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 26927642,
+      "contentLoadingVisibleTime" : 3528261,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6680702
+    }, {
+      "providerName" : "Library Maven: io.smallrye:jandex:3.1.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 167,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25896529,
+      "contentLoadingVisibleTime" : 2387811,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 11315610
+    }, {
+      "providerName" : "Library Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.18 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 164,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25886422,
+      "contentLoadingVisibleTime" : 1321770,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 12061048
+    }, {
+      "providerName" : "Library Maven: io.swagger.core.v3:swagger-models-jakarta:2.2.19 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 71,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 25496876,
+      "contentLoadingVisibleTime" : 2788171,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6196943
+    }, {
+      "providerName" : "Library Maven: org.cryptacular:cryptacular:1.2.4 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 131,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 24501685,
+      "contentLoadingVisibleTime" : 1771189,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 10380363
+    }, {
+      "providerName" : "Library Maven: org.mongodb:mongodb-driver-sync:4.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 77,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 23865818,
+      "contentLoadingVisibleTime" : 1043430,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 5564670
+    }, {
+      "providerName" : "Library Maven: org.junit.platform:junit-platform-commons:1.10.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 48,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 23264577,
+      "contentLoadingVisibleTime" : 582602,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2322705
+    }, {
+      "providerName" : "Library Maven: org.eclipse.angus:angus-activation:2.0.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 20,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 22180264,
+      "contentLoadingVisibleTime" : 555662,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 711708
+    }, {
+      "providerName" : "Library Maven: com.google.code.gson:gson:2.10.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 221,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 21017136,
+      "contentLoadingVisibleTime" : 2484510,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 7761102
+    }, {
+      "providerName" : "Library Maven: jakarta.inject:jakarta.inject-api:2.0.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 12,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 19314838,
+      "contentLoadingVisibleTime" : 459064,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 335906
+    }, {
+      "providerName" : "Module 'avizva-hc-contactcenterex-presentation' (avizva-hc-contactcenterex-presentation)",
+      "totalNumberOfIndexedFiles" : 53,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 19273432,
+      "contentLoadingVisibleTime" : 1327659,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4714016
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-utilities:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 38,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 17007878,
+      "contentLoadingVisibleTime" : 199873,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3473685
+    }, {
+      "providerName" : "Library Maven: org.apache.httpcomponents:httpcore-nio:4.4.16 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 249,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 16918545,
+      "contentLoadingVisibleTime" : 1097017,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 8599441
+    }, {
+      "providerName" : "Library Maven: jakarta.annotation:jakarta.annotation-api:2.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 23,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 15324341,
+      "contentLoadingVisibleTime" : 295100,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1224890
+    }, {
+      "providerName" : "Module 'avizva-hc-softphonehandlerapp-apis' (avizva-hc-softphonehandlerapp-apis)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 15069872,
+      "contentLoadingVisibleTime" : 63858,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4313191
+    }, {
+      "providerName" : "Library Maven: com.google.auto.service:auto-service-annotations:1.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 14796361,
+      "contentLoadingVisibleTime" : 63037,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 871760
+    }, {
+      "providerName" : "Library Maven: io.swagger.core.v3:swagger-annotations:2.2.20 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 63,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 14755710,
+      "contentLoadingVisibleTime" : 1311576,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2700289
+    }, {
+      "providerName" : "Library Maven: org.apache.groovy:groovy-jsr223:4.0.17 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 13,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 14687485,
+      "contentLoadingVisibleTime" : 8721375,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 292121
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-expression:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 152,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 14235864,
+      "contentLoadingVisibleTime" : 872126,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6587815
+    }, {
+      "providerName" : "Library Maven: org.hamcrest:hamcrest:2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 109,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 13659470,
+      "contentLoadingVisibleTime" : 2475399,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3593996
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-orm:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 111,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 12791125,
+      "contentLoadingVisibleTime" : 980885,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4730080
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-data-mongodb:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 12675053,
+      "contentLoadingVisibleTime" : 791533,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1997469
+    }, {
+      "providerName" : "Library Maven: org.opensaml:opensaml-profile-api:4.1.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 29,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 12316380,
+      "contentLoadingVisibleTime" : 179245,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1704620
+    }, {
+      "providerName" : "Library Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.2.RELEASE (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11602050,
+      "contentLoadingVisibleTime" : 296958,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 873374
+    }, {
+      "providerName" : "Library Maven: org.apache.lucene:lucene-misc:8.11.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 67,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11337713,
+      "contentLoadingVisibleTime" : 1150421,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2030311
+    }, {
+      "providerName" : "Library Maven: org.hibernate.common:hibernate-commons-annotations:6.0.6.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 60,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 11207810,
+      "contentLoadingVisibleTime" : 571632,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6501514
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-codec-socks:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 113,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10787618,
+      "contentLoadingVisibleTime" : 827817,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4376008
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-apiaudit:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 37,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10514304,
+      "contentLoadingVisibleTime" : 3139467,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1454513
+    }, {
+      "providerName" : "Library Maven: com.google.errorprone:error_prone_annotations:2.18.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 29,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10367573,
+      "contentLoadingVisibleTime" : 177088,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 991166
+    }, {
+      "providerName" : "Library Maven: com.auth0:jwks-rsa:0.22.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 16,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 10197136,
+      "contentLoadingVisibleTime" : 1248791,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 884298
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-authentication' (avizva-hc-claimapp-authentication)",
+      "totalNumberOfIndexedFiles" : 10,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 9757869,
+      "contentLoadingVisibleTime" : 435557,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2529473
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 51,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 8701469,
+      "contentLoadingVisibleTime" : 381561,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2388472
+    }, {
+      "providerName" : "Module 'avizva-hc-zenoapp-apis' (avizva-hc-zenoapp-apis)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 8405618,
+      "contentLoadingVisibleTime" : 283993,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 6614757
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-thymeleaf:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 8109542,
+      "contentLoadingVisibleTime" : 4169779,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 189840
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-jdbc:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 7681583,
+      "contentLoadingVisibleTime" : 6032159,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 703538
+    }, {
+      "providerName" : "Library Maven: com.google.guava:failureaccess:1.0.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 7188519,
+      "contentLoadingVisibleTime" : 1469316,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 200023
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-codegen:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 26,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 7100697,
+      "contentLoadingVisibleTime" : 166379,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 3647325
+    }, {
+      "providerName" : "Library Maven: org.json:json:20231013 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 32,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 6541029,
+      "contentLoadingVisibleTime" : 1978468,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1039721
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-entities' (avizva-hc-taskmanagerapp-entities)",
+      "totalNumberOfIndexedFiles" : 12,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 6403946,
+      "contentLoadingVisibleTime" : 603409,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 4218085
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-transport-native-unix-common:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 37,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 6138099,
+      "contentLoadingVisibleTime" : 357528,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2480065
+    }, {
+      "providerName" : "Library Maven: commons-logging:commons-logging:1.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 33,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5779027,
+      "contentLoadingVisibleTime" : 611331,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2582239
+    }, {
+      "providerName" : "Library Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.15.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 24,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5574989,
+      "contentLoadingVisibleTime" : 1206503,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 2014926
+    }, {
+      "providerName" : "Module 'avizva-hc-benefitapp-dao' (avizva-hc-benefitapp-dao)",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 5260920,
+      "contentLoadingVisibleTime" : 341867,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 278145
+    }, {
+      "providerName" : "Library Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 4772855,
+      "contentLoadingVisibleTime" : 127895,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1212957
+    }, {
+      "providerName" : "Library Maven: org.springframework:spring-jcl:6.1.3 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 3509871,
+      "contentLoadingVisibleTime" : 124813,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 583878
+    }, {
+      "providerName" : "Library Maven: io.searchbox:jest:6.3.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 11,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 3347309,
+      "contentLoadingVisibleTime" : 377795,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 202162
+    }, {
+      "providerName" : "Module 'avizva-hc-claimapp-dao' (avizva-hc-claimapp-dao)",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 3326236,
+      "contentLoadingVisibleTime" : 165286,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 817587
+    }, {
+      "providerName" : "Library Maven: io.netty:netty-resolver:4.1.105.Final (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 34,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 3148163,
+      "contentLoadingVisibleTime" : 219385,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 726154
+    }, {
+      "providerName" : "Library Maven: org.springframework.security:spring-security-cas:6.2.1 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 22,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 3026740,
+      "contentLoadingVisibleTime" : 227897,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 881718
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-coverage:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 2498273,
+      "contentLoadingVisibleTime" : 97966,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 1255602
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-serde:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 19,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 2085206,
+      "contentLoadingVisibleTime" : 99631,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 693871
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-web:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1837670,
+      "contentLoadingVisibleTime" : 70781,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 204169
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-buhierarchy:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 16,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1781185,
+      "contentLoadingVisibleTime" : 119523,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 792058
+    }, {
+      "providerName" : "Module 'avizva-hc-memberapp-apis' (avizva-hc-memberapp-apis)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1476089,
+      "contentLoadingVisibleTime" : 358813,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 222607
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter-aop:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1467252,
+      "contentLoadingVisibleTime" : 115616,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 134049
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-domainapiinvoker:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1379379,
+      "contentLoadingVisibleTime" : 84116,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 122314
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 13,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1371204,
+      "contentLoadingVisibleTime" : 59867,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 169780
+    }, {
+      "providerName" : "Library Maven: com.avizva.frameworks:avizva-hcdentities-broker:4.0.0 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 8,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 1242455,
+      "contentLoadingVisibleTime" : 89899,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 313889
+    }, {
+      "providerName" : "Module 'avizva-hc-taskmanagerapp-authorization' (avizva-hc-taskmanagerapp-authorization)",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 992269,
+      "contentLoadingVisibleTime" : 283463,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 161506
+    }, {
+      "providerName" : "Library Maven: org.springframework.boot:spring-boot-starter:3.2.2 (#1 class roots, #0 source roots)",
+      "totalNumberOfIndexedFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingVisibleTime" : 529780,
+      "contentLoadingVisibleTime" : 233427,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "isAppliedAllValuesSeparately" : true,
+      "separateApplyingIndexesVisibleTime" : 179643
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.2641983850638548
+  }
+}

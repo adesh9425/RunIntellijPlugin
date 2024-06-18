@@ -1,0 +1,65 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="Maven" externalSystemModuleType="SINGLE_MODULE" externalSystemModuleVersion="223-2" linkedProjectId="$MODULE_DIR$/pom.xml" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-webentities:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-domainentities:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-core:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.15.3" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-codegen:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service-annotations:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto:auto-common:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:32.0.1-jre" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.checkerframework:checker-qual:3.33.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.18.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:2.8" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.1.3" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.12.2" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-commons:1.12.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.15.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.15.3" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-annotations:2.2.20" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-common:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-pharmacyclaim:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-user:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-member:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-master:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-accumulator:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-broker:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-buhierarchy:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-claim:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-coverage:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-plan:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-policy:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-preauth:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-provider:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-enrollment:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.avizva.frameworks:avizva-hcdentities-invoice:4.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:4.11.1" level="project" />
+  </component>
+</module>
