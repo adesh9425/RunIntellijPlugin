@@ -25,3 +25,4 @@ Component is provided by the `CalendarToolWindowFactory.CalendarToolWindowConten
 [file:CalendarToolWindowFactory]: ./src/main/java/org/intellij/sdk/toolWindow/CalendarToolWindowFactory.java
 # RunIntellijPlugin
 # RunIntellijPlugin
+# RunIntellijPlugin
